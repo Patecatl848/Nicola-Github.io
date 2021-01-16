@@ -242,6 +242,46 @@
 	
 	   <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="/convalidare-un-dizionario-python-con-cerberus/">Convalidare un dizionario Python con Cerberus</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Da qualche giorno ho rilasciato Cerberus, uno strumento per la convalida dei dizionari Python. Gli passate un dizionario, lui lo confronta con uno schema di convalida e, se c&#8217;è qualcosa che non va (per esempio una chiave sconosciuta, oppure un valore di tipo sbagliato), ve lo segnala.
+&gt;&gt;&gt; v = Validator({'name': {'type': 'string'}}) &gt;&gt;&gt; v.validate({'name': 'john doe'}) True Sono due le caratteristiche che rendono Cerberus interessante: è facilmente estensibile (la documentazione include un esempio di estensione del sistema di convalida), e non si blocca sollevando un&#8217;eccezione al primo problema riscontrato: gli errori, quando presenti, sono tutti riportati in una lista a fine convalida. <a class="read-more" href="/convalidare-un-dizionario-python-con-cerberus/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/open-source/">#open source</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2012-10-16T00:00:00Z">
+            16 Oct 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="/una-mattinata-con-mongodb/">Una mattinata con MongoDB</a></h2>
     </header>
     <section class="post-excerpt">
@@ -389,41 +429,6 @@ Miguel de Icaza, il cervello dietro Xamarin e la piattaforma Mono, ha sintentizz
         
         <time class="post-date" datetime="2012-09-29T00:00:00Z">
             29 Sep 2012
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/ottimizzare-le-prestazioni-di-mongodb/">Ottimizzare le prestazioni di MongoDB</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>MongoDB Schema Design at Scale è un&#8217;eccellente articolo cu come ottimizzare database MongoDB sottoposti a pesanti carichi di lavoro, soprattutto in scrittura. Il messaggio, forte e chiaro, è sempre lo stesso: prima di agire studia per bene il tuo database engine; comprendine i vantaggi e soprattutto i punti deboli. <a class="read-more" href="/ottimizzare-le-prestazioni-di-mongodb/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/mongodb/">#MongoDB</a>,
-            
-        
-        <time class="post-date" datetime="2012-09-27T00:00:00Z">
-            27 Sep 2012
         </time>
     </footer>
 </article>
