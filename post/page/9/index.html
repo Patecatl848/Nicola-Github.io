@@ -231,7 +231,7 @@
 	
 	    <a class="newer-posts" href="/post/page/8/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 9 of 60</span>
+	<span class="page-number">Page 9 of 30</span>
 	
 	    <a class="older-posts" href="/post/page/10/">Older Posts &rarr;</a>
 	
@@ -242,11 +242,19 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/real-life-net-cross-platform/">Real Life .NET Cross Platform</a></h2>
+        <h2 class="post-title"><a href="/open-source-and-code-responsibility/">Open Source and Code Responsibility</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>There is a new episode up at Channel9 TecHeroes. It is called Real Life .NET Cross Platform and it is about developing production-ready, cross-platform applications with today&#8217;s .NET. In the interview we talk about SimpleCache, an asynchronous, permanent and cross-platform key-value object cache powered by SQLite3. The project is still a work in progress so there is no NuGet package available yet, but it is quite usable already. The talk slides are also available. <a class="read-more" href="/real-life-net-cross-platform/">&raquo;</a></p>
+            <p><p>Last week I was speaking at an Open Source panel at <a href="http://www.bettersoftware.it">Better Software 2014</a>, and one of the topics that we touched was code responsibility. This is an important topic for anyone who is maintaining an open source project, especially when it comes to the process of reviewing and accepting code contributions.</p>
+
+<p>At some point during the debate, I argued that when a maintainer merges a pull request, he (or she) implicitly agrees on being responsible for that code. That seemed to strike some surprise into most attendees.</p>
+
+<p>Yes, in theory any contributor is just a ping away so in case trouble arises one can always reach him, or her. Unfortunately this is not always the case. While some contributors will fully embrace your project and keep helping after their initial contribution, truth is that a good number of them will just move on, never to be seen again.</p>
+
+<p>There&#8217;s nothing wrong with that. Not everyone has spare time to devote to your project, which is perfectly fine. It is natural for most people to contribute what they need to a project and then go on their way. Actually, one could argue that most projects grow and prosper precisely thanks to this kind of contributions.</p>
+
+<p>However this attitude can become an incumbent when big chunks of code get merged, usually as new (big) features. Good practices advice against merging huge pull requests. In fact they are rare and when they do come, it is a good idea to ask for them to be split into smaller ones. But no matter the format, a huge contribution is likely to hit a project one day or another. It might even come from more than one person: a disconnected and distributed team of contributors who have been patiently tinkering on a side branch or a fork for example. When this happens, and provided that the contribution is worth merging, the maintainer should then ask him/herself the obvious question: <em>am I willing to deal with the consequences of this merge?</em></p> <a class="read-more" href="/open-source-and-code-responsibility/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -265,13 +273,15 @@
 
         on
             
-                <a href="https://nicolaiarocci.com//tags/cross-platform/">#cross-platform</a>,
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
             
-                <a href="https://nicolaiarocci.com//tags/events/">#events</a>,
+                <a href="https://nicolaiarocci.com//tags/open-source/">#open source</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
             
         
-        <time class="post-date" datetime="2016-03-11T00:00:00Z">
-            11 Mar 2016
+        <time class="post-date" datetime="2014-10-21T00:00:00Z">
+            21 Oct 2014
         </time>
     </footer>
 </article>
@@ -279,86 +289,17 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/my-coderdojo-interview-at-chennel-9-techeroes/">CoderDojo interview at Channel 9</a></h2>
+        <h2 class="post-title"><a href="/feature-overview-the-eve-oplog/">Feature Overview: The Eve OpLog</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>I was recently interviewed at Channel 9 TecHeroes. Topic was CoderDojo, the network of free computer programming clubs for young people. The show is run by Microsoft Italy, so the interview is in Italian. Enjoy the show. <a class="read-more" href="/my-coderdojo-interview-at-chennel-9-techeroes/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
+            <p><p>The operations log or OpLog is a new <a href="http://python-eve.org">Eve</a> feature that I&#8217;m currently developing on the <a href="https://github.com/nicolaiarocci/eve/tree/oplog"><code>oplog</code></a> experimental branch. It&#8217;s supposed to help in addressing a subtle issue that we&#8217;ve been dealing with, but I believe it can also emerge as a very useful all-around tool. I am posting about it in the hope of gathering some feedback from Eve contributors and users, so that I can better pinpoint design and implementation before I merge it to the main development branch.</p>
 
-        
-            
-            
+<h2 id="what-is-the-oplog">What is the OpLog?</h2>
 
-            
-            
-            
-            Nicola Iarocci
-                 
-        
+<p>The OpLog is a special resource that keeps a record of operations that modify the data stored by the API. Every <code>POST</code>, <code>PATCH</code>, <code>PUT</code> and <code>DELETE</code> operation can eventually be recorded by the oplog.</p>
 
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/coderdojo/">#coderdojo</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/events/">#events</a>,
-            
-        
-        <time class="post-date" datetime="2016-03-04T00:00:00Z">
-            4 Mar 2016
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/look-mum-im-an-mvp/">Look mum, I’m a MVP</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>A few hours ago I was notified that I have been awarded with the Microsoft MVP Award for Development Technologies.
-This came totally unexpected. Especially so considering that during the last few years I have been splitting my time between Microsoft and other open source technologies. My public work has mostly been on Python and MongoDB. Yes I also released .NET open source projects in the meantime (more are coming soon) and yes, I wrote a few articles here and on the MSDN Blog, attended Microsoft events and did interviews. <a class="read-more" href="/look-mum-im-an-mvp/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/microsoft/">#microsoft</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/mvp/">#mvp</a>,
-            
-        
-        <time class="post-date" datetime="2016-01-02T00:00:00Z">
-            2 Jan 2016
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/eve-0-6-1-has-been-released/">Eve 0.6.1 has been released</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>A new version of Eve, the REST API framework for Humans, has been released today. Following the 0.6 milestone released one month ago, v0.6.1 introduces some fixes and few new important features. Upgrade is strongly encouraged. As always, a changelog with full list of updates is available. <a class="read-more" href="/eve-0-6-1-has-been-released/">&raquo;</a></p>
+<p>At its core the oplog is simply a server log, something that&#8217;s always been on the Eve roadmap. What makes it a little bit different is its ability to be exposed as a read-only API endpoint. This would in turn allow clients to query it as they would with any other standard endpoint.</p> <a class="read-more" href="/feature-overview-the-eve-oplog/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -382,8 +323,8 @@ This came totally unexpected. Especially so considering that during the last few
                 <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
             
         
-        <time class="post-date" datetime="2015-10-29T00:00:00Z">
-            29 Oct 2015
+        <time class="post-date" datetime="2014-10-06T00:00:00Z">
+            6 Oct 2014
         </time>
     </footer>
 </article>
@@ -391,12 +332,25 @@ This came totally unexpected. Especially so considering that during the last few
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/my-talk-at-percona-live-2015/">My talk at Percona Live 2015</a></h2>
+        <h2 class="post-title"><a href="/ordered-dictionaries-with-python-2-4-2-6/">Ordered Dictionaries with Python 2.4-2.6</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>The slides of my talk at Percona Live 2015 (Amsterdam) are online. It was titled &#8220;MongoDB and REST APIs a Match Made in Heaven&#8221; and it was meant as an introduction to Mongo, REST principles and the Eve python framework.
-Overall it has been a pleasant experience, although I found that splitting 300 attendees through seven concurrent tracks ultimately led to too much fragmentation. People often found themselves with 2-3 interesting talks all happening simultaneously, and just had to pick one. <a class="read-more" href="/my-talk-at-percona-live-2015/">&raquo;</a></p>
+            <p><p><a href="https://docs.python.org/2/library/collections.html#collections.OrderedDict">OrderedDict</a> is a super handy data structure.</p>
+
+<blockquote>
+<p>An OrderedDict is a dict that remembers the order that keys were first inserted. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.</p>
+</blockquote>
+
+<p>Problem is, this stuff is only available in the standard library since Python 2.7 while <a href="http://python-eve.org">my project</a> also needs to support Python 2.6. Fortunately there&#8217;s a back-port available and it is only a pip install away:</p>
+
+<pre><code># make OrderedDict available on Python 2.6-2.4
+$ pip install ordereddict
+</code></pre>
+
+<p><a href="https://pypi.python.org/pypi/ordereddict">ordereddict</a> is based on the awesome recipe by <a href="http://code.activestate.com/recipes/576693">Raymond Hettinger</a>, works with Python 2.4-2.6 and, most importantly, is a drop-in replacement for OrderedDict.</p>
+
+<p>However if you want your code to run seamlessly on all Pythons there&#8217;s still some work to be done. First of all you want to make sure that the appropriate OrderedDict is imported, either the standard library version (for Python 2.7 and above) or the back-port release.</p> <a class="read-more" href="/ordered-dictionaries-with-python-2-4-2-6/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -415,15 +369,278 @@ Overall it has been a pleasant experience, although I found that splitting 300 a
 
         on
             
-                <a href="https://nicolaiarocci.com//tags/mongodb/">#MongoDB</a>,
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2014-09-16T00:00:00Z">
+            16 Sep 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/taming-portable-class-libraries-and-net-framework-4/">Taming Portable Class Libraries and .NET Framework 4</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p><p>If your project is a Portable Class Library and you want it to run with the .NET Framework 4 well, you are in for a few surprises. Especially so if you are using InstallShield for building your deployment package. We&#8217;ve been going through this a few days ago and it&#8217;s been kind of a wild ride. I thought I could pin the whole thing down so that others might enjoy a painless journey through all this mess.</p>
+
+<h2 id="portable-class-libraries-and-net-framework-4">Portable Class Libraries and .NET Framework 4</h2>
+
+<p>The first thing you should know is that while the .NET Framework 4 does support PCLs, in fact it won&#8217;t run them without a patch. For whatever reason, Microsoft decided that PCL compatibility wasn&#8217;t a worth a 4.0.4 update. That leaves us with the need to not only make sure that target machines are running the up-to-date .NET4 release (v4.0.3) but also that they&#8217;ve been updated with <a href="https://support.microsoft.com/kb/2468871" target="_blank">KB2468871</a>.</p>
+
+<p>You might be wondering why this is an issue in the first place. We could simply install the .NET Framework 4.5 which is backward compatible with the .NET4 and includes the afore mentioned KB2468871. Even better, we could just target the .NET 4.5 on our PCL. Problem is that besides iOS, Android, WinPhone and Silverlight we also want our libraries to run seamlessly on as many Windows editions as possible, Windows XP included. Here is the catch: <a href="https://connect.microsoft.com/VisualStudio/feedback/details/730732/net-framework-4-5-should-support-windows-xp-sp3," target="_blank">.NET4 is the last framework version to run on Windows XP</a>. And yes, we got the memo, Microsoft officially abandoned Windows XP a while ago so why bother? Well it turns out that millions of users are still running XP, especially so in the enterprise and SMB. These PCL are targeting exactly that, precisely the accounting software segment, and believe me there&#8217;s a huge number of users happily invoicing and accounting on their <em>old-fart-but-still-splendidly-doing-its-job-for-cheap</em> boxes. Oh and the .NET Framework 3.5 is not an option as it doesn&#8217;t support Portable Classes at all.</p> <a class="read-more" href="/taming-portable-class-libraries-and-net-framework-4/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/installshield/">#installshield</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/kb2468871/">#kb2468871</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/pcl/">#pcl</a>,
+            
+        
+        <time class="post-date" datetime="2014-08-28T00:00:00Z">
+            28 Aug 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/eve-0-4-cerberus-0-7-released/">Eve 0.4 and Cerberus 0.7 Released</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Eve 0.4 adds cool features like Document Versioning and Coherence Mode. Cerberus 0.7 allows regex validation amongst other niceties. Make sure to check the official v0.4 announcement for all the details. <a class="read-more" href="/eve-0-4-cerberus-0-7-released/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
             
                 <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
             
-                <a href="https://nicolaiarocci.com//tags/rest-api/">#rest api</a>,
+        
+        <time class="post-date" datetime="2014-07-10T00:00:00Z">
+            10 Jul 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/microsofts-new-running-shoes/">Microsoft’s New Running Shoes</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>When Ballmer famously said, &#8220;Linux is a cancer that attaches itself in an intellectual property sense to everything it touches,&#8221; it was fair to characterize Microsoft&#8217;s approach to open source as hostile. But over time, forces within Microsoft pushed to change this attitude. Many groups inside of Microsoft continue to see the customer and business value in fostering, rather than fighting, OSS.
+ via Microsoft&#8217;s New Running Shoes. <a class="read-more" href="/microsofts-new-running-shoes/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/microsoft/">#microsoft</a>,
             
         
-        <time class="post-date" datetime="2015-10-16T00:00:00Z">
-            16 Oct 2015
+        <time class="post-date" datetime="2014-06-17T00:00:00Z">
+            17 Jun 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/how-to-handle-big-repositories-with-git/">How to handle big repositories with git</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>git is a fantastic choice for tracking the evolution of your code base and to collaborate efficiently with your peers. But what happens when the repository you want to track is really huge?
+ via How to handle big repositories with git &#8211; Atlassian Blogs. <a class="read-more" href="/how-to-handle-big-repositories-with-git/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/git/">#git</a>,
+            
+        
+        <time class="post-date" datetime="2014-06-11T00:00:00Z">
+            11 Jun 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/10-most-common-python-mistakes/">10 Most Common Python Mistakes</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Python’s simple, easy-to-learn syntax can mislead Python developers – especially those who are newer to the language – into missing some of its subtleties and underestimating the power of the language.
+With that in mind, this article presents a “top 10” list of somewhat subtle, harder-to-catch mistakes that can bite even the most advanced Python developer in the rear.
+ via 10 Most Common Python Mistakes. <a class="read-more" href="/10-most-common-python-mistakes/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2014-06-04T00:00:00Z">
+            4 Jun 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/doesnt-github-talk-product-roadmap/">Why doesn’t GitHub talk about their product roadmap?</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Software development is mostly horseshit. We&#8217;re busy trying to build things, trying to estimate when things are done, trying to work with other humans to make sure you don&#8217;t break anything when you launch. All of these things can go horribly, horribly wrong without much malice or without much intention. It&#8217;s still very difficult.
+ via Why doesn&#8217;t GitHub talk about their product roadmap? <a class="read-more" href="/doesnt-github-talk-product-roadmap/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/github/">#github</a>,
+            
+        
+        <time class="post-date" datetime="2014-05-26T00:00:00Z">
+            26 May 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/how-to-be-a-sane-programmer/">How to be a sane programmer</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>But here’s the rub. Programming, like writing, painting, and music, is chiefly a creative endeavor not a technical one. Practice with any technology or language is useful as a means of learning tools and techniques, but it will not make you a substantially better programmer.
+ via How to be a sane programmer <a class="read-more" href="/how-to-be-a-sane-programmer/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/programming/">#programming</a>,
+            
+        
+        <time class="post-date" datetime="2014-03-24T00:00:00Z">
+            24 Mar 2014
         </time>
     </footer>
 </article>
@@ -434,7 +651,7 @@ Overall it has been a pleasant experience, although I found that splitting 300 a
 	
 	    <a class="newer-posts" href="/post/page/8/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 9 of 60</span>
+	<span class="page-number">Page 9 of 30</span>
 	
 	    <a class="older-posts" href="/post/page/10/">Older Posts &rarr;</a>
 	

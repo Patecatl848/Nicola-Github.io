@@ -868,7 +868,7 @@
 	
 	    <a class="newer-posts" href="/page/2/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 3 of 60</span>
+	<span class="page-number">Page 3 of 30</span>
 	
 	    <a class="older-posts" href="/page/4/">Older Posts &rarr;</a>
 	
@@ -879,12 +879,13 @@
     
         <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/fatturaelettronica-for-.net-v2.0/">FatturaElettronica for .NET v2.0</a></h2>
+        <h2 class="post-title"><a href="/quick-fix-mongodb-fails-when-saving-decimal-fields/">Quick fix: MongoDB fails when saving Decimal fields</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>Today I pushed version 2.0 of FatturaElettronica to NuGet. This release comes with full support for Fattura Semplificata, something that has been on the back-burner for a while. Special thanks to Gaetano Pizzol for single-handly contributing this feature.
-Now for the bad news. Since we were to add a new invoice type whereas so far we only had one, I decided to take the plunge and break backward compatibility a little bit. <a class="read-more" href="/fatturaelettronica-for-.net-v2.0/">&raquo;</a></p>
+            <p>So today I was trying to store some decimal fields on a MongoDB 3.4 instance and I kept failing, miserably.
+In Compass I was getting a somewhat obscure &ldquo;connection lost&rdquo; message on every save attempt. Upgrading to Mongo 3.4.10 (I was on 3.4.4) improved things, as the error message was now hinting at the setFeatureCompatibilityVersion setting which, apparently, was preventing some features to be made available.
+Now that made sense, as this specific database had been upgraded all the way from up Mongo 2. <a class="read-more" href="/quick-fix-mongodb-fails-when-saving-decimal-fields/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -902,8 +903,8 @@ Now for the bad news. Since we were to add a new invoice type whereas so far we 
         
 
         
-        <time class="post-date" datetime="2019-03-13T09:05:25&#43;02:00">
-            13 Mar 2019
+        <time class="post-date" datetime="2017-11-23T11:05:28&#43;01:00">
+            23 Nov 2017
         </time>
     </footer>
 </article>
@@ -911,12 +912,13 @@ Now for the bad news. Since we were to add a new invoice type whereas so far we 
     
         <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/building-a-restful-webapi-with-fsharp-and-netcore/">Building a RESTful WebApi with F# and NetCore</a></h2>
+        <h2 class="post-title"><a href="/spesometro-open-source-per-.net/">Spesometro Open Source per .NET</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>It is a common misconception that F# is just for data science, machine learning, and quantitative finance; in the .NET eco-system you turn to C# for enterprise and web development and, eventually, you&rsquo;ll look at F# for serious number crunching.
-While it is undoubtedly true that functional languages are ideally suited for solving numerical problems, some of them - and F# in particular - are perfectly fine for tackling so many different domains other than scientific ones. <a class="read-more" href="/building-a-restful-webapi-with-fsharp-and-netcore/">&raquo;</a></p>
+            <p>apologies, this post is about an Italian open source release, so it’s going to be in Italian
+Spesometro.NET è un nuovo progetto open source che ho rilasciato con la mia azienda. Si tratta di un package .NET che permette di leggere, scrivere e convalidare lo Spesometro o, come è chiamato formalmente, la Comunicazione delle Fatture Emesse e Ricevute.
+Si tratta di un adempimento che in tempi recenti, per ragioni che non è il caso di affrontare in questo articolo, ha causato grosse difficoltà sia ai fornitori di soluzioni software che, e soprattutto, agli utenti finali di dette soluzioni. <a class="read-more" href="/spesometro-open-source-per-.net/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -934,8 +936,8 @@ While it is undoubtedly true that functional languages are ideally suited for so
         
 
         
-        <time class="post-date" datetime="2019-02-24T09:05:25&#43;02:00">
-            24 Feb 2019
+        <time class="post-date" datetime="2017-10-05T09:37:00&#43;02:00">
+            5 Oct 2017
         </time>
     </footer>
 </article>
@@ -943,13 +945,12 @@ While it is undoubtedly true that functional languages are ideally suited for so
     
         <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/nuget-gems-deepequal/">NuGet Gems: DeepEqual</a></h2>
+        <h2 class="post-title"><a href="/python-workload-now-officially-supported-in-visual-studio-2017/">Python Workload now officially supported in Visual Studio 2017</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>This handy little package does one simple thing, and it does it well. According to its description, DeepEqual is:
- An extensible deep comparison library for .NET.
- I am sure you too have come across this a few times. You have some code that shuffles around objects, and at some point, you&rsquo;d like to make sure that two instances of the same class are, indeed, equal. And no, you don&rsquo;t mean &ldquo;equal&rdquo; as in reference equality. <a class="read-more" href="/nuget-gems-deepequal/">&raquo;</a></p>
+            <p>Visual Studio 2017 just received an update (version 15.2). Among other nice things, this update brings full support for Python back into the official release of VS2017. As you might recall (see my old whiny post), previously Python was only available with Visual Studio 2017 Preview (a separate install).
+I just upgraded my copy of Visual Studio, added the Python Development Workload to it via the VS Installer, and finally (and very happily) uninstalled the whole Visual Studio Preview thingie. <a class="read-more" href="/python-workload-now-officially-supported-in-visual-studio-2017/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -966,9 +967,15 @@ While it is undoubtedly true that functional languages are ideally suited for so
                  
         
 
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/visual-studio/">#visual studio</a>,
+            
         
-        <time class="post-date" datetime="2019-01-26T09:05:25&#43;02:00">
-            26 Jan 2019
+        <time class="post-date" datetime="2017-05-11T16:16:06&#43;02:00">
+            11 May 2017
         </time>
     </footer>
 </article>
@@ -976,13 +983,11 @@ While it is undoubtedly true that functional languages are ideally suited for so
     
         <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/fatturaelettronica-for-.net-v0.9-has-been-released/">FatturaElettronica for .NET v0.9 has been released</a></h2>
+        <h2 class="post-title"><a href="/how-to-convert-a-pcl-portable-project-to-netstandard/">How to convert a PCL (Portable) project to NetStandard</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>FatturaElettronica for .NET v0.9 has been released. The companion Extensions package also hits v0.4.
-The main new feature is the FromJson() extension method which allows, you guessed it, for deserialization of a JSON stream into a Fattura class instance:
-var fattura = Fattura.CreateInstance(Instance.Privati); fattura.FromJson(new JsonTextReader(new StringReader(json))); // or, if FatturaElettronica.Extensions v0.4 is being used:  fattura.FromJson(json); // Invoice is now ready for inspection.  foreach (var documento in fattura.Body) { var dati = documento. <a class="read-more" href="/fatturaelettronica-for-.net-v0.9-has-been-released/">&raquo;</a></p>
+            <p>I have been upgrading a few projects from their original PCL profiles (now deemed obsolete) to the Net Standard platform specification. It turned out to be a relatively straightforward process, but it does have its small hurdles, especially so if in the meantime you also want to transition to the new, streamlined, .csproj format as the migration will leave you with a now obsolete project.json project. In this article, I will cover upgrading a project from Portable Class Library to NetStandard. <a class="read-more" href="/how-to-convert-a-pcl-portable-project-to-netstandard/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -999,9 +1004,17 @@ var fattura = Fattura.CreateInstance(Instance.Privati); fattura.FromJson(new Jso
                  
         
 
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/netstandard/">#netstandard</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/visual-studio/">#visual studio</a>,
+            
         
-        <time class="post-date" datetime="2018-10-27T09:05:25&#43;02:00">
-            27 Oct 2018
+        <time class="post-date" datetime="2017-05-10T09:47:05&#43;02:00">
+            10 May 2017
         </time>
     </footer>
 </article>
@@ -1009,12 +1022,12 @@ var fattura = Fattura.CreateInstance(Instance.Privati); fattura.FromJson(new Jso
     
         <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/eve-0.8.1-has-been-released/">Eve 0.8.1 has been released</a></h2>
+        <h2 class="post-title"><a href="/eve-and-cerberus-funding-campaign/">Eve and Cerberus funding campaign</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>Just a quick note to report that Eve v0.8.1 is out and ready to rock. It brings a number of fixes, some improvements as well as a couple of new features. Check out the changelog for details.
-Join the newsletter to get an email alert when a new post surfaces on this site. If you want to get in touch, I am @nicolaiarocci on twitter. <a class="read-more" href="/eve-0.8.1-has-been-released/">&raquo;</a></p>
+            <p>Last February I published The State of Eve REST Framework. Among other things in that post, I mentioned that I was looking for ways that would allow me to allocate more time to the project (and its satellites).
+ I really feel like I should put more effort into Eve, Cerberus and satellite projects Eve-Swagger, Flask-Sentinel, Eve.NET, etc. I love working on these projects and I know a lot of people rely on them. <a class="read-more" href="/eve-and-cerberus-funding-campaign/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -1031,9 +1044,210 @@ Join the newsletter to get an email alert when a new post surfaces on this site.
                  
         
 
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
+            
         
-        <time class="post-date" datetime="2018-10-05T09:01:01&#43;02:00">
-            5 Oct 2018
+        <time class="post-date" datetime="2017-04-27T11:23:05&#43;02:00">
+            27 Apr 2017
+        </time>
+    </footer>
+</article>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/python-support-in-visual-studio-2017-or-the-lack-thereof/">Python support in Visual Studio 2017 or the lack thereof</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>So yesterday Visual Studio 2017 was released. Big news. Lots of cool stuff. As I write this I am watching the live stream of the 2 days-long launch event. If you want to learn about Python support in VS2017 though, you have to dig deeper and head over to the Python Engineering blog at Microsoft.
+As expected, the official release is actually coming out with no support for Python. It will come in a few months. <a class="read-more" href="/python-support-in-visual-studio-2017-or-the-lack-thereof/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/visual-studio/">#visual studio</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
+            
+        
+        <time class="post-date" datetime="2017-03-08T10:41:17&#43;01:00">
+            8 Mar 2017
+        </time>
+    </footer>
+</article>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/setting-the-default-timezone-in-appveyor-and-c-sharp-7-support/">Setting the default timezone in AppVeyor build worker (and C# 7.0 support)</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>So yesterday I pushed some code over to GitHub, then went off to work on a different project. A few seconds later I got an email from AppVeyor telling me that my CI build worker was reporting a failure. I was surprised as just ahead of the push I had tests all green in local.
+Turned out failure was on an equality assertion between two date values:
+As you can see the mismatch was precisely two hours. <a class="read-more" href="/setting-the-default-timezone-in-appveyor-and-c-sharp-7-support/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/appveyor/">#appveyor</a>,
+            
+        
+        <time class="post-date" datetime="2017-02-25T16:48:09&#43;01:00">
+            25 Feb 2017
+        </time>
+    </footer>
+</article>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/python-workload-pulled-off-visual-studio-2017-rc3/">Python Workload pulled off Visual Studio 2017 RC3</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>So how do you install the awesome Python Development Tools on the latest Visual Studio 2017 RC? That might seem a stupid question considering that the Data Science and Python Development workload has been available with every Release Candidate so far. You simply select the workload during the installation and you&rsquo;re done, right? Not quite.
+I found out the hard way this morning as I wanted to install VS 2017 RC3 on my development machine and, to my surprise, I could not find Python Development anywhere on the workloads window (which itself is a huge improvement over the VS 2015 install experience, by the way). <a class="read-more" href="/python-workload-pulled-off-visual-studio-2017-rc3/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/visual-studio/">#visual studio</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2017-02-18T10:48:29&#43;01:00">
+            18 Feb 2017
+        </time>
+    </footer>
+</article>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/the-state-of-the-eve-rest-framework-project/">The state of the Eve REST framework project</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>A new major release of the Eve REST API Framework is finally out with a number of cool new features (MongoDB Aggregations!), few fixes, and a couple of minor breaking changes. On the Eve blog you can find a detailed article about this important release.
+I am glad to report that the Eve-SQLAlchemy community extension, which allows SQL databases to serve as Eve backends, has seen a surge of activity around it. <a class="read-more" href="/the-state-of-the-eve-rest-framework-project/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+        
+        <time class="post-date" datetime="2017-02-06T00:00:00Z">
+            6 Feb 2017
+        </time>
+    </footer>
+</article>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/how-to-build-and-deploy-a-private-nuget-server-on-iis-or-azure/">How to build and deploy a private NuGet server on IIS or Azure</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Recently I had to build and deploy a private NuGet server. The official documentation is quite good, but I did hit some (admittedly small) hitches along the way, so I thought I might as well share the whole process. Hopefully this post will be helpful to the next guy or gal adventuring down the same path.
+If I don&rsquo;t need to convince you on the usefulness and importance of packages in modern software development, then you can safely jump to The case for private NuGet feeds, and spare yourself some of my ramblings. <a class="read-more" href="/how-to-build-and-deploy-a-private-nuget-server-on-iis-or-azure/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/packaging/">#packaging</a>,
+            
+        
+        <time class="post-date" datetime="2017-01-09T00:00:00Z">
+            9 Jan 2017
         </time>
     </footer>
 </article>
@@ -1044,7 +1258,7 @@ Join the newsletter to get an email alert when a new post surfaces on this site.
 	
 	    <a class="newer-posts" href="/page/2/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 3 of 60</span>
+	<span class="page-number">Page 3 of 30</span>
 	
 	    <a class="older-posts" href="/page/4/">Older Posts &rarr;</a>
 	

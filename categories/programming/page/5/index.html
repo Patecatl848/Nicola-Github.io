@@ -231,7 +231,7 @@
 	
 	    <a class="newer-posts" href="/categories/programming/page/4/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 5 of 42</span>
+	<span class="page-number">Page 5 of 21</span>
 	
 	    <a class="older-posts" href="/categories/programming/page/6/">Older Posts &rarr;</a>
 	
@@ -242,87 +242,17 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/the-little-mongodb-book-2nd-italian-edition/">The Little MongoDB Book 2nd Italian Edition</a></h2>
+        <h2 class="post-title"><a href="/taming-portable-class-libraries-and-net-framework-4/">Taming Portable Class Libraries and .NET Framework 4</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>The second edition of the Little MongoDB Book Italian Edition is finally up. It is aligned to MongoDB 2.6 and includes a much needed introduction to the Aggregation Frameworks. Enjoy. <a class="read-more" href="/the-little-mongodb-book-2nd-italian-edition/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
+            <p><p>If your project is a Portable Class Library and you want it to run with the .NET Framework 4 well, you are in for a few surprises. Especially so if you are using InstallShield for building your deployment package. We&#8217;ve been going through this a few days ago and it&#8217;s been kind of a wild ride. I thought I could pin the whole thing down so that others might enjoy a painless journey through all this mess.</p>
 
-        
-            
-            
+<h2 id="portable-class-libraries-and-net-framework-4">Portable Class Libraries and .NET Framework 4</h2>
 
-            
-            
-            
-            Nicola Iarocci
-                 
-        
+<p>The first thing you should know is that while the .NET Framework 4 does support PCLs, in fact it won&#8217;t run them without a patch. For whatever reason, Microsoft decided that PCL compatibility wasn&#8217;t a worth a 4.0.4 update. That leaves us with the need to not only make sure that target machines are running the up-to-date .NET4 release (v4.0.3) but also that they&#8217;ve been updated with <a href="https://support.microsoft.com/kb/2468871" target="_blank">KB2468871</a>.</p>
 
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/mongodb/">#MongoDB</a>,
-            
-        
-        <time class="post-date" datetime="2015-05-04T00:00:00Z">
-            4 May 2015
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/f-vs-c/">F# Vs C#</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>I have another guest post up at the official MSDN Team Blog. Titled F# Versus C#, it is an attempt at a gentle introduction to F# for the Italian C# developer. <a class="read-more" href="/f-vs-c/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/c/">#c</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/f/">#f#</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/microsoft/">#microsoft</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/msdn/">#msdn</a>,
-            
-        
-        <time class="post-date" datetime="2015-04-20T00:00:00Z">
-            20 Apr 2015
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/fattura-elettronica-open-source-update/">Fattura Elettronica Open Source Update</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Fattura Elettronica Open Source has been updated to v0.1.3 a few days ago and is available on NuGet. Sources are on GitHub. It fixes a deserialization issue with the ReadXML method. <a class="read-more" href="/fattura-elettronica-open-source-update/">&raquo;</a></p>
+<p>You might be wondering why this is an issue in the first place. We could simply install the .NET Framework 4.5 which is backward compatible with the .NET4 and includes the afore mentioned KB2468871. Even better, we could just target the .NET 4.5 on our PCL. Problem is that besides iOS, Android, WinPhone and Silverlight we also want our libraries to run seamlessly on as many Windows editions as possible, Windows XP included. Here is the catch: <a href="https://connect.microsoft.com/VisualStudio/feedback/details/730732/net-framework-4-5-should-support-windows-xp-sp3," target="_blank">.NET4 is the last framework version to run on Windows XP</a>. And yes, we got the memo, Microsoft officially abandoned Windows XP a while ago so why bother? Well it turns out that millions of users are still running XP, especially so in the enterprise and SMB. These PCL are targeting exactly that, precisely the accounting software segment, and believe me there&#8217;s a huge number of users happily invoicing and accounting on their <em>old-fart-but-still-splendidly-doing-its-job-for-cheap</em> boxes. Oh and the .NET Framework 3.5 is not an option as it doesn&#8217;t support Portable Classes at all.</p> <a class="read-more" href="/taming-portable-class-libraries-and-net-framework-4/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -343,13 +273,15 @@
             
                 <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
             
-                <a href="https://nicolaiarocci.com//tags/fattura-elettronica/">#fattura elettronica</a>,
+                <a href="https://nicolaiarocci.com//tags/installshield/">#installshield</a>,
             
-                <a href="https://nicolaiarocci.com//tags/open-source/">#open source</a>,
+                <a href="https://nicolaiarocci.com//tags/kb2468871/">#kb2468871</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/pcl/">#pcl</a>,
             
         
-        <time class="post-date" datetime="2015-04-17T00:00:00Z">
-            17 Apr 2015
+        <time class="post-date" datetime="2014-08-28T00:00:00Z">
+            28 Aug 2014
         </time>
     </footer>
 </article>
@@ -357,52 +289,11 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/talk-python-to-me-podcast-episode-1-eve-restful-apis-for-humans/">Talk Python To Me Podcast Episode #1: EVE RESTful APIs for Humans</a></h2>
+        <h2 class="post-title"><a href="/eve-0-4-cerberus-0-7-released/">Eve 0.4 and Cerberus 0.7 Released</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>I was lucky enough be the first guest for the shiny new Talk Python To Me Podcast hosted by Michael Kennedy. In this episode we talk about Eve an my other open source releases, which gives us an excuse to touch on a variety of topics such as Polyglot Programming, New Microsoft and the .NET evolution, MongoDB and the Open Source eco-system as seen from the point of view of an old fart who has been spending most of his career in closed systems. <a class="read-more" href="/talk-python-to-me-podcast-episode-1-eve-restful-apis-for-humans/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/podcast/">#podcast</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
-            
-        
-        <time class="post-date" datetime="2015-04-01T00:00:00Z">
-            1 Apr 2015
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/new-releases-for-cerberus-and-eve/">New Releases for Cerberus and Eve</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Yesterday Cerberus 0.8.1 was released with a few little fixes, one of them being more a new feature than a fix really: sub-document fields can now be set as field dependencies by using a &#8216;dotted&#8217; notation.
-So, suppose we set the following validation schema:
-schema = { 'test_field': { 'dependencies': [ 'a_dict.foo', 'a_dict.bar' ] }, 'a_dict': { 'type': 'dict', 'schema': { 'foo': {'type': 'string'}, 'bar': {'type': 'string'} } } }  Then, we can validate a document like this: <a class="read-more" href="/new-releases-for-cerberus-and-eve/">&raquo;</a></p>
+            <p>Eve 0.4 adds cool features like Document Versioning and Coherence Mode. Cerberus 0.7 allows regex validation amongst other niceties. Make sure to check the official v0.4 announcement for all the details. <a class="read-more" href="/eve-0-4-cerberus-0-7-released/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -428,8 +319,309 @@ schema = { 'test_field': { 'dependencies': [ 'a_dict.foo', 'a_dict.bar' ] }, 'a_
                 <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
             
         
-        <time class="post-date" datetime="2015-03-17T00:00:00Z">
-            17 Mar 2015
+        <time class="post-date" datetime="2014-07-10T00:00:00Z">
+            10 Jul 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/eve-0-3-released/">Eve 0.3 Released</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Today we released Eve v0.3. It includes customizable Files Storage support (on GridFS by default), a lot of fixes, several breaking changes and a lot of love. Head over to relevant blog post and/or to changelog to know more about it. <a class="read-more" href="/eve-0-3-released/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2014-02-14T00:00:00Z">
+            14 Feb 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/rest-apis-humans-fosdem/">REST APIs for Humans at FOSDEM</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Yesterday I gave a talk at FOSDEM 2014 in Brussels. The conference itself was amazing, with over 5000 attendees literally swarming and taking over the ULB Campus. I was stoked at how smoothly everything was going on despite the incredible number of simultaneous sessions and the number of attendees continuously flowing between buildings and conference rooms. Everybody involved, volunteers and attendees, has been very welcoming, charming and helpful. In short, I had a blast. <a class="read-more" href="/rest-apis-humans-fosdem/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/fosdem/">#fosdem</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2014-02-03T00:00:00Z">
+            3 Feb 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/giving-back-to-my-community-with-coderdojo-ravenna/">Giving back to my community</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>A few days ago I tweeted:
+ I&#8217;ve been working on a side project for a while. It&#8217;s about kids, coding, my town and giving back to the community. Almost ready for launch.  — Nicola Iarocci (@nicolaiarocci) January 3, 2014  Now the project is out in the wild and I&#8217;m very excited about it. It&#8217;s all italian yes, but do know that CoderDojo is a global movement, and starting a kids coding club in your own town would probably be great idea. <a class="read-more" href="/giving-back-to-my-community-with-coderdojo-ravenna/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/coderdojo/">#coderdojo</a>,
+            
+        
+        <time class="post-date" datetime="2014-01-11T00:00:00Z">
+            11 Jan 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/cerberus-0-5-is-out-and-it-breaks-stuff/">Cerberus 0.5 is out (and it breaks stuff)</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p><p>The new release changes the way validation errors are reported. Please note that these changes will also affect future releases of <a href="http://python-eve.org">Eve</a>, the Python REST API Framework.</p>
+
+<p>What we had before was basically a list of human-readable errors. Each item in the list, while perfectly fine for human reading, wasn&rsquo;t really ideal for algorithmic parsing. Why would you want to parse the errors with an algorithm? A common case would be when your client is using business objects to represent API resources (think a client-side ORM), and would have a hard time binding validation errors to the objects themselves.</p> <a class="read-more" href="/cerberus-0-5-is-out-and-it-breaks-stuff/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+        
+        <time class="post-date" datetime="2013-12-10T00:00:00Z">
+            10 Dec 2013
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/on-why-i-still-prefer-traditional-books-to-ebooks/">On Why I Still Prefer Traditional Books to eBooks</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>I&rsquo;ve been using a Kindle for a long time now, and I love it. But I keep buying paper books. Lots of them. Actually I buy a _lot_ more books than ebooks and it doesn&rsquo;t even stop there. Admittedly, I am guilty of repeatedly buying paper editions of ebooks I&rsquo;ve read on the Kindle.
+For a very long time I&rsquo;ve not been able to tell the precise reason why I keep going back to traditional books. <a class="read-more" href="/on-why-i-still-prefer-traditional-books-to-ebooks/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/ebooks/">#ebooks</a>,
+            
+        
+        <time class="post-date" datetime="2013-12-02T00:00:00Z">
+            2 Dec 2013
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/mongodb-rest-api-go-picnic-video-slides/">MongoDB and REST API go for a picnic (video and slides)</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>I had the opportunity to give my RESTful WeB APIs and MongoDB Go For A Picnic talk at both MongoTorino and NoSQL Day. The folks at PUG Friuli where so nice to record all the NoSQL Day sessions, so here you have it: the full length video of yours truly speaking to a fully packed room crowded with 120 very attentive attendees.
+Unfortunately audio is horrible and while all MongoTorino talks were in english, NoSQL Day was an italian-only event. <a class="read-more" href="/mongodb-rest-api-go-picnic-video-slides/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/mongodb/">#MongoDB</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/rest-api/">#rest api</a>,
+            
+        
+        <time class="post-date" datetime="2013-11-19T00:00:00Z">
+            19 Nov 2013
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/my-interview-on-being-a-mongodb-master/">My interview on being a MongoDB Master</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>So I&#8217;ve been interviewed by Laura Czajkowski on my experience and role as a MongoDB Master. The interview actually covers more angles than that and I guess that, if you really don&#8217;t have anything better to do, you might even want to check it out.
+ How did you get involved in open source?
+I’ve been an avid developer delivering desktop applications in the .NET/MSSQL closed source ecosystem for so many years that open source wasn’t even on my radar. <a class="read-more" href="/my-interview-on-being-a-mongodb-master/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/mongodb/">#MongoDB</a>,
+            
+        
+        <time class="post-date" datetime="2013-09-04T00:00:00Z">
+            4 Sep 2013
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/eve-with-python-3-3-support/">Eve with Python 3.3 Support</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Another Eve release is out and I&#8217;m particularly proud about it since it brings full Python 3.3 support (among other things). Check out the relevant blog post: Eve 0.0.9 is out! <a class="read-more" href="/eve-with-python-3-3-support/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/api/">#api</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+        
+        <time class="post-date" datetime="2013-08-29T00:00:00Z">
+            29 Aug 2013
         </time>
     </footer>
 </article>
@@ -440,7 +632,7 @@ schema = { 'test_field': { 'dependencies': [ 'a_dict.foo', 'a_dict.bar' ] }, 'a_
 	
 	    <a class="newer-posts" href="/categories/programming/page/4/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 5 of 42</span>
+	<span class="page-number">Page 5 of 21</span>
 	
 	    <a class="older-posts" href="/categories/programming/page/6/">Older Posts &rarr;</a>
 	

@@ -231,9 +231,7 @@
 	
 	    <a class="newer-posts" href="/tags/cerberus/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 2 of 3</span>
-	
-	    <a class="older-posts" href="/tags/cerberus/page/3/">Older Posts &rarr;</a>
+	<span class="page-number">Page 2 of 2</span>
 	
 </nav>
 
@@ -242,11 +240,12 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/eve-0-5-released-today/">Eve 0.5 released today</a></h2>
+        <h2 class="post-title"><a href="/convalidare-un-dizionario-python-con-cerberus/">Convalidare un dizionario Python con Cerberus</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>Eve v0.5 was released today. Cerberus v0.8 only a few days ago. A whole lot of new features, changes and fixes are coming with these releases so make sure to check the official release post to gather all the news. <a class="read-more" href="/eve-0-5-released-today/">&raquo;</a></p>
+            <p>Da qualche giorno ho rilasciato Cerberus, uno strumento per la convalida dei dizionari Python. Gli passate un dizionario, lui lo confronta con uno schema di convalida e, se c&#8217;è qualcosa che non va (per esempio una chiave sconosciuta, oppure un valore di tipo sbagliato), ve lo segnala.
+&gt;&gt;&gt; v = Validator({'name': {'type': 'string'}}) &gt;&gt;&gt; v.validate({'name': 'john doe'}) True Sono due le caratteristiche che rendono Cerberus interessante: è facilmente estensibile (la documentazione include un esempio di estensione del sistema di convalida), e non si blocca sollevando un&#8217;eccezione al primo problema riscontrato: gli errori, quando presenti, sono tutti riportati in una lista a fine convalida. <a class="read-more" href="/convalidare-un-dizionario-python-con-cerberus/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -267,167 +266,13 @@
             
                 <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
             
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+                <a href="https://nicolaiarocci.com//tags/open-source/">#open source</a>,
             
                 <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
             
         
-        <time class="post-date" datetime="2015-01-12T00:00:00Z">
-            12 Jan 2015
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/validating-user-objects-cerberus/">Validating user objects with Cerberus</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>People keep telling me that they want to validate class and instance attributes (object properties) with Cerberus. While it certainly wasn&#8217;t conceived with that goal in mind, it is actually very possible to leverage both the Python data model and Cerberus extensibility to achieve object validation.
-Nuts &amp; Bolts Let&#8217;s say that we have a simple class:
-&gt;&gt;&gt; class Person(object): ... pass  We create a Person instance and add a few properties and values: <a class="read-more" href="/validating-user-objects-cerberus/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
-            
-        
-        <time class="post-date" datetime="2015-01-05T00:00:00Z">
-            5 Jan 2015
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/eve-0-4-cerberus-0-7-released/">Eve 0.4 and Cerberus 0.7 Released</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Eve 0.4 adds cool features like Document Versioning and Coherence Mode. Cerberus 0.7 allows regex validation amongst other niceties. Make sure to check the official v0.4 announcement for all the details. <a class="read-more" href="/eve-0-4-cerberus-0-7-released/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
-            
-        
-        <time class="post-date" datetime="2014-07-10T00:00:00Z">
-            10 Jul 2014
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/cerberus-0-5-is-out-and-it-breaks-stuff/">Cerberus 0.5 is out (and it breaks stuff)</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>The new release changes the way validation errors are reported. Please note that these changes will also affect future releases of <a href="http://python-eve.org">Eve</a>, the Python REST API Framework.</p>
-
-<p>What we had before was basically a list of human-readable errors. Each item in the list, while perfectly fine for human reading, wasn&rsquo;t really ideal for algorithmic parsing. Why would you want to parse the errors with an algorithm? A common case would be when your client is using business objects to represent API resources (think a client-side ORM), and would have a hard time binding validation errors to the objects themselves.</p> <a class="read-more" href="/cerberus-0-5-is-out-and-it-breaks-stuff/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
-            
-        
-        <time class="post-date" datetime="2013-12-10T00:00:00Z">
-            10 Dec 2013
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/cerberus-0-0-2-tipi-di-dato-personalizzati/">Cerberus 0.0.2: tipi di dato personalizzati</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Primo aggiornamento per Cerberus, lo strumento per la convalida dei dizionari Python che ho rilasciato qualche tempo fa. Ora è possibile estendere la lista dei tipi di dato da convalidare, aggiungendone di propri. Per esempio nella nostra REST API (che usa Cerberus per la validazione) uso questa tecnica per implementare e convalidare il tipo ObjectId, tipico di MongoDB. I dettagli li trovate nella documentazione. <a class="read-more" href="/cerberus-0-0-2-tipi-di-dato-personalizzati/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
-            
-        
-        <time class="post-date" datetime="2012-11-22T00:00:00Z">
-            22 Nov 2012
+        <time class="post-date" datetime="2012-10-16T00:00:00Z">
+            16 Oct 2012
         </time>
     </footer>
 </article>
@@ -438,9 +283,7 @@ Nuts &amp; Bolts Let&#8217;s say that we have a simple class:
 	
 	    <a class="newer-posts" href="/tags/cerberus/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 2 of 3</span>
-	
-	    <a class="older-posts" href="/tags/cerberus/page/3/">Older Posts &rarr;</a>
+	<span class="page-number">Page 2 of 2</span>
 	
 </nav>
 
