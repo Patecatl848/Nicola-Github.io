@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 03 Feb 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 06 Feb 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Book review: The Water Dancer</title>
+      <link>https://nicolaiarocci.com/book-review-the-water-dancer/</link>
+      <pubDate>Sat, 06 Feb 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/book-review-the-water-dancer/</guid>
+      <description>The Water Dancer is the debut novel for Ta-Nehisi Coates, an author and journalist best known for his nonfiction works. Set in a slave plantation located in pre-civil war Virginia, this is a bold and ambitious story about slavery. From the editor website:
+ Young Hiram Walker was born into bondage. When his mother was sold away, Hiram was robbed of all memory of her—but was gifted with a mysterious power.</description>
+    </item>
     
     <item>
       <title>Strong opinions on software development</title>
