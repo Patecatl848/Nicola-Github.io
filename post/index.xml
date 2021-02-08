@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 06 Feb 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 08 Feb 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>When Homebrew breaks your Python virtual environment</title>
+      <link>https://nicolaiarocci.com/when-homebrew-breaks-your-python-virtual-environment/</link>
+      <pubDate>Mon, 08 Feb 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/when-homebrew-breaks-your-python-virtual-environment/</guid>
+      <description>Ever had your old, trusty Python virtual environment fail on you? I sure did. Sometimes, when I activate or switch between virtual environments, I get the following error:
+$ workon eve dyld: Library not loaded: @executable_path/../.Python  I never really took the time to look into it. When this happens, because I am in a rush (and because I am a lazy old fart), I shrug it off, recreate the virtual environment on the spot, and get back to work.</description>
+    </item>
     
     <item>
       <title>Book Review: The Water Dancer</title>
