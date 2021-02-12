@@ -879,6 +879,8 @@
     
         
     
+        
+    
 
     
 
@@ -898,6 +900,48 @@
 </nav>
 
     </div>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/how-to-add-a-je-suis-charlie-header-to-api-responses/">How to: Add custom JeSuisCharlie header to API responses</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>A lot of servers have been including a JeSuisCharlie header with their responses. If you haven&#8217;t already, try with Charlie Hebdo site itself:
+$ curl -I charliehebdo.fr Date: Mon, 12 Jan 2015 15:56:13 GMT Content-Type: text/html; charset=iso-8859-1 Content-Length: 221 Connection: keep-alive Location: http://www.charliehebdo.fr/index.html Vary: Accept-Encoding X-Charlie-fr: Je suis toujours Charlie. X-Charlie-en: I am still Charlie. X-Charlie-es: Todavia soy Charlie. X-Charlie-de: Ich bin immer Charlie. X-Charlie-ro: Inca sunt Charlie. X-Charlie-cz: Jsem stale Charlie. <a class="read-more" href="/how-to-add-a-je-suis-charlie-header-to-api-responses/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/jesuischarlie/">#jesuischarlie</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2015-01-12T00:00:00Z">
+            12 Jan 2015
+        </time>
+    </footer>
+</article>
 
     
         <article class="post post">
@@ -1274,57 +1318,6 @@ We don&#8217;t quite understand this yet. More importantly, the world doesn&#821
         
         <time class="post-date" datetime="2014-10-06T00:00:00Z">
             6 Oct 2014
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/ordered-dictionaries-with-python-2-4-2-6/">Ordered Dictionaries with Python 2.4-2.6</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p><a href="https://docs.python.org/2/library/collections.html#collections.OrderedDict">OrderedDict</a> is a super handy data structure.</p>
-
-<blockquote>
-<p>An OrderedDict is a dict that remembers the order that keys were first inserted. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.</p>
-</blockquote>
-
-<p>Problem is, this stuff is only available in the standard library since Python 2.7 while <a href="http://python-eve.org">my project</a> also needs to support Python 2.6. Fortunately there&#8217;s a back-port available and it is only a pip install away:</p>
-
-<pre><code># make OrderedDict available on Python 2.6-2.4
-$ pip install ordereddict
-</code></pre>
-
-<p><a href="https://pypi.python.org/pypi/ordereddict">ordereddict</a> is based on the awesome recipe by <a href="http://code.activestate.com/recipes/576693">Raymond Hettinger</a>, works with Python 2.4-2.6 and, most importantly, is a drop-in replacement for OrderedDict.</p>
-
-<p>However if you want your code to run seamlessly on all Pythons there&#8217;s still some work to be done. First of all you want to make sure that the appropriate OrderedDict is imported, either the standard library version (for Python 2.7 and above) or the back-port release.</p> <a class="read-more" href="/ordered-dictionaries-with-python-2-4-2-6/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
-            
-        
-        <time class="post-date" datetime="2014-09-16T00:00:00Z">
-            16 Sep 2014
         </time>
     </footer>
 </article>

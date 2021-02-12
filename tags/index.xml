@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 08 Feb 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 12 Feb 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>music</title>
+      <link>https://nicolaiarocci.com/tags/music/</link>
+      <pubDate>Fri, 12 Feb 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/music/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>python</title>
