@@ -57,6 +57,12 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/tags/programming/</loc>
+    <lastmod>2021-02-12T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/when-homebrew-breaks-your-python-virtual-environment/</loc>
     <lastmod>2021-02-08T07:05:25+01:00</lastmod>
   </url>
@@ -73,7 +79,13 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/book-review/</loc>
+    <loc>https://nicolaiarocci.com/tags/books/</loc>
+    <lastmod>2021-02-06T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/reviews/</loc>
     <lastmod>2021-02-06T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -84,8 +96,32 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/tags/opinions/</loc>
+    <lastmod>2021-02-03T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/the-great-unbundling-according-to-benedict-evans/</loc>
     <lastmod>2021-02-02T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/analysis/</loc>
+    <lastmod>2021-02-02T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/economy/</loc>
+    <lastmod>2021-02-02T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/technology/</loc>
+    <lastmod>2021-02-02T07:05:25+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -94,8 +130,26 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/tags/conferences/</loc>
+    <lastmod>2021-01-29T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/speaking/</loc>
+    <lastmod>2021-01-29T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/the-unreasonable-effectiveness-of-simple-html/</loc>
     <lastmod>2021-01-28T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/html/</loc>
+    <lastmod>2021-01-28T07:05:25+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -104,13 +158,25 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/erebus-the-story-of-a-ship/</loc>
+    <loc>https://nicolaiarocci.com/tags/people/</loc>
+    <lastmod>2021-01-22T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/book-review-erebus-the-story-of-a-ship/</loc>
     <lastmod>2021-01-13T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/five-good-books-i-read-in-2020/</loc>
     <lastmod>2021-01-04T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/reading/</loc>
+    <lastmod>2021-01-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -751,12 +817,6 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/programming/</loc>
-    <lastmod>2014-11-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/dont-people-work-programmers/</loc>
     <lastmod>2014-11-06T00:00:00+00:00</lastmod>
   </url>
@@ -1053,12 +1113,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/css/</loc>
-    <lastmod>2014-01-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/html/</loc>
     <lastmod>2014-01-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1444,12 +1498,6 @@
   <url>
     <loc>https://nicolaiarocci.com/una-mattinata-con-mongodb/</loc>
     <lastmod>2012-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/speaking/</loc>
-    <lastmod>2012-10-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
