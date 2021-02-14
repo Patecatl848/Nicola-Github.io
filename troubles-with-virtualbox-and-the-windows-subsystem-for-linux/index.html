@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="What I listen to while programming"/>
+<meta name="twitter:title" content="Troubles with VirtualBox and the Windows Subsystem for Linux"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="What I listen to while programming &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="Troubles with VirtualBox and the Windows Subsystem for Linux &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/what-i-listen-to-while-programming/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/" />
 
     
         
@@ -29,19 +29,21 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-02-12T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-02-14T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="music" />
+    <meta property="article:tag" content="linux" />
     
-    <meta property="article:tag" content="programming" />
+    <meta property="article:tag" content="windows10" />
+    
+    <meta property="article:tag" content="virtualbox" />
     
     
 
-    <title>What I listen to while programming &middot; Nicola Iarocci</title>
+    <title>Troubles with VirtualBox and the Windows Subsystem for Linux &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="What music do you listen to while programming?1 For me, it&amp;rsquo;s usually jazz, classical, electronic, lots of it, or nothing. There are some specialized websi" />
+    <meta name="description" content="Today I learned the hard way: don&amp;rsquo;t you dare running a vanilla install of VirtualBox together with Windows Subsystem for Linux v2 (WSL2). It won&amp;rsquo;t w" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -67,7 +69,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/what-i-listen-to-while-programming/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/" />
 
     
       
@@ -104,23 +106,23 @@
             
         ]
     },
-    "headline": "What I listen to while programming",
-    "name": "What I listen to while programming",
-    "wordCount":  305 ,
+    "headline": "Troubles with VirtualBox and the Windows Subsystem for Linux",
+    "name": "Troubles with VirtualBox and the Windows Subsystem for Linux",
+    "wordCount":  385 ,
     "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/what-i-listen-to-while-programming/",
-    "datePublished": "2021-02-12T07:05Z",
-    "dateModified": "2021-02-12T07:05Z",
+    "url": "https://nicolaiarocci.com/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/",
+    "datePublished": "2021-02-14T07:05Z",
+    "dateModified": "2021-02-14T07:05Z",
     
-    "keywords": "music, programming",
+    "keywords": "linux, windows10, virtualbox",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/what-i-listen-to-while-programming/"
+        "@id": "https://nicolaiarocci.com/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/"
     }
 }
     </script>
@@ -257,63 +259,78 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">What I listen to while programming</h1>
+        <h1 class="post-title">Troubles with VirtualBox and the Windows Subsystem for Linux</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-02-12T07:05:25&#43;01:00">
-            Feb 12, 2021
+          <time class="post-date" datetime="2021-02-14T07:05:25&#43;01:00">
+            Feb 14, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/music/">#music</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/linux/">#linux</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/programming/">#programming</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/windows10/">#windows10</a></span>
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/virtualbox/">#virtualbox</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>What music do you listen to while programming?<sup class="footnote-ref" id="fnref:6"><a href="#fn:6">1</a></sup> For me, it&rsquo;s usually jazz,
-classical, electronic, lots of it, or nothing. There are some specialized
-websites and podcasts I sometimes recur to, like <a href="http://www.musicforprogramming.net/">Music for Programming</a>.
-Several Spotify playlists I dig a lot, <a href="https://open.spotify.com/playlist/1itC2kKqIqun8OU05J5G8v?si=iYtyuKAfT4ejArv1aaT4FQ">Every Day I&rsquo;m Nerdin&rsquo;</a> being one of
-them. What can I say? I am musically omnivore.</p>
+      <p>Today I learned the hard way: don&rsquo;t you dare running a vanilla install of
+VirtualBox together with Windows Subsystem for Linux v2 (WSL2). It won&rsquo;t work.
+That&rsquo;s because WSL2 uses Hyper-V under the hood, which is incompatible with
+VirtualBox.</p>
 
-<p>However, I recently discovered something different: the <a href="https://fieldrecordings.xyz/">Field Recordings
-podcast</a>. &ldquo;A podcast where audio-makers stand silently in fields (or things
-that could be broadly interpreted as fields).&rdquo; I am told it was launched last
-year, just about when the COVID lockdowns started, by acclaimed UK audio artist
-and producer Eleanor McDowall. It&rsquo;s free, updated daily with submissions coming
-from all over the world, and holds many treasures. Most episodes are short, I&rsquo;d
-say around the 5 minutes mark, with some notable exceptions like <a href="https://fieldrecordings.xyz/2020/12/14/the-sound-of-2020/">The Sound of
-2020</a>, &ldquo;A slow weave of some of 2020&rsquo;s Field Recordings in chronological
-order&rdquo;. One of my favorites has got to be the &ldquo;<a href="https://fieldrecordings.xyz/2021/01/12/inside-the-log-burner-devoran-cornwall-in-january-2021-by-chris-attaway/">Inside the log burner</a>&ldquo;
-episode by Chris Attaway (Devoran, Cornwall, UK, January 2021):</p>
+<p>According to the <a href="https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html">official documentation</a> for VirtualBox v6.0:</p>
 
 <blockquote>
-<p>&ldquo;I was prepping a fire in our log burner on a cold, blustery day here in
-Devoran, Cornwall and the wind whistling through the vents was really creepy!
-So I stuck my Zoom inside and recorded it for a bit. It was like it had its
-own little atmosphere and weather inside!&rdquo;</p>
+<p>Oracle VM VirtualBox can be used on a Windows host where Hyper-V is running.
+<strong>This is an experimental feature</strong>. No configuration is required. Oracle VM
+VirtualBox detects Hyper-V automatically and uses Hyper-V as the
+virtualization engine for the host system.</p>
 </blockquote>
 
-<p>At my desk churning out code, I hit play, and that stove is instantly
-teleported here, right by my side. I can almost feel its warmth. Indeed,
-there&rsquo;s something cathartic about listening to these sound fragments from all
-over the world.</p>
+<p>Well, that did not prove to be true in my case. Hence the experimental clause,
+I guess. A little googling revealed that, indeed, it did work for a while, then
+a new Windows 10 release broke it again:</p>
+
+<blockquote>
+<p>The Hyper-V API became a viable reality with 1803, practically with 1809. And
+it went fine with 1903. And it broke with 1909. Please use your favorite
+search engine for &ldquo;Immature API&rdquo;&hellip; (<a href="https://forums.virtualbox.org/viewtopic.php?f=6&amp;t=90853&amp;start=195#p465333">source</a>)</p>
+</blockquote>
+
+<p>Even if it did work, however, you&rsquo;d run into some (possibly) severe
+performance degradation. Quoting from the same official documentation page:</p>
+
+<blockquote>
+<p>When using this feature, some host systems might experience significant
+Oracle VM VirtualBox performance degradation.</p>
+</blockquote>
+
+<p>If you don&rsquo;t need to run WSL2 and your VMs simultaneously, one workaround is to
+disable WSL2 in the Windows Features.  There, you have to disable Hyper-V,
+Virtual Machine Platform, and Windows Subsystem for Windows. Yes, I had to
+explicitly disable all three of them. When you eventually reactivate them, WSL2
+will start working again, configurations included.</p>
+
+<p>Another option is to fallback to WSL1. That will work. Unlike WSL2, WSL1 does
+not run in a VM. Also, converting back and forth between WSL1 and WLS2 is dead
+simple. I did not go this route because, well, I like the performance that
+comes with WSL2. I also plan to use VirtualBox only rarely, when I need to test
+new versions of our desktop application&rsquo;s installation procedure.</p>
+
+<p>This is all not ideal, of course. The situation is evolving. <a href="https://github.com/MicrosoftDocs/WSL/issues/536">This ticket</a>
+on the WSL documentation repository is probably the place to watch for updates.</p>
+
+<p>Hopefully, soon, once the currently &ldquo;immature API&rdquo; stabilizes, I will be able
+to come back to this article, edit it, and note that now everything works as
+expected.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:6">As I write this, news of the passing of Chick Corea hit me. Today his <em>Plays</em> album is on repeat.
- <a class="footnote-return" href="#fnref:6"><sup>[return]</sup></a></li>
-</ol>
-</div>
 
     </section>
 
@@ -368,17 +385,10 @@ over the world.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/">
-          <section class="post">
-              <h2>Troubles with VirtualBox and the Windows Subsystem for Linux</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/when-homebrew-breaks-your-python-virtual-environment/">
+      <a class="read-next-story prev" style="no-cover" href="/what-i-listen-to-while-programming/">
           <section class="post">
-              <h2>When Homebrew breaks your Python virtual environment</h2>
+              <h2>What I listen to while programming</h2>
           </section>
       </a>
   
