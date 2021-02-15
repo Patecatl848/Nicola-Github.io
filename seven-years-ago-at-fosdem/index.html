@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Troubles with VirtualBox and the Windows Subsystem for Linux"/>
+<meta name="twitter:title" content="Seven years ago at FOSDEM"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Troubles with VirtualBox and the Windows Subsystem for Linux &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="Seven years ago at FOSDEM &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/seven-years-ago-at-fosdem/" />
 
     
         
@@ -29,21 +29,19 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-02-14T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-02-15T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="linux" />
+    <meta property="article:tag" content="conferences" />
     
-    <meta property="article:tag" content="windows10" />
-    
-    <meta property="article:tag" content="virtualbox" />
+    <meta property="article:tag" content="speaking" />
     
     
 
-    <title>Troubles with VirtualBox and the Windows Subsystem for Linux &middot; Nicola Iarocci</title>
+    <title>Seven years ago at FOSDEM &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="Today I learned the hard way: don&amp;rsquo;t you dare running a vanilla install of VirtualBox together with Windows Subsystem for Linux v2 (WSL2). It won&amp;rsquo;t w" />
+    <meta name="description" content="About seven years ago, I presented the Eve Framework in a very crowded Python room at FOSDEM 2014 in Brussels. If you don&amp;rsquo;t know about FOSDEM, well, you s" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -69,7 +67,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/seven-years-ago-at-fosdem/" />
 
     
       
@@ -106,23 +104,23 @@
             
         ]
     },
-    "headline": "Troubles with VirtualBox and the Windows Subsystem for Linux",
-    "name": "Troubles with VirtualBox and the Windows Subsystem for Linux",
-    "wordCount":  385 ,
-    "timeRequired": "PT2M",
+    "headline": "Seven years ago at FOSDEM",
+    "name": "Seven years ago at FOSDEM",
+    "wordCount":  447 ,
+    "timeRequired": "PT3M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/",
-    "datePublished": "2021-02-14T07:05Z",
-    "dateModified": "2021-02-14T07:05Z",
+    "url": "https://nicolaiarocci.com/seven-years-ago-at-fosdem/",
+    "datePublished": "2021-02-15T07:05Z",
+    "dateModified": "2021-02-15T07:05Z",
     
-    "keywords": "linux, windows10, virtualbox",
+    "keywords": "conferences, speaking",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/"
+        "@id": "https://nicolaiarocci.com/seven-years-ago-at-fosdem/"
     }
 }
     </script>
@@ -259,78 +257,85 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Troubles with VirtualBox and the Windows Subsystem for Linux</h1>
+        <h1 class="post-title">Seven years ago at FOSDEM</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-02-14T07:05:25&#43;01:00">
-            Feb 14, 2021
+          <time class="post-date" datetime="2021-02-15T07:05:25&#43;01:00">
+            Feb 15, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/linux/">#linux</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/conferences/">#conferences</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/windows10/">#windows10</a></span>
-         
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/virtualbox/">#virtualbox</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/speaking/">#speaking</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>Today I learned the hard way: don&rsquo;t you dare running a vanilla install of
-VirtualBox together with Windows Subsystem for Linux v2 (WSL2). It won&rsquo;t work.
-That&rsquo;s because WSL2 uses Hyper-V under the hood, which is incompatible with
-VirtualBox.</p>
+      <p>About seven years ago, I presented the Eve Framework in a very crowded Python
+room at FOSDEM 2014 in Brussels. If you don&rsquo;t know about FOSDEM, well, you
+should check it out. Every year thousands of developers who recognize
+themselves with the free and open-source movement gather in Brussels from all
+over the world. And I mean thousands of them. According to Wikipedia, since
+2011, the meeting hosts about 4,000 visitors every year. It&rsquo;s huge, and it&rsquo;s
+a one of its kind.</p>
 
-<p>According to the <a href="https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html">official documentation</a> for VirtualBox v6.0:</p>
-
-<blockquote>
-<p>Oracle VM VirtualBox can be used on a Windows host where Hyper-V is running.
-<strong>This is an experimental feature</strong>. No configuration is required. Oracle VM
-VirtualBox detects Hyper-V automatically and uses Hyper-V as the
-virtualization engine for the host system.</p>
-</blockquote>
-
-<p>Well, that did not prove to be true in my case. Hence the experimental clause,
-I guess. A little googling revealed that, indeed, it did work for a while, then
-a new Windows 10 release broke it again:</p>
+<p>In 2021, FOSDEM was held online. I already <a href="/upcoming-speaking-engagements-with-ramblings/">mentioned</a> how I miss live events. In
+that post, I also wrote:</p>
 
 <blockquote>
-<p>The Hyper-V API became a viable reality with 1803, practically with 1809. And
-it went fine with 1903. And it broke with 1909. Please use your favorite
-search engine for &ldquo;Immature API&rdquo;&hellip; (<a href="https://forums.virtualbox.org/viewtopic.php?f=6&amp;t=90853&amp;start=195#p465333">source</a>)</p>
+<p>Any conference junkie will tell you that she/he attends for the people first,
+and only then for the sessions themselves. At these events, the most exciting
+stuff happens in the corridors, usually during breaks.</p>
 </blockquote>
 
-<p>Even if it did work, however, you&rsquo;d run into some (possibly) severe
-performance degradation. Quoting from the same official documentation page:</p>
+<p>At that FOSDEM seven years ago, I experienced one of those corridor moments. It
+did not really happen in a corridor, however.</p>
 
-<blockquote>
-<p>When using this feature, some host systems might experience significant
-Oracle VM VirtualBox performance degradation.</p>
-</blockquote>
+<p>I was at the Delirium Cafe one night, with my good friend (and exceptionally
+skilled Pythonista) <a href="https://www.amazon.com/Alessandro-Molina/e/B07F8CTSHW?ref_=dbs_p_ebk_r00_abau_000000">Alessandro Molina</a> at my side. Many other conference
+attendees were there, and we were all having fun doing what nerds do when they
+gather for a night in the pub. We were sitting at this big round table, me,
+Alessandro, and three other guys I did not know yet. We all started chatting,
+enjoying ourselves over a few rounds of tasty Belgian beer. In front of me was
+sitting this friendly, obviously brilliant (if a little shy) guy from
+Switzerland. At some point, I don&rsquo;t remember why, we were talking about PyPy,
+and getting technical about it. This guy was giving me a rundown on the
+ins-and-outs of PyPy, and well, I was surprised at how profound his knowledge
+was. In passing, I said that Alessandro and I knew one guy from the core team,
+Antonio Cuni. Then I mentioned the original author of the project, Armin Rigo,
+I think complimenting him on that significant achievement. The guy in front of
+me nodded and then smiled at me. And then came this weird, jarring moment of
+silence. That&rsquo;s when my friend Alessandro nudged me and whispered, &ldquo;Hey man,
+that&rsquo;s Armin Rigo sitting there. Right in front of you.&rdquo; We all had a good
+laugh. The next round was on me.</p>
 
-<p>If you don&rsquo;t need to run WSL2 and your VMs simultaneously, one workaround is to
-disable WSL2 in the Windows Features.  There, you have to disable Hyper-V,
-Virtual Machine Platform, and Windows Subsystem for Windows. Yes, I had to
-explicitly disable all three of them. When you eventually reactivate them, WSL2
-will start working again, configurations included.</p>
+<p>It&rsquo;s small moments like these that make attending (and presenting at)
+conferences worth it.</p>
 
-<p>Another option is to fallback to WSL1. That will work. Unlike WSL2, WSL1 does
-not run in a VM. Also, converting back and forth between WSL1 and WLS2 is dead
-simple. I did not go this route because, well, I like the performance that
-comes with WSL2. I also plan to use VirtualBox only rarely, when I need to test
-new versions of our desktop application&rsquo;s installation procedure.</p>
-
-<p>This is all not ideal, of course. The situation is evolving. <a href="https://github.com/MicrosoftDocs/WSL/issues/536">This ticket</a>
-on the WSL documentation repository is probably the place to watch for updates.</p>
-
-<p>Hopefully, soon, once the currently &ldquo;immature API&rdquo; stabilizes, I will be able
-to come back to this article, edit it, and note that now everything works as
-expected.</p>
+<p>PS. I had all the hints—the brilliant guy from Switzerland who knows PyPy like
+the back of his hand. Someone wasn&rsquo;t so smart on that night.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
+
+<figure>
+    <img src="/images/fosdem2014_python_room.jpg"
+         alt="The Python room at FOSDEM 2014"/> <figcaption>
+            <p><em>The Python room at FOSDEM 2014</em></p>
+        </figcaption>
+</figure>
+
+
+<figure>
+    <img src="/images/fosdem2014.jpg"
+         alt="With Alessandrio at FOSDEM 2014"/> <figcaption>
+            <p><em>With Alessandro at FOSDEM 2014</em></p>
+        </figcaption>
+</figure>
+
 
     </section>
 
@@ -385,17 +390,10 @@ expected.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/seven-years-ago-at-fosdem/">
-          <section class="post">
-              <h2>Seven years ago at FOSDEM</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/what-i-listen-to-while-programming/">
+      <a class="read-next-story prev" style="no-cover" href="/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/">
           <section class="post">
-              <h2>What I listen to while programming</h2>
+              <h2>Troubles with VirtualBox and the Windows Subsystem for Linux</h2>
           </section>
       </a>
   

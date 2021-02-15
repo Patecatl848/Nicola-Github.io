@@ -251,6 +251,41 @@
 	
 	   <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="/quick-fix-mongodb-fails-when-saving-decimal-fields/">Quick fix: MongoDB fails when saving Decimal fields</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>So today I was trying to store some decimal fields on a MongoDB 3.4 instance and I kept failing, miserably.
+In Compass I was getting a somewhat obscure &ldquo;connection lost&rdquo; message on every save attempt. Upgrading to Mongo 3.4.10 (I was on 3.4.4) improved things, as the error message was now hinting at the setFeatureCompatibilityVersion setting which, apparently, was preventing some features to be made available.
+Now that made sense, as this specific database had been upgraded all the way from up Mongo 2. <a class="read-more" href="/quick-fix-mongodb-fails-when-saving-decimal-fields/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        
+        <time class="post-date" datetime="2017-11-23T11:05:28&#43;01:00">
+            23 Nov 2017
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="/spesometro-open-source-per-.net/">Spesometro Open Source per .NET</a></h2>
     </header>
     <section class="post-excerpt">
@@ -605,46 +640,6 @@ If I don&rsquo;t need to convince you on the usefulness and importance of packag
         
         <time class="post-date" datetime="2017-01-09T00:00:00Z">
             9 Jan 2017
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/cerberus-1-0-released/">Cerberus 1.0 has been released</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>After a one year long development cycle I am proud to announce that version 1.0 of Cerberus, the data validation and transformation tool for Python, is finally out. A while ago I wrote an article on the new features and breaking changes that come with it, so please check it out carefully along with the changelog.
-I just wish to reiterate my gratitude towards all the contributors to the project. The ones who specifically worked on this awesome release, those who made it all possible, are: Matthew Ellison, Dominik Kellner, David Kirkendall, Damián Nohales, calve, Jonathan Huot, Roman Redkovich and of course the one and the only Frank Sachsenheim, whose role was pivotal to this release. <a class="read-more" href="/cerberus-1-0-released/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
-            
-        
-        <time class="post-date" datetime="2016-09-01T00:00:00Z">
-            1 Sep 2016
         </time>
     </footer>
 </article>
