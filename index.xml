@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 19 Feb 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 20 Feb 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -61,6 +61,16 @@ MongoDB è un database NoSQL open source, facilmente scalabile e ad alte presta
       <guid>https://nicolaiarocci.com/about/</guid>
       <description>Hello, my name is Nicola and this is my personal website. Here I keep memories and thoughts. Every once in a while I even post some technical stuff.
 I&amp;#8217;m a coder at heart author of several open source projects, a Microsoft MVP, Conference Speaker, teacher and consultant. I live in Ravenna, Italy, where I work on the Amica 10 project. In my hometown I run the local CoderDojo, a coding club for kids.</description>
+    </item>
+    
+    <item>
+      <title>The Lasting Lessons of John Conway&#39;s Game of Life</title>
+      <link>https://nicolaiarocci.com/the-lasting-lessons-of-john-conways-game-of-life/</link>
+      <pubDate>Sat, 20 Feb 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/the-lasting-lessons-of-john-conways-game-of-life/</guid>
+      <description>In March 1970, Dr. John Conway sent the &amp;ldquo;fatal&amp;rdquo; (as he later referred to it) letter to Martin Gardner. He was submitting ideas for Gardner&amp;rsquo;s Mathematical Games column in Scientific American.
+The New York Times features a good article on the fifty-year parable of The Game of Life. What&amp;rsquo;s appreciable, they asked some of Life&amp;rsquo;s most steadfast friends to reflect upon its influence and lessons over half a century. Among them, Brian Eno, who, being Brian Eno, has some smart things to say:</description>
     </item>
     
     <item>
