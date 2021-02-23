@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 20 Feb 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 23 Feb 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Musings on Python&#39;s Pattern Matching</title>
+      <link>https://nicolaiarocci.com/musings-on-pythons-pattern-matching/</link>
+      <pubDate>Tue, 23 Feb 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/musings-on-pythons-pattern-matching/</guid>
+      <description>Pattern Matching is coming to Python, and I am not sure I like it. Don&amp;rsquo;t get me wrong, I love pattern matching. I use it all the time in F#. I am sure that once it lands in the language, it will be wildly adopted.
+So what&amp;rsquo;s the problem with Python&amp;rsquo;s pattern matching? The community, some core developers included, has expressed several concerns. The Python Steering Council has acknowledged them and is willing to look into improvements should they be proposed.</description>
+    </item>
     
     <item>
       <title>The Lasting Lessons of John Conway&#39;s Game of Life</title>
