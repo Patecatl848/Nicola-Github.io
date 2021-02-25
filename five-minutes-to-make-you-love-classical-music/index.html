@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Musings on Python&#39;s Pattern Matching"/>
+<meta name="twitter:title" content="Five Minutes to Make You Love Classical Music"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Musings on Python&#39;s Pattern Matching &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="Five Minutes to Make You Love Classical Music &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/musings-on-pythons-pattern-matching/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/five-minutes-to-make-you-love-classical-music/" />
 
     
         
@@ -29,19 +29,19 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-02-23T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-02-25T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="python" />
+    <meta property="article:tag" content="music" />
     
-    <meta property="article:tag" content="programming" />
+    <meta property="article:tag" content="links" />
     
     
 
-    <title>Musings on Python&#39;s Pattern Matching &middot; Nicola Iarocci</title>
+    <title>Five Minutes to Make You Love Classical Music &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="Pattern Matching is coming to Python, and I am not sure I like it. Don&amp;rsquo;t get me wrong, I love pattern matching. I use it all the time in F#. I am sure tha" />
+    <meta name="description" content="I already mentioned what background music (or sounds) I like when I am coding. In that list, I included classical music. I know classical is not exactly a favor" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -67,7 +67,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/musings-on-pythons-pattern-matching/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/five-minutes-to-make-you-love-classical-music/" />
 
     
       
@@ -104,23 +104,23 @@
             
         ]
     },
-    "headline": "Musings on Python's Pattern Matching",
-    "name": "Musings on Python's Pattern Matching",
-    "wordCount":  536 ,
-    "timeRequired": "PT3M",
+    "headline": "Five Minutes to Make You Love Classical Music",
+    "name": "Five Minutes to Make You Love Classical Music",
+    "wordCount":  388 ,
+    "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/musings-on-pythons-pattern-matching/",
-    "datePublished": "2021-02-23T07:05Z",
-    "dateModified": "2021-02-23T07:05Z",
+    "url": "https://nicolaiarocci.com/five-minutes-to-make-you-love-classical-music/",
+    "datePublished": "2021-02-25T07:05Z",
+    "dateModified": "2021-02-25T07:05Z",
     
-    "keywords": "python, programming",
+    "keywords": "music, links",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/musings-on-pythons-pattern-matching/"
+        "@id": "https://nicolaiarocci.com/five-minutes-to-make-you-love-classical-music/"
     }
 }
     </script>
@@ -257,81 +257,62 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Musings on Python&#39;s Pattern Matching</h1>
+        <h1 class="post-title">Five Minutes to Make You Love Classical Music</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-02-23T07:05:25&#43;01:00">
-            Feb 23, 2021
+          <time class="post-date" datetime="2021-02-25T07:05:25&#43;01:00">
+            Feb 25, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/python/">#python</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/music/">#music</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/programming/">#programming</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>Pattern Matching <a href="https://lwn.net/Articles/845480/">is coming</a> to Python, and I am not sure I like it. Don&rsquo;t get me
-wrong, I love pattern matching. I use it all the time in F#. I am sure that
-once it lands in the language, it will be wildly adopted.</p>
+      <p>I already <a href="/what-i-listen-to-while-programming">mentioned</a> what background music (or sounds) I like when I am
+coding. In that list, I included classical music. I know classical is not
+exactly a favorite. Not in my field, at least. I suspect the vast majority of
+people disregard it in advance, not really knowing what they&rsquo;re missing out on,
+just because, well, you know, it&rsquo;s dinosaurs stuff. If you are among them, you
+should reconsider and repent your sins. But have no worries, and rejoice, for
+I am here to save your soul.</p>
 
-<p>So what&rsquo;s the problem with Python&rsquo;s pattern matching? The community, some core
-developers included, has expressed <a href="https://discuss.python.org/t/gauging-sentiment-on-pattern-matching/5770">several concerns</a>. The Python Steering
-Council has acknowledged them and is willing to look into improvements should
-they be proposed. I am not going into the details here. You can look them up
-yourself. Let&rsquo;s just say that there are a few gotchas, like the requirement to
-use dotted names as constants, to prevent them from being interpreted as
-capture variables instead (doh!) The lack of local scope bites hard here.</p>
-
-<p>If we look at pattern matching in isolation, it is undoubtedly desirable. There
-ought to be a reason why every language on the planet is trying to adopt it. Is
-it pythonic? I doubt it. With all its corner cases and the odd syntax, I think
-that the current design adds quite a bit of complexity to the language. As
-someone <a href="https://news.ycombinator.com/item?id=26083779">noted</a>, core dev Larry Hastings puts it well:</p>
+<p>Zachary Woolfe, The New York Times&rsquo;s classical music editor, has been working
+on <a href="https://www.nytimes.com/interactive/2020/arts/music/five-minutes-love-music.html">Five Minutes To Make You Love Classical Music</a>. This remarkable project aims
+at &ldquo;hooking readers on classical music, five minutes at a time.&rdquo;</p>
 
 <blockquote>
-<p>I dislike the syntax and semantics expressed in PEP 634. I see the match
-statement as a DSL contrived to look like Python and to be used inside of
-Python, but with very different semantics. When you enter a PEP 634 match
-statement, the rules of the language change completely, and code that looks
-like existing Python code does something surprisingly very different (<a href="https://discuss.python.org/t/gauging-sentiment-on-pattern-matching/5770/21">source</a>)</p>
+<p>Once a month online, about 15 musicians, pop-culture figures and Times
+writers and editors each select the piece they would play for a friend tied
+to a theme, be it an instrument, composer, genre or voice type. The series
+aims to make classical music accessible to readers as a Top 40 track [&hellip;].
+You don&rsquo;t need to know the difference between a cadenza and a concerto. &ldquo;It&rsquo;s
+about pure pleasure and exploration.&rdquo; (<a href="https://www.nytimes.com/2021/02/03/insider/five-minutes-love-classical-music.html">source</a>)</p>
 </blockquote>
 
-<p>I especially agree with this sentiment, and I am still quoting Hastings:</p>
+<p>I find this project interesting for many reasons, the main one being the
+variance of choices and themes. Picks are often excellent and not obvious. This
+is, I think, because of the wide range of people involved with the selections.
+You may have Yo-Yo Ma suggest a Concerto for the Cello installment, and then
+Mark Hamill or Condoleeza Rice propose a listening for the Mozart segment. How
+about Cecilia Bartoli for Baroque music?</p>
 
-<blockquote>
-<p><strong>I think the bar for adding new syntax to Python at this point in its life
-should be set very high</strong>. The language is already conceptually pretty large,
-and every new feature means new concepts one must learn if one is to read an
-arbitrary blob of someone else&rsquo;s Python code. The bigger the new syntax, the
-higher the bar should become, and so the bigger payoff the new syntax has to
-provide.</p>
-</blockquote>
+<p>Mind you, I am not a classical music expert. I just try and like to listen to
+good music, regardless of the genre. I am probably the ideal target for
+a project like this, which explains why I keep coming back. My favorite?
+Probably <a href="https://www.nytimes.com/2020/06/03/arts/music/five-minutes-classical-music-cello.html">Five Minutes That Will Make You Love the Cello</a>, although I am
+having a hard time accepting that Bach&rsquo;s Suite No. 1 is not included in the
+selection (Suite No. 5 is, though.)</p>
 
-<p>Unfortunately, I feel like this trend of getting away from pythonic-Python has
-been going on for a while. As my friend Alessandro Molina mentioned just today:</p>
-
-<blockquote>
-<p>I have been thinking about how Python has been moving away from its own Zen
-since the time of &ldquo;async&rdquo; keyword. Convenience rarely values added
-complexity. Never been a big fan of adding keywords that will be misused by
-the majority to deal with the vertical needs of a minority (<a href="https://twitter.com/__amol__/status/1364205630928617473">source</a>)</p>
-</blockquote>
-
-<p>He was referring to group exceptions, not pattern matching. Still, his tweet
-struck a nerve as I was busy writing down these thoughts.</p>
-
-<p>More generally, I am concerned with all the recent attempts to take features
-from functional languages and bring them over to object-oriented languages.
-It&rsquo;s not just a Python thing; C# just ported Records, pattern matching, and
-a few other things over from F#/ML. I understand that like 85% of the software
-development crowd is into object-oriented languages, but look, it&rsquo;s going to
-exceptionally hard to successfully and seamlessly move features from apples to
-oranges.</p>
+<p>Official NYT playlists for the series are available on Spotify and, I presume,
+other platforms. I know because I wasted a couple hours building my own before
+finding out.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
@@ -388,17 +369,10 @@ oranges.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/five-minutes-to-make-you-love-classical-music/">
-          <section class="post">
-              <h2>Five Minutes to Make You Love Classical Music</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/the-lasting-lessons-of-john-conways-game-of-life/">
+      <a class="read-next-story prev" style="no-cover" href="/musings-on-pythons-pattern-matching/">
           <section class="post">
-              <h2>The Lasting Lessons of John Conway&#39;s Game of Life</h2>
+              <h2>Musings on Python&#39;s Pattern Matching</h2>
           </section>
       </a>
   
