@@ -240,7 +240,7 @@
 	
 	    <a class="newer-posts" href="/categories/programming/page/4/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 5 of 21</span>
+	<span class="page-number">Page 5 of 11</span>
 	
 	    <a class="older-posts" href="/categories/programming/page/6/">Older Posts &rarr;</a>
 	
@@ -251,17 +251,12 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/taming-portable-class-libraries-and-net-framework-4/">Taming Portable Class Libraries and .NET Framework 4</a></h2>
+        <h2 class="post-title"><a href="/decodificare-le-date-in-un-flusso-json-python/">Decodificare le date in un flusso JSON (Python)</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p><p>If your project is a Portable Class Library and you want it to run with the .NET Framework 4 well, you are in for a few surprises. Especially so if you are using InstallShield for building your deployment package. We&#8217;ve been going through this a few days ago and it&#8217;s been kind of a wild ride. I thought I could pin the whole thing down so that others might enjoy a painless journey through all this mess.</p>
-
-<h2 id="portable-class-libraries-and-net-framework-4">Portable Class Libraries and .NET Framework 4</h2>
-
-<p>The first thing you should know is that while the .NET Framework 4 does support PCLs, in fact it won&#8217;t run them without a patch. For whatever reason, Microsoft decided that PCL compatibility wasn&#8217;t a worth a 4.0.4 update. That leaves us with the need to not only make sure that target machines are running the up-to-date .NET4 release (v4.0.3) but also that they&#8217;ve been updated with <a href="https://support.microsoft.com/kb/2468871" target="_blank">KB2468871</a>.</p>
-
-<p>You might be wondering why this is an issue in the first place. We could simply install the .NET Framework 4.5 which is backward compatible with the .NET4 and includes the afore mentioned KB2468871. Even better, we could just target the .NET 4.5 on our PCL. Problem is that besides iOS, Android, WinPhone and Silverlight we also want our libraries to run seamlessly on as many Windows editions as possible, Windows XP included. Here is the catch: <a href="https://connect.microsoft.com/VisualStudio/feedback/details/730732/net-framework-4-5-should-support-windows-xp-sp3," target="_blank">.NET4 is the last framework version to run on Windows XP</a>. And yes, we got the memo, Microsoft officially abandoned Windows XP a while ago so why bother? Well it turns out that millions of users are still running XP, especially so in the enterprise and SMB. These PCL are targeting exactly that, precisely the accounting software segment, and believe me there&#8217;s a huge number of users happily invoicing and accounting on their <em>old-fart-but-still-splendidly-doing-its-job-for-cheap</em> boxes. Oh and the .NET Framework 3.5 is not an option as it doesn&#8217;t support Portable Classes at all.</p> <a class="read-more" href="/taming-portable-class-libraries-and-net-framework-4/">&raquo;</a></p>
+            <p>JSON-Datetime permette di decodificare i valori [cci lang=&#8221;python&#8221; theme=&#8221;default&#8221;]datetime[/cci] normalmente espressi come stringhe in un flusso JSON. E&#8217; davvero molto semplice, e fa parte della suite strumenti open source che sto sviluppando nel contesto del più ampio progetto RESTful Web API.
+Del problema della decodifica delle stringhe JSON in valori datetime ho già scritto in passato. Allora proponevo una soluzione algoritmica; ora vi presento un prodotto finito che potete usare nei vostri progetti. <a class="read-more" href="/decodificare-le-date-in-un-flusso-json-python/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -282,58 +277,15 @@
 
         on
             
-                <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
+                <a href="https://nicolaiarocci.com//tags/datetime/">#datetime</a>,
             
-                <a href="https://nicolaiarocci.com//tags/installshield/">#installshield</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/kb2468871/">#kb2468871</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/pcl/">#pcl</a>,
-            
-        
-        <time class="post-date" datetime="2014-08-28T00:00:00Z">
-            28 Aug 2014
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/eve-0-4-cerberus-0-7-released/">Eve 0.4 and Cerberus 0.7 Released</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Eve 0.4 adds cool features like Document Versioning and Coherence Mode. Cerberus 0.7 allows regex validation amongst other niceties. Make sure to check the official v0.4 announcement for all the details. <a class="read-more" href="/eve-0-4-cerberus-0-7-released/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+                <a href="https://nicolaiarocci.com//tags/json/">#json</a>,
             
                 <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
             
         
-        <time class="post-date" datetime="2014-07-10T00:00:00Z">
-            10 Jul 2014
+        <time class="post-date" datetime="2012-09-10T00:00:00Z">
+            10 Sep 2012
         </time>
     </footer>
 </article>
@@ -341,11 +293,11 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/eve-0-3-released/">Eve 0.3 Released</a></h2>
+        <h2 class="post-title"><a href="/pybooks-le-migliori-risorse-gratuite-su-python/">Pybooks – Le migliori risorse gratuite su Python</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>Today we released Eve v0.3. It includes customizable Files Storage support (on GridFS by default), a lot of fixes, several breaking changes and a lot of love. Head over to relevant blog post and/or to changelog to know more about it. <a class="read-more" href="/eve-0-3-released/">&raquo;</a></p>
+            <p>PyBooks è un&#8217;ottima selezione di risorse gratuite su Python e dintorni. I migliori libri gratuiti su Python sono inclusi, così come alcuni validi tutorial sulle librerie e i framework più diffusi. Il progetto è curato dalle stesse persone che stanno dietro JSBooks, la raccolta di libri JavaScript di cui ho scritto qualche giorno fa. Anche in questo caso è possibile contribuire attivamente segnalando nuove interessanti risorse. <a class="read-more" href="/pybooks-le-migliori-risorse-gratuite-su-python/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -366,13 +318,15 @@
 
         on
             
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+                <a href="https://nicolaiarocci.com//tags/ebook/">#ebook</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/open-source/">#open source</a>,
             
                 <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
             
         
-        <time class="post-date" datetime="2014-02-14T00:00:00Z">
-            14 Feb 2014
+        <time class="post-date" datetime="2012-09-04T00:00:00Z">
+            4 Sep 2012
         </time>
     </footer>
 </article>
@@ -380,11 +334,11 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/rest-apis-humans-fosdem/">REST APIs for Humans at FOSDEM</a></h2>
+        <h2 class="post-title"><a href="/jsbooks-libri-open-source-su-javascript/">JSBooks – Libri Open Source su JavaScript</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>Yesterday I gave a talk at FOSDEM 2014 in Brussels. The conference itself was amazing, with over 5000 attendees literally swarming and taking over the ULB Campus. I was stoked at how smoothly everything was going on despite the incredible number of simultaneous sessions and the number of attendees continuously flowing between buildings and conference rooms. Everybody involved, volunteers and attendees, has been very welcoming, charming and helpful. In short, I had a blast. <a class="read-more" href="/rest-apis-humans-fosdem/">&raquo;</a></p>
+            <p>JSBooks Free JavaScript Books è una valida selezione di risorse gratuite su JavaScript. Si tratta di libri e guide gratuite per programmatori di ogni livello, dal principiante al veterano. Il catalogo include titoli su jQuery, Backbone, design patterns, Node, CoffeeScript, qualcosa su HTML5 e addirittura un libro su MongoDB (si tratta una mia vecchia conoscenza). Alcuni suggerimenti sono davvero di ottima qualità. Il progetto è open source e chiunque può contribuire segnalando nuove interessanti risorse via GitHub. <a class="read-more" href="/jsbooks-libri-open-source-su-javascript/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -405,15 +359,95 @@
 
         on
             
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+                <a href="https://nicolaiarocci.com//tags/ebook/">#ebook</a>,
             
-                <a href="https://nicolaiarocci.com//tags/fosdem/">#fosdem</a>,
+                <a href="https://nicolaiarocci.com//tags/javascript/">#javascript</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/open-source/">#open source</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
+            
+        
+        <time class="post-date" datetime="2012-08-30T00:00:00Z">
+            30 Aug 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/sullessere-un-programmatore/">Sull’essere un Programmatore</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Non fare lo stronzo Codice semplice è difficile da scrivere Codice squisitamente semplice è davvero difficile da scrivere Se è semplice leggerlo non vuol dire che sia stato semplice scriverlo In effetti più è semplice più, probabilmente, è stato difficile scriverlo Ci sono molti modi di ottenere lo stesso risultato E&#8217; davvero improbabile che il primo che ti viene in mente sia anche il migliore Probabilmente il _migliore_ non esiste &#8211; ne esistono molti, ognuno migliore a modo suo Hai sempre modo di migliorare &#8211; nel codice, nelle capacità, in te stesso Se pensi che non sei mai stato così bravo prima d&#8217;ora, probabilmente hai ragione Non esistono correzioni di una sola riga Impara a desiderare il successo più di quanto temi il fallimento Diventi vecchio solo quando non sei più capace di imparare nuovi trucchetti Fai sempre un backup prima di &#8220;dare una sistemata&#8221; al codice Leggi il fottuto manuale A volte un po&#8217; stronzo è ok. <a class="read-more" href="/sullessere-un-programmatore/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
+            
+        
+        <time class="post-date" datetime="2012-08-18T00:00:00Z">
+            18 Aug 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/imparare-python-con-codecademy/">Imparare Python con Codecademy</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Di Codecademy avevo già scritto tempo fa in occasione dei loro primi corsi giocoso-interattivi su HTML, CSS e JavaScript. E&#8217; di ieri l&#8217;annuncio del nuovo corso Python per principianti. Se volete rompere il ghiaccio con questo bellissimo linguaggio l&#8217;approccio di Codecademy (imparare divertendosi, anche grazie a collaudati meccanismi incentivanti come i punteggi e i trofei) potrebbe fare per voi. <a class="read-more" href="/imparare-python-con-codecademy/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/codecademy/">#codecademy</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
             
                 <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
             
         
-        <time class="post-date" datetime="2014-02-03T00:00:00Z">
-            3 Feb 2014
+        <time class="post-date" datetime="2012-07-31T00:00:00Z">
+            31 Jul 2012
         </time>
     </footer>
 </article>
@@ -421,12 +455,13 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/giving-back-to-my-community-with-coderdojo-ravenna/">Giving back to my community</a></h2>
+        <h2 class="post-title"><a href="/analisi-delle-performance-python/">Analisi delle performance in Python</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>A few days ago I tweeted:
- I&#8217;ve been working on a side project for a while. It&#8217;s about kids, coding, my town and giving back to the community. Almost ready for launch.  — Nicola Iarocci (@nicolaiarocci) January 3, 2014  Now the project is out in the wild and I&#8217;m very excited about it. It&#8217;s all italian yes, but do know that CoderDojo is a global movement, and starting a kids coding club in your own town would probably be great idea. <a class="read-more" href="/giving-back-to-my-community-with-coderdojo-ravenna/">&raquo;</a></p>
+            <p>E&#8217; vero che non tutti i programmi Python richiedono un&#8217;analisi rigorosa delle prestazioni, ma è rassicurante sapere che l&#8217;ecosistema Python ci mette a disposizione una serie di strumenti a cui possiamo rivolgerci in caso di necessità.
+Analizzare la performance di un programma significa prima di tutto rispondere a queste quattro semplici domande:
+ Quanto gira veloce? Dove sono i &#8220;collli di bottiglia&#8221;? Quanta memoria sta utilizzando? Dove occorrono gli spechi di memoria? <a class="read-more" href="/analisi-delle-performance-python/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -447,11 +482,15 @@
 
         on
             
-                <a href="https://nicolaiarocci.com//tags/coderdojo/">#coderdojo</a>,
+                <a href="https://nicolaiarocci.com//tags/performane/">#performane</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/profiling/">#profiling</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
             
         
-        <time class="post-date" datetime="2014-01-11T00:00:00Z">
-            11 Jan 2014
+        <time class="post-date" datetime="2012-07-25T00:00:00Z">
+            25 Jul 2012
         </time>
     </footer>
 </article>
@@ -459,13 +498,11 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/cerberus-0-5-is-out-and-it-breaks-stuff/">Cerberus 0.5 is out (and it breaks stuff)</a></h2>
+        <h2 class="post-title"><a href="/flask-mimerender-v0-1-2/">Flask-MimeRender v0.1.2</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p><p>The new release changes the way validation errors are reported. Please note that these changes will also affect future releases of <a href="http://python-eve.org">Eve</a>, the Python REST API Framework.</p>
-
-<p>What we had before was basically a list of human-readable errors. Each item in the list, while perfectly fine for human reading, wasn&rsquo;t really ideal for algorithmic parsing. Why would you want to parse the errors with an algorithm? A common case would be when your client is using business objects to represent API resources (think a client-side ORM), and would have a hard time binding validation errors to the objects themselves.</p> <a class="read-more" href="/cerberus-0-5-is-out-and-it-breaks-stuff/">&raquo;</a></p>
+            <p>Grazie al contributo di Bruno Ripa, la versione 0.1.2 di Flask-MimeRender pubblicata oggi introduce il supporto per codici di stato HTTP arbitrari. Ho colto l&#8217;occasione per uniformare il codice sorgente alle direttive PEP8 e per sistemare alcuni dettagli del package PyPI. Vi ricordo che potete contribuire voi stessi al progetto, direttamente su GitHub. <a class="read-more" href="/flask-mimerender-v0-1-2/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -486,13 +523,15 @@
 
         on
             
-                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
+                <a href="https://nicolaiarocci.com//tags/flask/">#flask</a>,
             
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
             
         
-        <time class="post-date" datetime="2013-12-10T00:00:00Z">
-            10 Dec 2013
+        <time class="post-date" datetime="2012-07-19T00:00:00Z">
+            19 Jul 2012
         </time>
     </footer>
 </article>
@@ -500,130 +539,13 @@
 	
 	   <article class="post post">
     <header class="post-header">
-        <h2 class="post-title"><a href="/on-why-i-still-prefer-traditional-books-to-ebooks/">On Why I Still Prefer Traditional Books to eBooks</a></h2>
+        <h2 class="post-title"><a href="/sviluppare-una-restful-web-api-con-python-flask-e-mongodb/">Sviluppare una RESTful Web API con Python, Flask e MongoDB</a></h2>
     </header>
     <section class="post-excerpt">
         
-            <p>I&rsquo;ve been using a Kindle for a long time now, and I love it. But I keep buying paper books. Lots of them. Actually I buy a _lot_ more books than ebooks and it doesn&rsquo;t even stop there. Admittedly, I am guilty of repeatedly buying paper editions of ebooks I&rsquo;ve read on the Kindle.
-For a very long time I&rsquo;ve not been able to tell the precise reason why I keep going back to traditional books. <a class="read-more" href="/on-why-i-still-prefer-traditional-books-to-ebooks/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
+            <p><p><img class="alignright size-thumbnail wp-image-4867" style="border: 0px;" title="EuroPython 2012" src="images/europython-logo-150x50.png?fit=150%2C50" alt="EuroPython 2012" srcset="http://i2.wp.com/nicolaiarocci.com/wp-content/uploads/europython-logo.png?resize=150%2C50 150w, http://i2.wp.com/nicolaiarocci.com/wp-content/uploads/europython-logo.png?resize=300%2C100 300w, http://i2.wp.com/nicolaiarocci.com/wp-content/uploads/europython-logo.png?w=330 330w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />La scorsa settimana a <a title="EuroPython 2012" href="https://ep2012.europython.eu" target="_blank">EuroPython 2012</a> ho tenuto un talk intitolato <a href="https://ep2012.europython.eu/conference/talks/sviluppare-una-restful-web-api-con-python-flask-e-mongodb" target="_blank">Sviluppare una RESTful Web API con Python, Flask e MongoDB</a>. Mi ha fatto piacere riscontrare forte interesse sia per gli aspetti teorici dell&#8217;architettura REST che per la loro implementazione pratica con strumenti quali Flask e MongoDB. In entrambe le sessioni inglese e italiana mi sono state rivolte molte domande, sia in occasione delle Q&amp;A plenarie che nei successivi colloqui informali. Parecchi anche i commenti ed i suggerimenti, davvero utili ed apprezzati (a quanto pare non sono l&#8217;unico che, forte di un background .NET, ha compiuto o sta per compiere il salto verso Python e il mondo open source).</p>
 
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/ebooks/">#ebooks</a>,
-            
-        
-        <time class="post-date" datetime="2013-12-02T00:00:00Z">
-            2 Dec 2013
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/mongodb-rest-api-go-picnic-video-slides/">MongoDB and REST API go for a picnic (video and slides)</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>I had the opportunity to give my RESTful WeB APIs and MongoDB Go For A Picnic talk at both MongoTorino and NoSQL Day. The folks at PUG Friuli where so nice to record all the NoSQL Day sessions, so here you have it: the full length video of yours truly speaking to a fully packed room crowded with 120 very attentive attendees.
-Unfortunately audio is horrible and while all MongoTorino talks were in english, NoSQL Day was an italian-only event. <a class="read-more" href="/mongodb-rest-api-go-picnic-video-slides/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/mongodb/">#MongoDB</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/rest-api/">#rest api</a>,
-            
-        
-        <time class="post-date" datetime="2013-11-19T00:00:00Z">
-            19 Nov 2013
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/my-interview-on-being-a-mongodb-master/">My interview on being a MongoDB Master</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>So I&#8217;ve been interviewed by Laura Czajkowski on my experience and role as a MongoDB Master. The interview actually covers more angles than that and I guess that, if you really don&#8217;t have anything better to do, you might even want to check it out.
- How did you get involved in open source?
-I’ve been an avid developer delivering desktop applications in the .NET/MSSQL closed source ecosystem for so many years that open source wasn’t even on my radar. <a class="read-more" href="/my-interview-on-being-a-mongodb-master/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/mongodb/">#MongoDB</a>,
-            
-        
-        <time class="post-date" datetime="2013-09-04T00:00:00Z">
-            4 Sep 2013
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/eve-with-python-3-3-support/">Eve with Python 3.3 Support</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Another Eve release is out and I&#8217;m particularly proud about it since it brings full Python 3.3 support (among other things). Check out the relevant blog post: Eve 0.0.9 is out! <a class="read-more" href="/eve-with-python-3-3-support/">&raquo;</a></p>
+<p>Soprattutto ho rilevato una forte curiosità su MongoDB, un database non-relazionale verso il quale sembra prevalere un atteggiamento  di generale timidezza: &#8220;vorrei ma non oso&#8221;, insomma. Per quanto riguarda Flask direi che ormai, nel vasto firmamento dei micro web framework, è una stella che brilla di luce propria.</p> <a class="read-more" href="/sviluppare-una-restful-web-api-con-python-flask-e-mongodb/">&raquo;</a></p>
         
     </section>
     <footer class="post-meta">
@@ -646,11 +568,518 @@ I’ve been an avid developer delivering desktop applications in the .NET/MSSQL 
             
                 <a href="https://nicolaiarocci.com//tags/api/">#api</a>,
             
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+                <a href="https://nicolaiarocci.com//tags/europython/">#europython</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/flask/">#flask</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/mongodb/">#MongoDB</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/rest/">#rest</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/speaking/">#speaking</a>,
             
         
-        <time class="post-date" datetime="2013-08-29T00:00:00Z">
-            29 Aug 2013
+        <time class="post-date" datetime="2012-07-09T00:00:00Z">
+            9 Jul 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/e-finalmente-esce-sublime-text-2/">E finalmente esce Sublime Text 2</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Da ieri Sublime Text 2 è ufficialmente fuori dalla lunghissima beta. Molte novità anche nell&#8217;ultima build, incluso il supporto per il Retina Display di OSX (tanto per dire quanto questi ragazzi stiano sul pezzo). Vi propongo un po&#8217; di link di riferimento:
+ Annuncio della versione 2.0 sul blog Sublime Come Kenneth Reitz ha configurato ST2 per Python Sublime Text 2 un anno dopo, il mio articolo più recente su ST2  PS: io nel frattempo sono tornato a vim, e per ora ci sto molto comodo. <a class="read-more" href="/e-finalmente-esce-sublime-text-2/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/sublime-text/">#sublime text</a>,
+            
+        
+        <time class="post-date" datetime="2012-06-27T00:00:00Z">
+            27 Jun 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/come-usare-al-meglio-webkit-inspector/">Come usare al meglio WebKit Inspector</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Se vi occupate di frontend non perdetevi lo spettacolare articolo in cui Majd Taby ci spiega come usare al meglio il WebKit Inspector.
+ Il panorama mobile è monopolizzato da WebKit e di conseguenza gran parte degli strumenti e dell&#8217;infrastruttura per lo sviluppo di applicazioni frontend mobile (e non solo, ndr) risiedono nel WebKit Inspector. Per questo ne analizzerò con cura gli strumenti e spiegherò come e quando usarli.
+ Ci sono anche le slide. <a class="read-more" href="/come-usare-al-meglio-webkit-inspector/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/css/">#css</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/frontend/">#frontend</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/javascript/">#javascript</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/webkit/">#webkit</a>,
+            
+        
+        <time class="post-date" datetime="2012-06-15T00:00:00Z">
+            15 Jun 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/windows-azure-ora-supporta-ufficialmente-python/">Windows Azure ora supporta ufficialmente Python</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>La pagina ufficiale di Python sulla piattaforma Windows Azure  Windows Azure ora supporta ufficialmente Python. La pagina ufficiale consente di scaricare l&#8217;SDK e contiene alcuni tutorial per la creazione di applicazioni Django, Python e IPython direttamente da Visual Studio. <a class="read-more" href="/windows-azure-ora-supporta-ufficialmente-python/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/windows-azure/">#windows azure</a>,
+            
+        
+        <time class="post-date" datetime="2012-06-08T00:00:00Z">
+            8 Jun 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/convertire-una-data-json-in-un-oggetto-datetime-python/">Convertire una data JSON in un oggetto datetime Python</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Abbiamo una stringa JSON che contiene una data:
+fonte = '{&quot;ragione_sociale&quot;: &quot;CIR 2000&quot;, &quot;aggiornato_il&quot;: &quot;Wed, 06 Jun 2012 14:19:53 UTC&quot;}'  Vediamo che succede se la convertiamo in un dizionario Python:
+import simplejson as json json.loads(fonte) {'aggiornato_il': 'Wed, 06 Jun 2012 14:19:53 UTC ', 'ragione_sociale': 'CIR 2000'}  Facile, vero? C&#8217;è però un piccolo problema: aggiornato_il è ancora una stringa mentre a noi, per poterlo elaborare comodamente, serve un campo datetime. <a class="read-more" href="/convertire-una-data-json-in-un-oggetto-datetime-python/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/datetime/">#datetime</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/json/">#json</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2012-06-07T00:00:00Z">
+            7 Jun 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/xamarin-abbandona-il-progetto-silverlight-per-linux/">Xamarin abbandona il progetto Silverlight per Linux</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Moonlight, l&#8217;implementazione open-source di Silverlight per sistemi Linux, è stata abbandonata da Xamarin.
+ Abbiamo abbandonato Moonlight (&#8230;) Il web non ha addotato Silverlight; non ha avuto il successo che mi aspettavo. Miguel de Icaza
+ Un&#8217;altro chiodo sulla bara di Silverlight. Dei dubbi sul futuro della tecnologia Microsoft avevo già scritto in occasione della sua mancata adozione in Windows 8 e al momento dell&#8217;annuncio di Silverlight 5. <a class="read-more" href="/xamarin-abbandona-il-progetto-silverlight-per-linux/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/silverlight/">#Silverlight</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/xamarin/">#xamarin</a>,
+            
+        
+        <time class="post-date" datetime="2012-05-30T00:00:00Z">
+            30 May 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/primi-passi-con-ssh/">Primi passi con SSH</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Se siete ai primi passi nello sviluppo di applicazioni web vi consiglio la lettura di SSH: What and How. Senza troppi fronzoli l&#8217;articolo spiega le basi di SSH mettendo bene in luce le possibilità offerte da questo importante strumento di lavoro.
+ Ogni giorno molti sviluppatori web usano SSH (&#8220;Secure Shell&#8221;) per gestire i loro server, fare backup, lavorare in remoto e una miriade di altre cosette. Oggi vi spiego cos&#8217;è e da dove viene SSH e, soprattutto, vi insegno come configurarlo sul vostro server remoto o sulla vostra rete locale. <a class="read-more" href="/primi-passi-con-ssh/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/ssh/">#ssh</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/web/">#web</a>,
+            
+        
+        <time class="post-date" datetime="2012-05-23T00:00:00Z">
+            23 May 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/come-annullare-una-commit-in-git/">Come annullare una Commit in Git</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p><p><img class="alignright size-thumbnail wp-image-4967" style="border-style: initial; border-color: initial; border-image: initial; border-width: 0px;" title="Git Logo" src="http://i0.wp.com/nicolaiarocci.com/wp-content/uploads/gitlogo-150x62.png?fit=150%2C62" alt="Git Logo" srcset="images/gitlogo.png?resize=150%2C62 150w, http://i1.wp.com/nicolaiarocci.com/wp-content/uploads/gitlogo.png?resize=300%2C125 300w, http://i1.wp.com/nicolaiarocci.com/wp-content/uploads/gitlogo.png?resize=500%2C208 500w, http://i1.wp.com/nicolaiarocci.com/wp-content/uploads/gitlogo.png?w=910 910w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1" />Usando <a title="Git" href="http://git-scm.com/" target="_blank">Git</a> capita ogni tanto, vuoi per stanchezza o per distrazione, di lanciare commit sbagliate. Stamattina m&#8217;è capitato di sistemare del codice, testarlo e fare la commit&#8230; solo per scoprire di aver lavorato sulla branch sbagliata! Non è la prima volta che mi succede e non sarà nemmeno l&#8217;ultima. Poiché ho scarsa memoria ogni volta mi tocca usare google e ripescare quei due o tre comandi utili in questi casi. Ho pensato di appuntarli qui, un po&#8217; per metterli a disposizione di tutti, un po&#8217; per poterli ritrovare facilmente.</p> <a class="read-more" href="/come-annullare-una-commit-in-git/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/git/">#git</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
+            
+        
+        <time class="post-date" datetime="2012-05-17T00:00:00Z">
+            17 May 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/git-si-e-rifatto-il-look-e-non-solo/">Git si è rifatto il look (e non solo)</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Il sito del progetto Git è stato finalmente aggiornato. Nuova grafica, nuovo logo, ottimizzazione dei contenuti e soprattutto integrazione di importanti risorse prima ospitate altrove: la Git Reference, il libro ProGit, Why Git is Better Than X e il nuovo progetto Git Video Series, che include quattro bei filmati già pronti. <a class="read-more" href="/git-si-e-rifatto-il-look-e-non-solo/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/git/">#git</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/version-control/">#version control</a>,
+            
+        
+        <time class="post-date" datetime="2012-05-08T00:00:00Z">
+            8 May 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/conosco-solo-php-come-scrivo-una-applicazione-web-in-python/">Conosco solo PHP. Come scrivo una applicazione web in Python?</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Venite da PHP e siete incuriositi da Python? Vi consiglio la lettura di Python FAQ Webdev: i web framework Python dal punto di vista di un ex sviluppatore PHP. <a class="read-more" href="/conosco-solo-php-come-scrivo-una-applicazione-web-in-python/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/php/">#php</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/web/">#web</a>,
+            
+        
+        <time class="post-date" datetime="2012-05-07T00:00:00Z">
+            7 May 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/opportunita-per-esperti-joomla-e-php/">Opportunità per esperti Joomla e PHP</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p><p><em>Ogni tanto ricevo proposte di lavoro che non sono in grado di soddisfare né direttamente (per mancanza di tempo o know-how) né indirettamente (passando nomi di colleghi e conoscenti). E&#8217; questo il caso della richiesta di Michele, che vi propongo nel caso qualcuno di voi sia interessato. Sia chiaro che io non c&#8217;entro e non ci guadagno nulla; mi interessa solo favorire domanda e offerta e mi limito, col permesso dell&#8217;autore, a ripubblicare il suo annuncio. Se siete interessati contattate Michele direttamente:</em></p> <a class="read-more" href="/opportunita-per-esperti-joomla-e-php/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/job/">#job</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/joomla/">#joomla</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/php/">#php</a>,
+            
+        
+        <time class="post-date" datetime="2012-05-06T00:00:00Z">
+            6 May 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/guido-van-rossum-a-europython-2012/">Guido van Rossum a EuroPython 2012</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>ZOMG! Guido Van Rossum the Benevolent Dictator for Life will give a keynote at #europython  &mdash; Nicola Iarocci (@nicolaiarocci) April 20, 2012  Partenza col botto per EuroPython 2012. I keynote introduttivi saranno tenuti nientemeno che dal creatore stesso del linguaggio, Guido Van Rossum, e da Alex Martelli. Ieri è stato annunciato il programma ufficiale e a quanto pare mi spetta l&#8217;inaugurazione della italian track martedì 3 luglio. Il giorno successivo sarò impegnato, ancora di prima mattina, con la versione in lingua inglese del mio talk: <a class="read-more" href="/guido-van-rossum-a-europython-2012/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/europython/">#europython</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/eventi/">#eventi</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2012-04-20T00:00:00Z">
+            20 Apr 2012
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/imparare-git-un-passo-alla-volta-con-git-immersion/">Imparare Git un passo alla volta con Git Immersion</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Già sapete che Git è uno degli strumenti senza i quali non potrei più vivere, ne ho scritto anche recentemente in Branching di successo per Git e Usare Git con Dropbox. Oggi vi propongo Git Immersion, fantastico sito-laboratorio per &#8220;immergersi&#8221; in Git imparandolo passo dopo passo.
+  Git Immersion è un tour guidato che ti accompagna in una passeggiata tra i fondamenti di Git, ispirato dalla premessa che conoscere una cosa significa usarla. <a class="read-more" href="/imparare-git-un-passo-alla-volta-con-git-immersion/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/git/">#git</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
+            
+        
+        <time class="post-date" datetime="2012-04-13T00:00:00Z">
+            13 Apr 2012
         </time>
     </footer>
 </article>
@@ -661,7 +1090,7 @@ I’ve been an avid developer delivering desktop applications in the .NET/MSSQL 
 	
 	    <a class="newer-posts" href="/categories/programming/page/4/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 5 of 21</span>
+	<span class="page-number">Page 5 of 11</span>
 	
 	    <a class="older-posts" href="/categories/programming/page/6/">Older Posts &rarr;</a>
 	
