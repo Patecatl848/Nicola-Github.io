@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Five Minutes to Make You Love Classical Music"/>
+<meta name="twitter:title" content="How to increase upload file size in ASP.NET Core"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Five Minutes to Make You Love Classical Music &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="How to increase upload file size in ASP.NET Core &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/five-minutes-to-make-you-love-classical-music/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/how-to-increase-upload-file-size-in-asp.net-core/" />
 
     
         
@@ -29,19 +29,22 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-02-25T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-02-26T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="music" />
+    <meta property="article:tag" content="til" />
     
-    <meta property="article:tag" content="links" />
+    <meta property="article:tag" content="aspnet" />
+    
+    <meta property="article:tag" content=".net" />
     
     
 
-    <title>Five Minutes to Make You Love Classical Music &middot; Nicola Iarocci</title>
+    <title>How to increase upload file size in ASP.NET Core &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="I already mentioned what background music (or sounds) I like when I am coding. In that list, I included classical music. I know classical is not exactly a favor" />
+    <meta name="description" content="Today I learned the hard way that since ASP.NET Core 2.0, the request body has acquired a default size limit at 30MB (~28.6 MiB).
+ If the request body size exce" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -67,7 +70,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/five-minutes-to-make-you-love-classical-music/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/how-to-increase-upload-file-size-in-asp.net-core/" />
 
     
       
@@ -104,23 +107,23 @@
             
         ]
     },
-    "headline": "Five Minutes to Make You Love Classical Music",
-    "name": "Five Minutes to Make You Love Classical Music",
-    "wordCount":  388 ,
+    "headline": "How to increase upload file size in ASP.NET Core",
+    "name": "How to increase upload file size in ASP.NET Core",
+    "wordCount":  262 ,
     "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/five-minutes-to-make-you-love-classical-music/",
-    "datePublished": "2021-02-25T07:05Z",
-    "dateModified": "2021-02-25T07:05Z",
+    "url": "https://nicolaiarocci.com/how-to-increase-upload-file-size-in-asp.net-core/",
+    "datePublished": "2021-02-26T07:05Z",
+    "dateModified": "2021-02-26T07:05Z",
     
-    "keywords": "music, links",
+    "keywords": "til, aspnet, .net",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/five-minutes-to-make-you-love-classical-music/"
+        "@id": "https://nicolaiarocci.com/how-to-increase-upload-file-size-in-asp.net-core/"
     }
 }
     </script>
@@ -257,62 +260,70 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Five Minutes to Make You Love Classical Music</h1>
+        <h1 class="post-title">How to increase upload file size in ASP.NET Core</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-02-25T07:05:25&#43;01:00">
-            Feb 25, 2021
+          <time class="post-date" datetime="2021-02-26T07:05:25&#43;01:00">
+            Feb 26, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/music/">#music</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/aspnet/">#aspnet</a></span>
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/.net/">#.net</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>I already <a href="/what-i-listen-to-while-programming">mentioned</a> what background music (or sounds) I like when I am
-coding. In that list, I included classical music. I know classical is not
-exactly a favorite. Not in my field, at least. I suspect the vast majority of
-people disregard it in advance, not really knowing what they&rsquo;re missing out on,
-just because, well, you know, it&rsquo;s dinosaurs stuff. If you are among them, you
-should reconsider and repent your sins. But have no worries, and rejoice, for
-I am here to save your soul.</p>
-
-<p>Zachary Woolfe, The New York Times&rsquo;s classical music editor, has been working
-on <a href="https://www.nytimes.com/interactive/2020/arts/music/five-minutes-love-music.html">Five Minutes To Make You Love Classical Music</a>. This remarkable project aims
-at &ldquo;hooking readers on classical music, five minutes at a time.&rdquo;</p>
+      <p>Today I learned the hard way that since ASP.NET Core 2.0, the request body has
+acquired a default size limit at 30MB (~28.6 MiB).</p>
 
 <blockquote>
-<p>Once a month online, about 15 musicians, pop-culture figures and Times
-writers and editors each select the piece they would play for a friend tied
-to a theme, be it an instrument, composer, genre or voice type. The series
-aims to make classical music accessible to readers as a Top 40 track [&hellip;].
-You don&rsquo;t need to know the difference between a cadenza and a concerto. &ldquo;It&rsquo;s
-about pure pleasure and exploration.&rdquo; (<a href="https://www.nytimes.com/2021/02/03/insider/five-minutes-love-classical-music.html">source</a>)</p>
+<p>If the request body size exceeds the configured max request body size limit,
+the call to Request.Body.ReadAsync will throw an IOException. If this
+exception is uncaught, Kestrel will respond with a 413 Payload Too Large
+response and HttpSys will respond with a generic 500 Internal Server Error
+response (<a href="https://github.com/aspnet/Announcements/issues/267">source</a>).</p>
 </blockquote>
 
-<p>I find this project interesting for many reasons, the main one being the
-variance of choices and themes. Picks are often excellent and not obvious. This
-is, I think, because of the wide range of people involved with the selections.
-You may have Yo-Yo Ma suggest a Concerto for the Cello installment, and then
-Mark Hamill or Condoleeza Rice propose a listening for the Mozart segment. How
-about Cecilia Bartoli for Baroque music?</p>
+<p>This will be a breaking change if your endpoint is expected to handle large
+uploads. The solution is simple, just decorate your MVC action or controller
+with the <code>RequestSizeLimit</code> attribute, like so:</p>
 
-<p>Mind you, I am not a classical music expert. I just try and like to listen to
-good music, regardless of the genre. I am probably the ideal target for
-a project like this, which explains why I keep coming back. My favorite?
-Probably <a href="https://www.nytimes.com/2020/06/03/arts/music/five-minutes-classical-music-cello.html">Five Minutes That Will Make You Love the Cello</a>, although I am
-having a hard time accepting that Bach&rsquo;s Suite No. 1 is not included in the
-selection (Suite No. 5 is, though.)</p>
+<pre><code>    [HttpPost]
+    [RequestSizeLimit(100_000_000)]
+    public IActionResult MyAction([FromBody] MyViewModel data)
+    {
+</code></pre>
 
-<p>Official NYT playlists for the series are available on Spotify and, I presume,
-other platforms. I know because I wasted a couple hours building my own before
-finding out.</p>
+<p><code>DisableRequestSizeLimit</code> can be used to make request size unlimited. This
+effectively restores pre-2.0.0 behavior for just the attributed action or
+controller. You can also change or disable the limit programmatically, either
+on a per-request basis or globally (see the instructions at this <a href="https://github.com/aspnet/Announcements/issues/267">link</a>.)</p>
+
+<p>In my case, however, disabling the request limit was not enough. Because my
+endpoint is expecting an <code>IFormFile</code> argument, I also had to set the
+<code>RequestFormLimits</code> attribute:</p>
+
+<pre><code>    [HttpPost]
+    [DisableRequestSizeLimit,
+    RequestFormLimits(MultipartBodyLengthLimit = int.MaxValue, 
+        ValueLengthLimit = int.MaxValue)]
+    public async Task&lt;ActionResult&gt; BulkAdd(string schema, IFormFile file)
+    {
+</code></pre>
+
+<p>Please note that all of this happened on a .NET 5 Linux application with
+Kestrel running behind nginx. As pointed out at the link above, if you&rsquo;re
+running behind IIS, then the limit is disabled, and the usual <em>web.config</em>
+limit applies.</p>
+
+<p>For future reference, <a href="https://github.com/dotnet/aspnetcore/blob/main/src/Servers/Kestrel/Core/src/KestrelServerLimits.cs">here</a> are the current Kestrel Server Limits.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
@@ -369,17 +380,10 @@ finding out.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/how-to-increase-upload-file-size-in-asp.net-core/">
-          <section class="post">
-              <h2>How to increase upload file size in ASP.NET Core</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/musings-on-pythons-pattern-matching/">
+      <a class="read-next-story prev" style="no-cover" href="/five-minutes-to-make-you-love-classical-music/">
           <section class="post">
-              <h2>Musings on Python&#39;s Pattern Matching</h2>
+              <h2>Five Minutes to Make You Love Classical Music</h2>
           </section>
       </a>
   
