@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 02 Mar 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 04 Mar 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -61,6 +61,16 @@ MongoDB è un database NoSQL open source, facilmente scalabile e ad alte presta
       <guid>https://nicolaiarocci.com/about/</guid>
       <description>Hello, my name is Nicola and this is my personal website. Here I keep memories and thoughts. Every once in a while I even post some technical stuff.
 I&amp;#8217;m a coder at heart author of several open source projects, a Microsoft MVP, Conference Speaker, teacher and consultant. I live in Ravenna, Italy, where I work on the Amica 10 project. In my hometown I run the local CoderDojo, a coding club for kids.</description>
+    </item>
+    
+    <item>
+      <title>Semantic Versioning Will Not Save You</title>
+      <link>https://nicolaiarocci.com/semantic-versioning-will-not-save-you/</link>
+      <pubDate>Thu, 04 Mar 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/semantic-versioning-will-not-save-you/</guid>
+      <description>The always brilliant Hynek recently posted Semantic Versioning Will Not Save You. Primarily targeted at consumers of SemVer-versioned packages, it is full of insightful advice.
+From my perspective as an open-source maintainer, I can tell you that versioning is hard. Judging when a new release is going to break backward compatibility is not as simple as it might seem on the surface, and Hynek does a great job explaining why. Sometimes it is also hard for me to tell if a change in a codebase classifies as a new feature, small improvement, or fix—subtle differences.</description>
     </item>
     
     <item>
