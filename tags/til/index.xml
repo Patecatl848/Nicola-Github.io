@@ -18,7 +18,7 @@
       <pubDate>Tue, 09 Mar 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/cleaning-up-your-postgres-database/</guid>
-      <description>I am an application/backend developer who has to quibble with databases more often than desired. I can get my way around Postgres pretty well, but I can always use a hint or so, especially when it comes to fine-tuning and performance.
+      <description>I am an application/backend developer who has to quibble with databases more often than desired. I can get my way around Postgres pretty well, but I can always use a hint or two, especially when it comes to fine-tuning and performance.
 I stumbled upon Cleaning Up Your Postgres Databases. It offers useful advice on spotting performance bottlenecks in your Postgres database. Take the cache and index hit queries, for example.</description>
     </item>
     
