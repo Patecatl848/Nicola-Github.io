@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 04 Mar 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 09 Mar 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/links/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cleaning Up Your Postgres Database</title>
+      <link>https://nicolaiarocci.com/cleaning-up-your-postgres-database/</link>
+      <pubDate>Tue, 09 Mar 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/cleaning-up-your-postgres-database/</guid>
+      <description>I am an application/backend developer who has to quibble with databases more often than desired. I can get my way around Postgres pretty well, but I can always use a hint or so, especially when it comes to fine-tuning and performance.
+I stumbled upon Cleaning Up Your Postgres Databases. It offers useful advice on spotting performance bottlenecks in your Postgres database. Take the cache and index hit queries, for example.</description>
+    </item>
     
     <item>
       <title>Semantic Versioning Will Not Save You</title>
