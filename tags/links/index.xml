@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>How to Shrink a WSL2 Virtual Disk</title>
+      <link>https://nicolaiarocci.com/how-to-shrink-a-wsl2-virtual-disk/</link>
+      <pubDate>Fri, 12 Mar 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/how-to-shrink-a-wsl2-virtual-disk/</guid>
+      <description>I discovered you can use the &amp;ldquo;diskpart&amp;rdquo; tool to compact a VHDX. This allows you to shrink a WSL2 virtual disk file, reclaiming disk space. It appeared to work for me without any data corruption, taking the file size down from 100GB to 15GB. (source)
+ I adore Parallels &amp;ldquo;reclaim disk space&amp;rdquo; feature. Just the other day, I got back 70GB off my Windows Guest in a breeze. I&amp;rsquo;m coming from VirtualBox, where reclaiming disk space is a significant pain.</description>
+    </item>
+    
+    <item>
       <title>You Have to Write As Though Your Parents Are Dead</title>
       <link>https://nicolaiarocci.com/you-have-to-write-as-though-your-parents-are-dead/</link>
       <pubDate>Fri, 12 Mar 2021 07:05:25 +0100</pubDate>
