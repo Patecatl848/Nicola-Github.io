@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 16 Mar 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 17 Mar 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -61,6 +61,16 @@ MongoDB è un database NoSQL open source, facilmente scalabile e ad alte presta
       <guid>https://nicolaiarocci.com/about/</guid>
       <description>Hello, my name is Nicola and this is my personal website. Here I keep memories and thoughts. Every once in a while I even post some technical stuff.
 I&amp;#8217;m a coder at heart author of several open source projects, a Microsoft MVP, Conference Speaker, teacher and consultant. I live in Ravenna, Italy, where I work on the Amica 10 project. In my hometown I run the local CoderDojo, a coding club for kids.</description>
+    </item>
+    
+    <item>
+      <title>How to Make crontab Work on macOS Catalina</title>
+      <link>https://nicolaiarocci.com/how-to-make-crontab-work-on-macos-catalina/</link>
+      <pubDate>Wed, 17 Mar 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/how-to-make-crontab-work-on-macos-catalina/</guid>
+      <description>Today I learned that on macOS Catalina, cron does not work out of the box. I know it&amp;rsquo;s deprecated in favor of launchd. However, I still want to use cron because I use it on the Linux machines I share with colleagues; it&amp;rsquo;s been part of our workflow since forever, and, well, I am a lazy old fart.
+On Catalina, cron needs to be granted Full Disk Access rights. Go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access and add cron to the allowed apps.</description>
     </item>
     
     <item>

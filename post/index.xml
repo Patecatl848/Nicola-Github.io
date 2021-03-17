@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 16 Mar 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 17 Mar 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Make crontab Work on macOS Catalina</title>
+      <link>https://nicolaiarocci.com/how-to-make-crontab-work-on-macos-catalina/</link>
+      <pubDate>Wed, 17 Mar 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/how-to-make-crontab-work-on-macos-catalina/</guid>
+      <description>Today I learned that on macOS Catalina, cron does not work out of the box. I know it&amp;rsquo;s deprecated in favor of launchd. However, I still want to use cron because I use it on the Linux machines I share with colleagues; it&amp;rsquo;s been part of our workflow since forever, and, well, I am a lazy old fart.
+On Catalina, cron needs to be granted Full Disk Access rights. Go to System Preferences &amp;gt; Security &amp;amp; Privacy &amp;gt; Privacy &amp;gt; Full Disk Access and add cron to the allowed apps.</description>
+    </item>
     
     <item>
       <title>How to Write Good Software Documentation</title>

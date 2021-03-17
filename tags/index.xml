@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 16 Mar 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 17 Mar 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>macOS</title>
+      <link>https://nicolaiarocci.com/tags/macos/</link>
+      <pubDate>Wed, 17 Mar 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>til</title>
+      <link>https://nicolaiarocci.com/tags/til/</link>
+      <pubDate>Wed, 17 Mar 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/til/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>documentation</title>
@@ -36,15 +54,6 @@
       <pubDate>Fri, 12 Mar 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>til</title>
-      <link>https://nicolaiarocci.com/tags/til/</link>
-      <pubDate>Fri, 12 Mar 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/til/</guid>
       <description></description>
     </item>
     

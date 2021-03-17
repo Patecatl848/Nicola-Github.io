@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="How to Write Good Software Documentation"/>
+<meta name="twitter:title" content="How to Make crontab Work on macOS Catalina"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="How to Write Good Software Documentation &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="How to Make crontab Work on macOS Catalina &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/how-to-write-good-software-documentation/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/how-to-make-crontab-work-on-macos-catalina/" />
 
     
         
@@ -29,19 +29,19 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-03-16T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-03-17T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="documentation" />
+    <meta property="article:tag" content="til" />
     
-    <meta property="article:tag" content="links" />
+    <meta property="article:tag" content="macOS" />
     
     
 
-    <title>How to Write Good Software Documentation &middot; Nicola Iarocci</title>
+    <title>How to Make crontab Work on macOS Catalina &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="There is a secret that needs to be understood in order to write good software documentation: there isn’t one thing called documentation, there are four. They ar" />
+    <meta name="description" content="Today I learned that on macOS Catalina, cron does not work out of the box. I know it&amp;rsquo;s deprecated in favor of launchd. However, I still want to use cron b" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -67,7 +67,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/how-to-write-good-software-documentation/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/how-to-make-crontab-work-on-macos-catalina/" />
 
     
       
@@ -104,23 +104,23 @@
             
         ]
     },
-    "headline": "How to Write Good Software Documentation",
-    "name": "How to Write Good Software Documentation",
-    "wordCount":  347 ,
-    "timeRequired": "PT2M",
+    "headline": "How to Make crontab Work on macOS Catalina",
+    "name": "How to Make crontab Work on macOS Catalina",
+    "wordCount":  209 ,
+    "timeRequired": "PT1M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/how-to-write-good-software-documentation/",
-    "datePublished": "2021-03-16T07:05Z",
-    "dateModified": "2021-03-16T07:05Z",
+    "url": "https://nicolaiarocci.com/how-to-make-crontab-work-on-macos-catalina/",
+    "datePublished": "2021-03-17T07:05Z",
+    "dateModified": "2021-03-17T07:05Z",
     
-    "keywords": "documentation, links",
+    "keywords": "til, macOS",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/how-to-write-good-software-documentation/"
+        "@id": "https://nicolaiarocci.com/how-to-make-crontab-work-on-macos-catalina/"
     }
 }
     </script>
@@ -257,69 +257,44 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">How to Write Good Software Documentation</h1>
+        <h1 class="post-title">How to Make crontab Work on macOS Catalina</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-03-16T07:05:25&#43;01:00">
-            Mar 16, 2021
+          <time class="post-date" datetime="2021-03-17T07:05:25&#43;01:00">
+            Mar 17, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/documentation/">#documentation</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/macos/">#macOS</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <blockquote>
-<p>There is a secret that needs to be understood in order to write good software
-documentation: there isn’t one thing called documentation, there are four.
-They are: tutorials, how-to guides, technical reference and explanation. They
-represent four different purposes or functions, and require four different
-approaches to their creation. Understanding the implications of this will
-help improve most documentation - often immensely.</p>
-</blockquote>
+      <p>Today I learned that on macOS Catalina, cron does not work out of the box.
+I know it&rsquo;s deprecated in favor of launchd. However, I still want to use
+cron because I use it on the Linux machines I share with colleagues; it&rsquo;s
+been part of our workflow since forever, and, well, I am a lazy old fart.</p>
 
-<p>I dig Daniele Procida&rsquo;s take on <a href="https://documentation.divio.com/">writing good software documentation</a>. It
-just makes sense. The system is simple, comprehensive, and, crucial,
-universally-applicable. The &ldquo;four different functions&rdquo; scheme works equally
-well if you are writing for a technical-savvy audience or the general public,
-which is excellent. The users I&rsquo;m writing for are software developers, in some
-cases, and desktop or web application users in others.</p>
+<p>On Catalina, cron needs to be granted Full Disk Access rights. Go to <code>System
+Preferences &gt; Security &amp; Privacy &gt; Privacy &gt; Full Disk Access</code> and add cron
+to the allowed apps. It&rsquo;s located in the <code>/usr/sbin/</code> folder, which won&rsquo;t be
+visible by default. Hit <code>Shift+Cmd+.</code> in Finder to enable hidden folders.</p>
 
-<p>I also like how he goes deep into explaining how and why each function has
-a different goal, should be isolated and written differently from others.</p>
+<p>Remember, the cron task won&rsquo;t be running in your current session, so you&rsquo;ll
+have to ensure that your scripts have the necessary rights to perform their
+job. Or you take the old fart shortcut and go <code>sudo crontab -e</code>, like a boss.</p>
 
-<blockquote>
-<p>Each of them requires a <strong>distinct mode of writing</strong>. People working with
-software need these four different kinds of documentation at different times,
-in different circumstances - so software usually needs them all, and they
-should all be integrated into your documentation. And documentation needs to
-be explicitly structured around them, and they all must be kept separate and
-distinct from each other.</p>
-</blockquote>
+<p>Keep in mind that granting full disk access rights to cron does lower your
+security barriers. Only do that if you have complete control over your system.
+Of course, you can always go back and remove (uncheck) cron from the Full Disk
+Access app list.</p>
 
-<p>Last but not least, the framework itself serves as a guide for the author.</p>
-
-<blockquote>
-<p>This division makes it obvious to both author and reader what material, and
-what kind of material, goes where. It tells the author <strong>how to write</strong>, and
-<strong>what to write</strong>, and <strong>where to write it</strong>. It saves the author from
-wasting a great deal of time trying to wrestle the information they want to
-impart into a shape that makes sense, because each of these kinds of
-documentation has only one job.</p>
-</blockquote>
-
-<p>I wish I had this resource at hand when I was writing the docs for <a href="/opensource/">my open
-source projects</a>. I think will adopt this framework on the next occasion,
-which will be very soon.</p>
-
-<p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow
-@<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
+<p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
     </section>
 
@@ -374,17 +349,10 @@ which will be very soon.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/how-to-make-crontab-work-on-macos-catalina/">
-          <section class="post">
-              <h2>How to Make crontab Work on macOS Catalina</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/how-to-shrink-a-wsl2-virtual-disk/">
+      <a class="read-next-story prev" style="no-cover" href="/how-to-write-good-software-documentation/">
           <section class="post">
-              <h2>How to Shrink a WSL2 Virtual Disk</h2>
+              <h2>How to Write Good Software Documentation</h2>
           </section>
       </a>
   
