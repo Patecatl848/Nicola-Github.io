@@ -28,26 +28,55 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/how-to-write-good-software-documentation/</loc>
-    <lastmod>2021-03-16T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/battling-with-ssh-cron-jobs-and-macos-keyring/</loc>
+    <lastmod>2021-03-17T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-03-16T07:05:25+01:00</lastmod>
+    <lastmod>2021-03-17T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-03-16T07:05:25+01:00</lastmod>
+    <lastmod>2021-03-17T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-03-16T07:05:25+01:00</lastmod>
+    <lastmod>2021-03-17T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/cron/</loc>
+    <lastmod>2021-03-17T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/macos/</loc>
+    <lastmod>2021-03-17T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/ssh/</loc>
+    <lastmod>2021-03-17T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/til/</loc>
+    <lastmod>2021-03-17T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/how-to-write-good-software-documentation/</loc>
+    <lastmod>2021-03-16T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -74,12 +103,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/books/</loc>
-    <lastmod>2021-03-12T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/til/</loc>
     <lastmod>2021-03-12T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1840,12 +1863,6 @@
   <url>
     <loc>https://nicolaiarocci.com/primi-passi-con-ssh/</loc>
     <lastmod>2012-05-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/ssh/</loc>
-    <lastmod>2012-05-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

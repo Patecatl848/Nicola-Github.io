@@ -249,6 +249,50 @@
 	
 	   <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="/battling-with-ssh-cron-jobs-and-macos-keyring/">Battling with SSH, cron jobs, and macOS Keyring</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>So today, I was setting up a cronjob on my trusty MacBook Pro. The goal was to backup some folders from a remote Linux server via rsync. The script is simple. It goes something like this:
+rsync -avz -e &quot;ssh -i ~/.ssh/my_rsa_keyfile&quot; myuser@myserver:remotedir/ ~/localdir/  Launched by hand, it works seamlessly. Call it from a cron job via crontab, and I get a permission denied error. I then enabled ssh -v option to gather a little intel on what was actually going on. <a class="read-more" href="/battling-with-ssh-cron-jobs-and-macos-keyring/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/til/">#til</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/macos/">#macos</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/cron/">#cron</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/ssh/">#ssh</a>,
+            
+        
+        <time class="post-date" datetime="2021-03-17T07:05:25&#43;01:00">
+            17 Mar 2021
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="/how-to-write-good-software-documentation/">How to Write Good Software Documentation</a></h2>
     </header>
     <section class="post-excerpt">
@@ -1005,46 +1049,6 @@ $ workon eve dyld: Library not loaded: @executable_path/../.Python  I never real
         
         <time class="post-date" datetime="2021-02-08T07:05:25&#43;01:00">
             8 Feb 2021
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/book-review-the-water-dancer/">Book Review: The Water Dancer</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>The Water Dancer is the debut novel for Ta-Nehisi Coates, an author and journalist best known for his nonfiction works. Set in a slave plantation located in pre-civil war Virginia, this is a bold and ambitious story about slavery. From the editor website:
- Young Hiram Walker was born into bondage. When his mother was sold away, Hiram was robbed of all memory of her—but was gifted with a mysterious power. <a class="read-more" href="/book-review-the-water-dancer/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/books/">#books</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/reviews/">#reviews</a>,
-            
-        
-        <time class="post-date" datetime="2021-02-06T07:05:25&#43;01:00">
-            6 Feb 2021
         </time>
     </footer>
 </article>
