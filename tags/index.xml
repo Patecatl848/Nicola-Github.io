@@ -58,6 +58,15 @@
     </item>
     
     <item>
+      <title>wsl2</title>
+      <link>https://nicolaiarocci.com/tags/wsl2/</link>
+      <pubDate>Fri, 12 Mar 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/wsl2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>postgres</title>
       <link>https://nicolaiarocci.com/tags/postgres/</link>
       <pubDate>Tue, 09 Mar 2021 07:05:25 +0100</pubDate>
@@ -81,6 +90,15 @@
       <pubDate>Thu, 04 Mar 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>semver</title>
+      <link>https://nicolaiarocci.com/tags/semver/</link>
+      <pubDate>Thu, 04 Mar 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/semver/</guid>
       <description></description>
     </item>
     
