@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Battling with SSH, cron jobs, and macOS Keyring"/>
+<meta name="twitter:title" content="Book Review: Materada"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Battling with SSH, cron jobs, and macOS Keyring &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="Book Review: Materada &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/battling-with-ssh-cron-jobs-and-macos-keyring/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/book-review-materada/" />
 
     
         
@@ -29,23 +29,19 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-03-17T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-03-19T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="til" />
+    <meta property="article:tag" content="books" />
     
-    <meta property="article:tag" content="macos" />
-    
-    <meta property="article:tag" content="cron" />
-    
-    <meta property="article:tag" content="ssh" />
+    <meta property="article:tag" content="reviews" />
     
     
 
-    <title>Battling with SSH, cron jobs, and macOS Keyring &middot; Nicola Iarocci</title>
+    <title>Book Review: Materada &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="So today, I was setting up a cronjob on my trusty MacBook Pro. The goal was to backup some folders from a remote Linux server via rsync. The script is simple. I" />
+    <meta name="description" content="I am very ignorant about the Istrian Peninsula&amp;rsquo;s history, a gap I always wanted to fill. After some research, Fulvio Tomizza&amp;rsquo;s book, Materada, surfa" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -71,7 +67,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/battling-with-ssh-cron-jobs-and-macos-keyring/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/book-review-materada/" />
 
     
       
@@ -108,23 +104,23 @@
             
         ]
     },
-    "headline": "Battling with SSH, cron jobs, and macOS Keyring",
-    "name": "Battling with SSH, cron jobs, and macOS Keyring",
-    "wordCount":  346 ,
+    "headline": "Book Review: Materada",
+    "name": "Book Review: Materada",
+    "wordCount":  320 ,
     "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/battling-with-ssh-cron-jobs-and-macos-keyring/",
-    "datePublished": "2021-03-17T07:05Z",
-    "dateModified": "2021-03-17T07:05Z",
+    "url": "https://nicolaiarocci.com/book-review-materada/",
+    "datePublished": "2021-03-19T07:05Z",
+    "dateModified": "2021-03-19T07:05Z",
     
-    "keywords": "til, macos, cron, ssh",
+    "keywords": "books, reviews",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/battling-with-ssh-cron-jobs-and-macos-keyring/"
+        "@id": "https://nicolaiarocci.com/book-review-materada/"
     }
 }
     </script>
@@ -261,79 +257,53 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Battling with SSH, cron jobs, and macOS Keyring</h1>
+        <h1 class="post-title">Book Review: Materada</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-03-17T07:05:25&#43;01:00">
-            Mar 17, 2021
+          <time class="post-date" datetime="2021-03-19T07:05:25&#43;01:00">
+            Mar 19, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/books/">#books</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/macos/">#macos</a></span>
-         
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/cron/">#cron</a></span>
-         
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/ssh/">#ssh</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/reviews/">#reviews</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>So today, I was setting up a cronjob on my trusty MacBook Pro. The goal was to
-backup some folders from a remote Linux server via rsync. The script is simple.
-It goes something like this:</p>
+      <p>I am very ignorant about the Istrian Peninsula&rsquo;s history, a gap I always wanted
+to fill. After some research, Fulvio Tomizza&rsquo;s book, Materada, surfaced as
+a good fit to fill this gap. It&rsquo;s a semi-biographic historical novel set in the
+Istria of the author&rsquo;s youth. Fulvio Tomizza was born in Giurizzani di
+Materada, Istria, in 1935. He had to go through all the torments caused in that
+disputed area by Fascism first (forced Italianization, cultural suppression),
+and then by the Second World War and the terrible events that followed: the
+Foibe massacres and the Istrian-Dalmatian exodus.</p>
 
-<pre><code>rsync -avz -e &quot;ssh -i ~/.ssh/my_rsa_keyfile&quot; myuser@myserver:remotedir/ ~/localdir/
-</code></pre>
+<p>In the spring of 1955, in the countryside around the village of Materada,
+Francesco Koslovic &ndash;even his name straddles two cultures&ndash; world is falling
+apart. Following the Paris Peace Treaties of 1947, Istrian-Italians and
+Dalmatian-Italians, who have long and peacefully inhabited the area with
+Croatian and Slovene communities, have to choose. Abandon their homes and
+the hard-worked atavistic land, migrate to Italy, become Italian, or stay in
+a now-hostile territory. Francesco and his brother have to make the call with
+their families. They had a portion of their land confiscated by the Yugoslavian
+regime. They know the situation is dire. But this is their promised land.  As
+they procrastinate and time goes by, most farmers around them, the friends who
+make their community, slowly but inevitably leave along with their families.
+The sense of abandonment is palpable.</p>
 
-<p>Launched by hand, it works seamlessly. Call it from a cron job via crontab, and
-I get a permission denied error. I then enabled ssh <code>-v</code> option to gather
-a little intel on what was actually going on. As it turns out, the exact
-error was:</p>
-
-<pre><code>`read_passphrase: can't open /dev/tty: Device not configured`
-</code></pre>
-
-<p>Quite puzzling. Long story short, the error message was misleading. It took me
-an embarrassingly long time to figure out what the real problem was. The
-identity file I was using has a passphrase, which is saved in macOS Keyring.
-When the <code>ssh -i</code> command is launched via cron, no Keyring is used. Not unless
-you explicitly instruct ssh to do. See, my <code>~/.ssh/config</code> file was something
-like this:</p>
-
-<pre><code>Host *
-    ServerAliveInterval 360
-    AddKeysToAgent yes
-
-[...]
-
-Host myserver
-    HostName 123.123.123.123
-    User myuser
-</code></pre>
-
-<p>See, in <code>myserver</code> section there was no <code>Usekeychain</code> option. Launching the
-script interactively worked because of <code>AddkeysToAgent</code> in the general section.
-It enables the ssh-agent for the current terminal session, for all hosts. But
-cron jobs, well, they don&rsquo;t run in the same session, and certainly don&rsquo;t run
-the agent. I could eval the agent in the script, of course, but the
-simplest solution was to update <code>myserver</code> section:</p>
-
-<pre><code>Host myserver
-    HostName 123.123.123.123
-    Usekeychain yes
-    User myuser
-</code></pre>
-
-<p>Now ssh knows it should use the keychain when resolving <code>myserver</code> RSA key,
-even when no agent is running. I am not sure why I did not have <code>Usekeychain</code>
-there; I do have it enabled for other hosts in the same file. As said, I wasted
-way too much time on this issue. At least, I hope my experience will be useful
-to someone else, or, more likely, to my future self in a few months or years.</p>
+<p><img src="/images/materada.jpg#right" alt="Materada, by Fulvio Tomizza (book cover)" />
+This novel tells the experience the author had to experience himself, along
+with his own family. He moved to Trieste in 1954. Throughout his whole life,
+however, he kept going back to Materada, to his roots. Writing this tale must
+have been a cathartic effort. Initially, I had a hard time connecting with the
+story. That happened, I think, <em>precisely</em> because of my ignorance about
+surrounding historical events. Materada was a great, painful, worthwhile read.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
@@ -390,17 +360,10 @@ to someone else, or, more likely, to my future self in a few months or years.</p
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/book-review-materada/">
-          <section class="post">
-              <h2>Book Review: Materada</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/how-to-write-good-software-documentation/">
+      <a class="read-next-story prev" style="no-cover" href="/battling-with-ssh-cron-jobs-and-macos-keyring/">
           <section class="post">
-              <h2>How to Write Good Software Documentation</h2>
+              <h2>Battling with SSH, cron jobs, and macOS Keyring</h2>
           </section>
       </a>
   
