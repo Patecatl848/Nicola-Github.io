@@ -28,26 +28,43 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/book-review-materada/</loc>
-    <lastmod>2021-03-19T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/my-pusher-of-digital-memorabilia/</loc>
+    <lastmod>2021-03-21T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-03-19T07:05:25+01:00</lastmod>
+    <lastmod>2021-03-21T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-03-19T07:05:25+01:00</lastmod>
+    <lastmod>2021-03-21T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-03-19T07:05:25+01:00</lastmod>
+    <lastmod>2021-03-21T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/games/</loc>
+    <lastmod>2021-03-21T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/links/</loc>
+    <lastmod>2021-03-21T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/book-review-materada/</loc>
+    <lastmod>2021-03-19T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -98,12 +115,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/documentation/</loc>
-    <lastmod>2021-03-16T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/links/</loc>
     <lastmod>2021-03-16T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
