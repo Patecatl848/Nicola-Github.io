@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="How to add an empty directory to a Git repository"/>
+<meta name="twitter:title" content="Write libraries, not services? Not so fast"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="How to add an empty directory to a Git repository &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="Write libraries, not services? Not so fast &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/how-to-add-an-empty-directory-to-a-git-repository/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/write-libraries-not-services-not-so-fast/" />
 
     
         
@@ -29,19 +29,17 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-03-22T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-03-25T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="til" />
-    
-    <meta property="article:tag" content="git" />
+    <meta property="article:tag" content="links" />
     
     
 
-    <title>How to add an empty directory to a Git repository &middot; Nicola Iarocci</title>
+    <title>Write libraries, not services? Not so fast &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="How do you add an empty directory to a Git repository? It&amp;rsquo;s a classic, and yet, I have to look it up every single time. Git does not support this out of t" />
+    <meta name="description" content="Write libraries instead of services is an interesting article I read a while ago. I cannot get it off my head, so I thought I might as well sit and write about " />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -67,7 +65,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/how-to-add-an-empty-directory-to-a-git-repository/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/write-libraries-not-services-not-so-fast/" />
 
     
       
@@ -104,23 +102,23 @@
             
         ]
     },
-    "headline": "How to add an empty directory to a Git repository",
-    "name": "How to add an empty directory to a Git repository",
-    "wordCount":  361 ,
-    "timeRequired": "PT2M",
+    "headline": "Write libraries, not services? Not so fast",
+    "name": "Write libraries, not services? Not so fast",
+    "wordCount":  680 ,
+    "timeRequired": "PT4M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/how-to-add-an-empty-directory-to-a-git-repository/",
-    "datePublished": "2021-03-22T07:05Z",
-    "dateModified": "2021-03-22T07:05Z",
+    "url": "https://nicolaiarocci.com/write-libraries-not-services-not-so-fast/",
+    "datePublished": "2021-03-25T07:05Z",
+    "dateModified": "2021-03-25T07:05Z",
     
-    "keywords": "til, git",
+    "keywords": "links",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/how-to-add-an-empty-directory-to-a-git-repository/"
+        "@id": "https://nicolaiarocci.com/write-libraries-not-services-not-so-fast/"
     }
 }
     </script>
@@ -257,72 +255,103 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">How to add an empty directory to a Git repository</h1>
+        <h1 class="post-title">Write libraries, not services? Not so fast</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-03-22T07:05:25&#43;01:00">
-            Mar 22, 2021
+          <time class="post-date" datetime="2021-03-25T07:05:25&#43;01:00">
+            Mar 25, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
-         
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/git/">#git</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>How do you add an empty directory to a Git repository? It&rsquo;s a classic, and yet,
-I have to look it up every single time. Git does not support this out of the
-box:</p>
+      <p><a href="http://catern.com/services.html">Write libraries instead of services</a> is an interesting article I read
+a while ago.   I cannot get it off my head, so I thought I might as well sit
+and write about it in an attempt to clear up my mind. I have been writing
+libraries for a good part of my life. Most of my earlier dev-work resides on
+thousands of computers, mainly in the form of SDKs. More recently, I have also
+been writing, deploying, selling, and servicing remote services. This is
+a topic I care about.</p>
+
+<p>Let&rsquo;s jump into the article.</p>
 
 <blockquote>
-<p>Currently the design of the Git index (staging area) only permits files to be
-listed, and nobody competent enough to make the change to allow empty
-directories has cared enough about this situation to remedy it. Directories
-are added automatically when adding files inside them. That is, directories
-never have to be added to the repository, and are not tracked on their own.
-You can say <code>git add &lt;dir&gt;</code> and it will add the files in there. <strong>If you really
-need a directory to exist in checkouts you should create a file in it</strong>.
-.gitignore works well for this purpose; you can leave it empty or fill in
-the names of files you do not expect to show up in the directory.
-(<a href="https://git.wiki.kernel.org/index.php/GitFaq#Can_I_add_empty_directories.3F">source</a>)</p>
+<p>A service has constant administration costs which are paid by the service
+provider. A properly designed library instead moves these costs to the users
+of the library.</p>
 </blockquote>
 
-<p>The same answer offers a workaround: just save an empty .gitignore file into
-the directory. At that point, <code>git status</code> shows the file as untracked. We can
-add it to the repository, and <em>presto</em>, our folder ends up captured in version
-control.</p>
+<p>This ignores the issue of support. You are going to have to support your users.
+Support comes at a cost. I would argue that, given the distributed nature of
+libraries, their support can be <em>extremely</em> costly. Your library is probably
+residing in a myriad of diverse, local environments. Issues are hard to
+replicate or reason about. It is hard to isolate your own code from the
+surrounding environment.</p>
 
-<p>I don&rsquo;t like using .gitignore for this. That file serves a different,
-unrelated goal. Finding it in an otherwise empty directory would cause
-puzzlement to my colleagues and my future self in six months. For better
-semantic and clarity, what I do is add a <code>.keep</code> file instead:</p>
+<blockquote>
+<p>People say, &ldquo;services are easy because you can upgrade them centrally, so you
+can avoid slow-to-upgrade users making everyone&rsquo;s lives worse.&rdquo; But this
+assumes that slow-to-upgrade users can have negative effects on everyone
+else. If one user can&rsquo;t have a negative impact on other users, then you don&rsquo;t
+care if some users are slow to upgrade; they&rsquo;re only hurting themselves.</p>
+</blockquote>
 
-<pre><code>$ touch mydir/.keep
-</code></pre>
+<p>Again, support. Those slow-to-upgrade users are going to not just hurt but
+<em>torture</em> your support service with years-old obsolete issues.  If you think
+it&rsquo;s the user&rsquo;s responsibility to keep dependencies up to date, good luck with
+that. That assumes that developers adopting the library control their
+deployments, which isn&rsquo;t often the case. They might employ the library in
+a desktop application distributed to dozens (or thousands) of end-users. They
+could have a <em>really</em> hard-time making sure all their deployments are kept up
+to speed.  Really, old versions are a pain point and one (if not the most)
+significant cost factor. Of course, maintaining a service comes at a cost too,
+and you&rsquo;ll likely need to offer some sort of support there as well. A service,
+however, ensures all your users are on the same version, which tremendously
+reduces the support effort. Maybe the author has the luxury of never having had
+to deal with support.</p>
 
-<p>Same trick. Better semantics. When I pull this repository in six months, I will
-immediately grasp what&rsquo;s going on (an alternative would be a README.md file
-with an explanation.)</p>
+<p>When weighting costs, support must be factored in with all the rest:
+development, maintenance, distribution, documentation, etc. Maybe the author
+has the luxury of never having had to deal with support.</p>
 
-<p>Of course, if the dir is meant to fill-up over time, but we still want to
-ignore its future contents in version control, then .gitignore is the right
-tool for the job. Something like this would work (I <a href="https://stackoverflow.com/questions/115983/how-can-i-add-an-empty-directory-to-a-git-repository">dug it up</a> on Stack
-Overflow, where else):</p>
+<p>A service, on the other hand, represents a single point of failure. If it goes
+down, all users are immediately affected<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">1</a></sup>. A big nasty bug in your library
+will only affect the unlucky ones who are on that version. Now, <em>this</em> is
+undoubtedly a big win for distributed libraries.</p>
 
-<pre><code># Ignore everything in this directory
-*
-# Except this file
-!.gitignore
-</code></pre>
+<p>Your service, however, will talk to all languages via REST, GraphQL, or any
+other interface of choice. The library will usually speak just one language.
+You might choose to provide language-specific SDKs for your service, but that&rsquo;s
+just an option.</p>
 
-<p>I should probably adopt the #tirl tag, as in &ldquo;Today I Re-Learned.&rdquo;</p>
+<p>Do you need to hold state? If you do, most of the time, a service will be
+a better option. With state comes responsibility. Now you have to ensure
+regular backups, resilience, and maintenance, all of them at a cost.</p>
+
+<p>The author suggests a few approaches to circumventing libraries limitations.
+Some are reasonable. Others, quite frankly, I don&rsquo;t understand.</p>
+
+<p>Many factors influence the choice between service and library, use case and
+prevailing circumstances being the main ones. I am not even sure they are
+comparable as they tend to solve different problems. Bending one into another
+probably is not a great idea.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:2">I know first hand. We&rsquo;ve recently been impacted by a catastrophic event that happened to one of our providers. Our services went down and, with them, a good part of our users. I plan to write an article on that event.
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+</ol>
+</div>
 
     </section>
 
@@ -377,17 +406,10 @@ Overflow, where else):</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/write-libraries-not-services-not-so-fast/">
-          <section class="post">
-              <h2>Write libraries, not services? Not so fast</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/my-pusher-of-digital-memorabilia/">
+      <a class="read-next-story prev" style="no-cover" href="/how-to-add-an-empty-directory-to-a-git-repository/">
           <section class="post">
-              <h2>My Pusher of Digital Memorabilia</h2>
+              <h2>How to add an empty directory to a Git repository</h2>
           </section>
       </a>
   
