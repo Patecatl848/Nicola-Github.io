@@ -39,7 +39,7 @@
     <title>Write libraries, not services? Not so fast &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="Write libraries instead of services is an interesting article I read a while ago. I cannot get it off my head, so I thought I might as well sit and write about " />
+    <meta name="description" content="Write libraries instead of services is an interesting article I read a while ago. I cannot get it off my head. In an attempt to clear up my mind, I decided to s" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -104,7 +104,7 @@
     },
     "headline": "Write libraries, not services? Not so fast",
     "name": "Write libraries, not services? Not so fast",
-    "wordCount":  680 ,
+    "wordCount":  688 ,
     "timeRequired": "PT4M",
     "inLanguage": {
       "@type": "Language",
@@ -272,12 +272,11 @@
 
     <section class="post-content">
       <p><a href="http://catern.com/services.html">Write libraries instead of services</a> is an interesting article I read
-a while ago.   I cannot get it off my head, so I thought I might as well sit
-and write about it in an attempt to clear up my mind. I have been writing
-libraries for a good part of my life. Most of my earlier dev-work resides on
-thousands of computers, mainly in the form of SDKs. More recently, I have also
-been writing, deploying, selling, and servicing remote services. This is
-a topic I care about.</p>
+a while ago. I cannot get it off my head. In an attempt to clear up my mind,
+I decided to sit down and write about it. I have been writing libraries for
+a good part of my life. Most of my earlier dev-work resides on thousands of
+computers in the form of libraries. More recently, I have been writing and
+deploying remote services. Libraries versus Services is a topic I care about.</p>
 
 <p>Let&rsquo;s jump into the article.</p>
 
@@ -289,7 +288,7 @@ of the library.</p>
 
 <p>This ignores the issue of support. You are going to have to support your users.
 Support comes at a cost. I would argue that, given the distributed nature of
-libraries, their support can be <em>extremely</em> costly. Your library is probably
+libraries, supporting them can become <em>very</em> costly. Your library is probably
 residing in a myriad of diverse, local environments. Issues are hard to
 replicate or reason about. It is hard to isolate your own code from the
 surrounding environment.</p>
@@ -303,44 +302,44 @@ care if some users are slow to upgrade; they&rsquo;re only hurting themselves.</
 </blockquote>
 
 <p>Again, support. Those slow-to-upgrade users are going to not just hurt but
-<em>torture</em> your support service with years-old obsolete issues.  If you think
-it&rsquo;s the user&rsquo;s responsibility to keep dependencies up to date, good luck with
-that. That assumes that developers adopting the library control their
-deployments, which isn&rsquo;t often the case. They might employ the library in
-a desktop application distributed to dozens (or thousands) of end-users. They
-could have a <em>really</em> hard-time making sure all their deployments are kept up
-to speed.  Really, old versions are a pain point and one (if not the most)
-significant cost factor. Of course, maintaining a service comes at a cost too,
-and you&rsquo;ll likely need to offer some sort of support there as well. A service,
-however, ensures all your users are on the same version, which tremendously
-reduces the support effort. Maybe the author has the luxury of never having had
-to deal with support.</p>
+torture your support service with years-old obsolete issues.  If you think it&rsquo;s
+the user&rsquo;s responsibility to keep dependencies up to date, good luck with that.
+That assumes that developers adopting the library control their deployments,
+which isn&rsquo;t often the case. They might employ the library in a desktop
+application distributed to dozens (or thousands) of end-users. It could be next
+to impossible for them to make sure that all their deployments are up to speed.
+Old versions are a pain point and one (if not the most) significant cost
+factor. Maintaining a service comes at a cost too, and you&rsquo;ll likely need to
+offer some sort of support there as well. A service, however, ensures that all
+your users are on the same version, which tremendously reduces the support
+effort.</p>
 
-<p>When weighting costs, support must be factored in with all the rest:
-development, maintenance, distribution, documentation, etc. Maybe the author
-has the luxury of never having had to deal with support.</p>
+<p>When weighting costs, support must be factored in, along with all the rest:
+development, maintenance, distribution, documentation, etc.  Maybe the
+article&rsquo;s author has the luxury of not having to deal with support himself.
+Still, there&rsquo;s someone else at his company who has to do that.</p>
 
 <p>A service, on the other hand, represents a single point of failure. If it goes
-down, all users are immediately affected<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">1</a></sup>. A big nasty bug in your library
-will only affect the unlucky ones who are on that version. Now, <em>this</em> is
-undoubtedly a big win for distributed libraries.</p>
+down, all users are immediately affected<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">1</a></sup>. By contrast, a nasty bug in your
+library will only affect the unlucky users on that version. Now, <em>this</em> makes
+a significant advantage for distributed libraries.</p>
 
 <p>Your service, however, will talk to all languages via REST, GraphQL, or any
 other interface of choice. The library will usually speak just one language.
-You might choose to provide language-specific SDKs for your service, but that&rsquo;s
-just an option.</p>
+Yes, you might provide language-specific SDKs for your service, but that&rsquo;s just
+an option.</p>
 
 <p>Do you need to hold state? If you do, most of the time, a service will be
-a better option. With state comes responsibility. Now you have to ensure
-regular backups, resilience, and maintenance, all of them at a cost.</p>
+a better option. With state comes responsibility, however. You have to
+ensure regular backups, resilience, and maintenance, all of them at a cost.</p>
 
-<p>The author suggests a few approaches to circumventing libraries limitations.
-Some are reasonable. Others, quite frankly, I don&rsquo;t understand.</p>
+<p>The author suggests a few approaches to circumventing library limitations. Some
+are reasonable, like dynamic linking where it is applicable (not all stacks
+support it). Others, quite frankly, I don&rsquo;t understand.</p>
 
 <p>Many factors influence the choice between service and library, use case and
 prevailing circumstances being the main ones. I am not even sure they are
-comparable as they tend to solve different problems. Bending one into another
-probably is not a great idea.</p>
+comparable, as they tend to solve different problems.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 <div class="footnotes">
@@ -348,7 +347,7 @@ probably is not a great idea.</p>
 <hr />
 
 <ol>
-<li id="fn:2">I know first hand. We&rsquo;ve recently been impacted by a catastrophic event that happened to one of our providers. Our services went down and, with them, a good part of our users. I plan to write an article on that event.
+<li id="fn:2">I know first hand. We&rsquo;ve recently been impacted by a catastrophic event that happened to one of our providers. Our services went down and, with them, a good part of our users. How we overcame the situation and what we learned in the process would probably be worth telling, maybe in a future article.
  <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
 </ol>
 </div>
