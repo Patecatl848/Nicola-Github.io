@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 25 Mar 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 27 Mar 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get better at programming by learning how things work</title>
+      <link>https://nicolaiarocci.com/get-better-at-programming-by-learning-how-things-work/</link>
+      <pubDate>Sat, 27 Mar 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/get-better-at-programming-by-learning-how-things-work/</guid>
+      <description>When we talk about getting better at programming, we often talk about testing, writing reusable code, design patterns, and readability. All of those things are important. But in this blog post, I want to talk about a different way to get better at programming: learning how the systems you’re using work! This is the main way I approach getting better at programming.
+ Once again, Julia Evans has great sensible advice up on her site.</description>
+    </item>
     
     <item>
       <title>Write libraries, not services? Not so fast</title>
