@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 01 Apr 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Apr 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>books</title>
+      <link>https://nicolaiarocci.com/tags/books/</link>
+      <pubDate>Fri, 02 Apr 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reviews</title>
+      <link>https://nicolaiarocci.com/tags/reviews/</link>
+      <pubDate>Fri, 02 Apr 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/reviews/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>anonymity</title>
@@ -99,24 +117,6 @@
       <pubDate>Sun, 21 Mar 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/games/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>books</title>
-      <link>https://nicolaiarocci.com/tags/books/</link>
-      <pubDate>Fri, 19 Mar 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reviews</title>
-      <link>https://nicolaiarocci.com/tags/reviews/</link>
-      <pubDate>Fri, 19 Mar 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/reviews/</guid>
       <description></description>
     </item>
     
