@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 11 Apr 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 17 Apr 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -61,6 +61,16 @@ MongoDB è un database NoSQL open source, facilmente scalabile e ad alte presta
       <guid>https://nicolaiarocci.com/about/</guid>
       <description>Hello, my name is Nicola and this is my personal website. Here I keep memories and thoughts. Every once in a while I even post some technical stuff.
 I&amp;#8217;m a coder at heart author of several open source projects, a Microsoft MVP, Conference Speaker, teacher and consultant. I live in Ravenna, Italy, where I work on the Amica 10 project. In my hometown I run the local CoderDojo, a coding club for kids.</description>
+    </item>
+    
+    <item>
+      <title>SQLite is the only database you will ever need in most cases</title>
+      <link>https://nicolaiarocci.com/sqlite-is-the-only-database-you-will-ever-need-in-most-cases/</link>
+      <pubDate>Sat, 17 Apr 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/sqlite-is-the-only-database-you-will-ever-need-in-most-cases/</guid>
+      <description>The name SQLite is a nice name, but the &amp;ldquo;lite&amp;rdquo; part is misleading, it sounds like it is only useful for tiny things - which is very wrong. SQLite should be named AwesomeSQL, because that is what it is. SQLite is probably the only database you will ever need in most cases
+ Yeah. This article resonates with me. SQLite is the de-facto standard engine for embedded systems. But it should also be the go-to database for all those websites and services that don&amp;rsquo;t need to scale to multiple machines.</description>
     </item>
     
     <item>
