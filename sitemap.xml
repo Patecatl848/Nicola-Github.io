@@ -45,20 +45,32 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/sqlite-is-the-only-database-you-will-ever-need-in-most-cases/</loc>
-    <lastmod>2021-04-17T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/tags/</loc>
+    <lastmod>2021-04-18T07:05:25+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-04-17T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/tags/behaviour/</loc>
+    <lastmod>2021-04-18T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/links/</loc>
-    <lastmod>2021-04-17T07:05:25+01:00</lastmod>
+    <lastmod>2021-04-18T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/over-engineering/</loc>
+    <lastmod>2021-04-18T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/sqlite-is-the-only-database-you-will-ever-need-in-most-cases/</loc>
+    <lastmod>2021-04-17T07:05:25+01:00</lastmod>
   </url>
   
   <url>
