@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 18 Apr 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 20 Apr 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>achievements</title>
+      <link>https://nicolaiarocci.com/tags/achievements/</link>
+      <pubDate>Tue, 20 Apr 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/achievements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gamification</title>
+      <link>https://nicolaiarocci.com/tags/gamification/</link>
+      <pubDate>Tue, 20 Apr 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/gamification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://nicolaiarocci.com/tags/github/</link>
+      <pubDate>Tue, 20 Apr 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/github/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>behaviour</title>
@@ -747,15 +774,6 @@
       <pubDate>Thu, 28 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/pcl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github</title>
-      <link>https://nicolaiarocci.com/tags/github/</link>
-      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/github/</guid>
       <description></description>
     </item>
     
