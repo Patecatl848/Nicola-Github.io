@@ -249,6 +249,51 @@
 	
 	   <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="/new-eve-swagger-and-flask-sentinel-releases/">New Eve-Swagger and Flask-Sentinel releases</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>It&rsquo;s maintenance day in my little Python world. I just released new versions of two small but apparently quite popular packages:
+ eve-swagger, the OpenAPI/Swager extensions for Eve-powered APIs, hits v0.1.4. It&rsquo;s just a single fix for API breakage introduced with the previous release; details available here. Thanks to Asger Gitz-Johansen for the help with this release.
+ Flask-Sentinel, an Oauth2 Provider for Flask, hits v0.0.8. This also is a small release that fixes 500 errors if you were using unpinned versions of redis. <a class="read-more" href="/new-eve-swagger-and-flask-sentinel-releases/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/eve-swagger/">#eve-swagger</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/flask-sentinel/">#flask-sentinel</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/releases/">#releases</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2021-04-24T07:05:25&#43;01:00">
+            24 Apr 2021
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="/musings-on-pythons-pattern-matching/">Musings on Python&#39;s Pattern Matching</a></h2>
     </header>
     <section class="post-excerpt">
@@ -1030,49 +1075,6 @@ Collection rules First up is the new set of anyof, allof, noneof and oneof valid
         
         <time class="post-date" datetime="2015-04-01T00:00:00Z">
             1 Apr 2015
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/new-releases-for-cerberus-and-eve/">New Releases for Cerberus and Eve</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Yesterday Cerberus 0.8.1 was released with a few little fixes, one of them being more a new feature than a fix really: sub-document fields can now be set as field dependencies by using a &#8216;dotted&#8217; notation.
-So, suppose we set the following validation schema:
-schema = { 'test_field': { 'dependencies': [ 'a_dict.foo', 'a_dict.bar' ] }, 'a_dict': { 'type': 'dict', 'schema': { 'foo': {'type': 'string'}, 'bar': {'type': 'string'} } } }  Then, we can validate a document like this: <a class="read-more" href="/new-releases-for-cerberus-and-eve/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
-            
-        
-        <time class="post-date" datetime="2015-03-17T00:00:00Z">
-            17 Mar 2015
         </time>
     </footer>
 </article>
