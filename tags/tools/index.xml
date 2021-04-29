@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 10 Mar 2012 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Apr 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Worktree vs Git Savepoints</title>
+      <link>https://nicolaiarocci.com/git-worktree-vs-git-savepoints/</link>
+      <pubDate>Thu, 29 Apr 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/git-worktree-vs-git-savepoints/</guid>
+      <description>The official Git documentation presents the following example as a valid use-case for the worktree command:
+ You are in the middle of a refactoring session and your boss comes in and demands that you fix something immediately. You might typically use git-stash1 to store your changes away temporarily. However, your working tree is in such a state of disarray (with new, moved, and removed files and other bits and pieces strewn around) that you don&amp;rsquo;t want to risk disturbing any of it.</description>
+    </item>
     
     <item>
       <title>Sublime Text 2 un anno dopo</title>

@@ -951,6 +951,8 @@
     
         
     
+        
+    
 
     
 
@@ -970,6 +972,49 @@
 </nav>
 
     </div>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/new-releases-for-cerberus-and-eve/">New Releases for Cerberus and Eve</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Yesterday Cerberus 0.8.1 was released with a few little fixes, one of them being more a new feature than a fix really: sub-document fields can now be set as field dependencies by using a &#8216;dotted&#8217; notation.
+So, suppose we set the following validation schema:
+schema = { 'test_field': { 'dependencies': [ 'a_dict.foo', 'a_dict.bar' ] }, 'a_dict': { 'type': 'dict', 'schema': { 'foo': {'type': 'string'}, 'bar': {'type': 'string'} } } }  Then, we can validate a document like this: <a class="read-more" href="/new-releases-for-cerberus-and-eve/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2015-03-17T00:00:00Z">
+            17 Mar 2015
+        </time>
+    </footer>
+</article>
 
     
         <article class="post post">
@@ -1722,46 +1767,6 @@ Nuts &amp; Bolts Let&#8217;s say that we have a simple class:
         
         <time class="post-date" datetime="2015-01-05T00:00:00Z">
             5 Jan 2015
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/some-thoughts-on-the-new-net-redux/">Some Thoughts on the new .NET (Redux)</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Like all those involved with the .NET ecosystem I&#8217;ve been slowly digesting the recent news on the whole thing going open source and cross platform. I&#8217;ve been jogging down a few notes in light of a future blog post, but then Jeremy Miller came out with his own Some Thoughts on the New .NET which is almost exactly the post I wanted to write. So when he writes:
- I’ve started to associate . <a class="read-more" href="/some-thoughts-on-the-new-net-redux/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/open-source/">#open source</a>,
-            
-        
-        <time class="post-date" datetime="2014-12-04T00:00:00Z">
-            4 Dec 2014
         </time>
     </footer>
 </article>

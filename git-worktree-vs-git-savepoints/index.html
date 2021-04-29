@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Earth Restored"/>
+<meta name="twitter:title" content="Git Worktree vs Git Savepoints"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Earth Restored &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="Git Worktree vs Git Savepoints &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/earth-restored/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/git-worktree-vs-git-savepoints/" />
 
     
         
@@ -29,21 +29,20 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-04-25T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-04-29T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="links" />
+    <meta property="article:tag" content="git" />
     
-    <meta property="article:tag" content="plantearth" />
-    
-    <meta property="article:tag" content="space" />
+    <meta property="article:tag" content="tools" />
     
     
 
-    <title>Earth Restored &middot; Nicola Iarocci</title>
+    <title>Git Worktree vs Git Savepoints &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="Only 24 people have journeyed far enough to see the whole Earth against the black of space. The images they brought back changed our world. Here is a selection " />
+    <meta name="description" content="The official Git documentation presents the following example as a valid use-case for the worktree command:
+ You are in the middle of a refactoring session and " />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -69,7 +68,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/earth-restored/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/git-worktree-vs-git-savepoints/" />
 
     
       
@@ -106,23 +105,23 @@
             
         ]
     },
-    "headline": "Earth Restored",
-    "name": "Earth Restored",
-    "wordCount":  70 ,
-    "timeRequired": "PT1M",
+    "headline": "Git Worktree vs Git Savepoints",
+    "name": "Git Worktree vs Git Savepoints",
+    "wordCount":  592 ,
+    "timeRequired": "PT3M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/earth-restored/",
-    "datePublished": "2021-04-25T07:05Z",
-    "dateModified": "2021-04-25T07:05Z",
+    "url": "https://nicolaiarocci.com/git-worktree-vs-git-savepoints/",
+    "datePublished": "2021-04-29T07:05Z",
+    "dateModified": "2021-04-29T07:05Z",
     
-    "keywords": "links, plantearth, space",
+    "keywords": "git, tools",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/earth-restored/"
+        "@id": "https://nicolaiarocci.com/git-worktree-vs-git-savepoints/"
     }
 }
     </script>
@@ -259,35 +258,101 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Earth Restored</h1>
+        <h1 class="post-title">Git Worktree vs Git Savepoints</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-04-25T07:05:25&#43;01:00">
-            Apr 25, 2021
+          <time class="post-date" datetime="2021-04-29T07:05:25&#43;01:00">
+            Apr 29, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/git/">#git</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/plantearth/">#plantearth</a></span>
-         
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/space/">#space</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/tools/">#tools</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <blockquote>
-<p>Only 24 people have journeyed far enough to see the whole Earth against the
-black of space. The images they brought back changed our world. Here is
-a selection of the most beautiful photographs of Earth — iconic images and
-unknown gems — digitally restored to their full glory.</p>
+      
+
+<p>The official Git documentation presents the following example as a valid
+use-case for the <code>worktree</code> command:</p>
+
+<blockquote>
+<p>You are in the middle of a refactoring session and your boss comes in and
+demands that you fix something immediately. You might typically use
+git-stash<a href="https://git-scm.com/docs/git-worktree">1</a> to store your changes away temporarily. However, your working
+tree is in such a state of disarray (with new, moved, and removed files and
+other bits and pieces strewn around) that you don&rsquo;t want to risk disturbing
+any of it. (<a href="https://git-scm.com/docs/git-worktree">source</a>)</p>
 </blockquote>
 
-<p>Toby Ord&rsquo;s recent <a href="https://www.tobyord.com/earth">Earth Restored</a> project is
-a must-see.</p>
+<p>If you don&rsquo;t know about <code>worktree</code>, you should check it out. It is a handy,
+powerful yet little known command. I don&rsquo;t use it, however. It will check out
+a new branch to a new directory, and I don&rsquo;t like that. I prefer to keep the
+simple, default 1:1 relationship between the repository and the file system.
+Managing multiple working trees seems like an unnecessary complication when
+similar results can be achieved with a few aliases.</p>
+
+<p>Indeed, for the use-case above, my workflow revolves around three git-aliases.
+Over the years, I collected many. Most of them (like the ones mentioned here)
+are not my doing. I stumbled upon them somewhere, tinkered as needed, and then
+incorporated them into my daily workflow.</p>
+
+<h2 id="git-save"><code>git save</code></h2>
+
+<p>This adds all changes, including untracked files, to the staging area and then
+commits with a <code>SAVEPOINT</code> message. When an emergency hits and I need to
+quickly switch context, I&rsquo;ll just <code>git save</code> and check out to a new branch to
+do whatever I am tasked to do. When I&rsquo;m done, I&rsquo;ll switch back to my original
+branch, <code>git undo</code>(see below), and resume work. It&rsquo;s easily configured with:</p>
+
+<pre><code>$ git config --global alias.save '!git add -A &amp;&amp; git commit -m &quot;SAVEPOINT&quot;'
+</code></pre>
+
+<h2 id="git-wip"><code>git wip</code></h2>
+
+<p><code>wip</code> is similar to <code>save</code>. It stages all tracked changes and then commits with
+a <code>WIP</code> message. So yes, it offers the same features as above but leaves
+untracked files unstaged, a significant difference. Like above, when done with
+the extra work, I&rsquo;ll switch back, <code>git undo</code>, and resume. Set it up with:</p>
+
+<pre><code>$ git config --global alias.wip '!git add -u &amp;&amp; git commit -m &quot;WIP&quot;'
+</code></pre>
+
+<h2 id="git-undo"><code>git undo</code></h2>
+
+<p>This alias allows me to quickly resume work after a <code>save</code> or <code>wip</code>. It undoes
+the last commit but keeps its changes, with files unstaged. It can also be used
+in other circumstances (for those, however, I have a functionally identical
+<code>r1</code> alias at hand). Configure with:</p>
+
+<pre><code>$ git config —-global alias.undo 'reset HEAD^ —-mixed'
+</code></pre>
+
+<h2 id="git-wipe"><code>git wipe</code></h2>
+
+<p>This is a special, use-with-caution one. It adds changes in the working tree to
+a <code>WIPE SAVEPOINT</code> commit, then it wipes the commit. At that point, the working
+tree is clean, but I can still go back to that work if the need arises (via
+reflog). Seldom used, this <code>wipe</code> comes in handy when I have some experimental
+code that is not going into production and yet, I want to keep it around. Set
+it up with:</p>
+
+<pre><code>$ git config --global alias.wipe \
+    '!git add -A &amp;&amp; git commit -qm &quot;WIPE SAVEPOINT&quot; &amp;&amp; git reset HEAD~1 --hard'
+</code></pre>
+
+<p>If you are not familiar with the git reflog, you might want to stay clear from
+<code>wipe</code>, though.</p>
+
+<p>One advantage of this workflow is that saved changes will stay with their
+relevant branch. When you get back to it, <code>git log</code> will hint at what happened
+when you left. Assuming it is a private branch, you might even decide to push
+it for backup before starting the hotfix work.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
@@ -344,17 +409,10 @@ a must-see.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/git-worktree-vs-git-savepoints/">
-          <section class="post">
-              <h2>Git Worktree vs Git Savepoints</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/new-eve-swagger-and-flask-sentinel-releases/">
+      <a class="read-next-story prev" style="no-cover" href="/earth-restored/">
           <section class="post">
-              <h2>New Eve-Swagger and Flask-Sentinel releases</h2>
+              <h2>Earth Restored</h2>
           </section>
       </a>
   
