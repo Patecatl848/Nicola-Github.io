@@ -28,26 +28,43 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/git-worktree-vs-git-savepoints/</loc>
-    <lastmod>2021-04-29T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/book-review-one-man-caravan/</loc>
+    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-04-29T07:05:25+01:00</lastmod>
+    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-04-29T07:05:25+01:00</lastmod>
+    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-04-29T07:05:25+01:00</lastmod>
+    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/books/</loc>
+    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/reviews/</loc>
+    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/git-worktree-vs-git-savepoints/</loc>
+    <lastmod>2021-04-29T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -168,18 +185,6 @@
   <url>
     <loc>https://nicolaiarocci.com/book-review-the-silence-a-novel/</loc>
     <lastmod>2021-04-11T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/books/</loc>
-    <lastmod>2021-04-11T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/reviews/</loc>
-    <lastmod>2021-04-11T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
