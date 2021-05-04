@@ -28,26 +28,49 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/book-review-one-man-caravan/</loc>
-    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
+    <lastmod>2021-05-04T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
+    <lastmod>2021-05-04T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
+    <lastmod>2021-05-04T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
+    <lastmod>2021-05-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/dotnet-smtpclient-should-not-be-used/</loc>
+    <lastmod>2021-05-04T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/programming/</loc>
+    <lastmod>2021-05-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/til/</loc>
+    <lastmod>2021-05-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/book-review-one-man-caravan/</loc>
+    <lastmod>2021-05-02T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -227,12 +250,6 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/programming/</loc>
-    <lastmod>2021-04-05T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/tags/teaching/</loc>
     <lastmod>2021-04-05T07:05:25+01:00</lastmod>
     <priority>0</priority>
@@ -296,12 +313,6 @@
   <url>
     <loc>https://nicolaiarocci.com/how-to-add-an-empty-directory-to-a-git-repository/</loc>
     <lastmod>2021-03-22T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/til/</loc>
-    <lastmod>2021-03-22T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

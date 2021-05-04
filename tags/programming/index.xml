@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 05 Apr 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 04 May 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>dotnet SmtpClient should not be used</title>
+      <link>https://nicolaiarocci.com/dotnet-smtpclient-should-not-be-used/</link>
+      <pubDate>Tue, 04 May 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/dotnet-smtpclient-should-not-be-used/</guid>
+      <description>I am very late to the party, but today I learned that the good old dotnet SmptClient is considered obsolete and should not be used. Quoting the documentation:
+ We don&amp;rsquo;t recommend using the SmtpClient class for new development because SmtpClient doesn&amp;rsquo;t support many modern protocols. Use MailKit or other libraries instead. (source)
+ Interestingly, Microsoft is recommending a third-party open-source library as an alternative. I hope we&amp;rsquo;ll see more of that in the future.</description>
+    </item>
     
     <item>
       <title>School assignments that count: simulating the COVID outbreak with the C language</title>

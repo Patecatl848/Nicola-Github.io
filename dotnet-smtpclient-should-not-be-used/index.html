@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Book Review: One Man Caravan"/>
+<meta name="twitter:title" content="dotnet SmtpClient should not be used"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Book Review: One Man Caravan &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="dotnet SmtpClient should not be used &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/book-review-one-man-caravan/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/dotnet-smtpclient-should-not-be-used/" />
 
     
         
@@ -29,19 +29,22 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-05-02T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-05-04T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="books" />
+    <meta property="article:tag" content="til" />
     
-    <meta property="article:tag" content="reviews" />
+    <meta property="article:tag" content="dotnet" />
+    
+    <meta property="article:tag" content="programming" />
     
     
 
-    <title>Book Review: One Man Caravan &middot; Nicola Iarocci</title>
+    <title>dotnet SmtpClient should not be used &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="Robert Edison Fulton was the first solo round-the-world motorcycle tourer. He made his worldwide trip on a two-cylinder Douglas motorcycle between July 1932 and" />
+    <meta name="description" content="I am very late to the party, but today I learned that the good old dotnet SmptClient is considered obsolete and should not be used. Quoting the documentation:
+ " />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -67,7 +70,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/book-review-one-man-caravan/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/dotnet-smtpclient-should-not-be-used/" />
 
     
       
@@ -104,23 +107,23 @@
             
         ]
     },
-    "headline": "Book Review: One Man Caravan",
-    "name": "Book Review: One Man Caravan",
-    "wordCount":  495 ,
-    "timeRequired": "PT3M",
+    "headline": "dotnet SmtpClient should not be used",
+    "name": "dotnet SmtpClient should not be used",
+    "wordCount":  135 ,
+    "timeRequired": "PT1M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/book-review-one-man-caravan/",
-    "datePublished": "2021-05-02T07:05Z",
-    "dateModified": "2021-05-02T07:05Z",
+    "url": "https://nicolaiarocci.com/dotnet-smtpclient-should-not-be-used/",
+    "datePublished": "2021-05-04T07:05Z",
+    "dateModified": "2021-05-04T07:05Z",
     
-    "keywords": "books, reviews",
+    "keywords": "til, dotnet, programming",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/book-review-one-man-caravan/"
+        "@id": "https://nicolaiarocci.com/dotnet-smtpclient-should-not-be-used/"
     }
 }
     </script>
@@ -257,79 +260,46 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Book Review: One Man Caravan</h1>
+        <h1 class="post-title">dotnet SmtpClient should not be used</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-05-02T07:05:25&#43;01:00">
-            May 2, 2021
+          <time class="post-date" datetime="2021-05-04T07:05:25&#43;01:00">
+            May 4, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/books/">#books</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/reviews/">#reviews</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/dotnet/">#dotnet</a></span>
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/programming/">#programming</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>Robert Edison Fulton was the first solo round-the-world motorcycle tourer. He
-made his worldwide trip on a two-cylinder Douglas motorcycle between July 1932
-and December 1933, more or less 90 years ago. On his way from London to the
-colonial Middle East, Fulton crossed Nazi Germany. Some of the countries and
-places he passed do not exist anymore. Most have changed dramatically; others,
-not so much.  I suspect, for example, that his adventures in Syria,
-Afghanistan, or at the Indian-Pakistani borders might have been written today.</p>
+      <p>I am very late to the party, but today I learned that the good old dotnet
+<code>SmptClient</code> is considered obsolete and should not be used. Quoting the
+documentation:</p>
 
-<p>Fulton was in his early twenties when he started his journey. The book was
-published only a few years later, in 1937. Stories were still fresh and not
-conditioned by the passing age. That is important because within the next
-decade the world would change forever. Take Japan. There he is greeted by
-a flock of enthusiast, merry motorcyclists who will accompany him across the
-country, celebrating the strong bond between the United States and the Rising
-Sun. In few years, the same situation will be inconceivable.</p>
+<blockquote>
+<p>We don&rsquo;t recommend using the SmtpClient class for new development because
+SmtpClient doesn&rsquo;t support many modern protocols. Use MailKit or other
+libraries instead. (<a href="https://docs.microsoft.com/en-us/dotnet/api/system.net.mail.smtpclient?view=net-5.0&amp;viewFallbackFrom=netcore-5.0#remarks">source</a>)</p>
+</blockquote>
 
-<p><img src="/images/one-man-caravan.jpg#right" alt="One Man Caravan book cover" />
-This book is not your typical motorcycle log. It is about stories, people, and
-societies more than routes, timetables, and usual motorcycle porn. The Author
-might happily skip thousands of miles across some undoubtedly incredible
-terrain just because he feels the urge to tell about that memorable encounter
-he had in Teheran or Tokyo or that otherwise small insignificant Malaysian
-village.</p>
+<p>Interestingly, Microsoft is recommending a third-party open-source library as an
+alternative. I hope we&rsquo;ll see more of that in the future.</p>
 
-<p>The tone is often naive and amusing. Even dramatic events are often narrated in
-a light, entertaining fashion. But make no mistake, this was a genuine
-adventure, filled with thrilling and dangerous moments. It is somewhat
-startling that the Author could cross so many God-forsaken places only to get
-his bike stolen when he was back home in New York. Thankfully he got it back
-one week later.</p>
-
-<p>In few occurrences, a colonial attitude surfaces. That might sound jarring to
-the modern educated reader, but we have to put it all in context. After all, in
-1932, Fulton was the offspring of a wealthy American family. He was studying in
-London when he left to explore the world in reply to a dare. Given the premise,
-I think he instead emerges as a curious, unassuming person who is willing to
-learn, understand and, of course, explore.</p>
-
-<p>In the same years, Patrick Leigh Fermor, another young student, embarked on
-a similar journey. He went all the way across Europe down to Constantinople, on
-foot. Leigh Fermor memories are also available for your reading pleasure in
-a remarkable three-book series<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>. Together, the stories of these two fearless
-authors draw a great picture of an age when the world was still enormous and
-divided into many diverse, often isolated cultures and societies.</p>
+<p>I just finished integrating <a href="https://github.com/jstedfast/MailKit">MailKit</a> in our backend. I must say that I&rsquo;m
+pleasantly surprised by its rich feature-set and the elegant and
+straightforward design, which makes getting on-board super easy. It&rsquo;s built on
+top of the excellent MimeKit, after all, and authored by the very same author
+Jeffrey Stedfast.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1">First one being <em>A Time of Gifts: On Foot to Constantinople: from the Hook of Holland to the Middle Danube</em>. Browse some of his books in my <a href="/books-i-have-read">reading list</a>.
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-</ol>
-</div>
 
     </section>
 
@@ -384,17 +354,10 @@ divided into many diverse, often isolated cultures and societies.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/dotnet-smtpclient-should-not-be-used/">
-          <section class="post">
-              <h2>dotnet SmtpClient should not be used</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/git-worktree-vs-git-savepoints/">
+      <a class="read-next-story prev" style="no-cover" href="/book-review-one-man-caravan/">
           <section class="post">
-              <h2>Git Worktree vs Git Savepoints</h2>
+              <h2>Book Review: One Man Caravan</h2>
           </section>
       </a>
   
