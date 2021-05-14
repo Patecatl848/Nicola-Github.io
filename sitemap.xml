@@ -28,20 +28,43 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/flask-2.0/</loc>
+    <lastmod>2021-05-14T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-05-12T07:05:25+01:00</lastmod>
+    <lastmod>2021-05-14T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-05-12T07:05:25+01:00</lastmod>
+    <lastmod>2021-05-14T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-05-12T07:05:25+01:00</lastmod>
+    <lastmod>2021-05-14T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/flask/</loc>
+    <lastmod>2021-05-14T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/programming/</loc>
+    <lastmod>2021-05-14T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/python/</loc>
+    <lastmod>2021-05-14T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -77,12 +100,6 @@
   <url>
     <loc>https://nicolaiarocci.com/dotnet-smtpclient-should-not-be-used/</loc>
     <lastmod>2021-05-04T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/programming/</loc>
-    <lastmod>2021-05-04T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -155,12 +172,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/flask-sentinel/</loc>
-    <lastmod>2021-04-24T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/python/</loc>
     <lastmod>2021-04-24T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1124,12 +1135,6 @@
   <url>
     <loc>https://nicolaiarocci.com/a-sentinel-for-your-flask-applications/</loc>
     <lastmod>2015-02-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/flask/</loc>
-    <lastmod>2015-02-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
