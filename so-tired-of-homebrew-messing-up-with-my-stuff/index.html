@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="On Programming and Writing"/>
+<meta name="twitter:title" content="So tired of Homebrew messing up with my stuff"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="On Programming and Writing &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="So tired of Homebrew messing up with my stuff &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/on-programming-and-writing/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/so-tired-of-homebrew-messing-up-with-my-stuff/" />
 
     
         
@@ -29,21 +29,19 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-05-25T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-05-25T08:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="links" />
+    <meta property="article:tag" content="homebrew" />
     
-    <meta property="article:tag" content="programming" />
-    
-    <meta property="article:tag" content="writing" />
+    <meta property="article:tag" content="macOS" />
     
     
 
-    <title>On Programming and Writing &middot; Nicola Iarocci</title>
+    <title>So tired of Homebrew messing up with my stuff &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="My brilliant friend Salvatore Sanfilippo (otherwise known as antirez of Redis fame) has an interesting write-up on his website. How similar is programming to pr" />
+    <meta name="description" content="Pardon me while I&amp;rsquo;m venting out my frustration. I am so tired of Homebrew messing up with my stuff. It used to be the perfect tool for the right job until" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -69,7 +67,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/on-programming-and-writing/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/so-tired-of-homebrew-messing-up-with-my-stuff/" />
 
     
       
@@ -106,23 +104,23 @@
             
         ]
     },
-    "headline": "On Programming and Writing",
-    "name": "On Programming and Writing",
-    "wordCount":  329 ,
+    "headline": "So tired of Homebrew messing up with my stuff",
+    "name": "So tired of Homebrew messing up with my stuff",
+    "wordCount":  265 ,
     "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/on-programming-and-writing/",
-    "datePublished": "2021-05-25T07:05Z",
-    "dateModified": "2021-05-25T07:05Z",
+    "url": "https://nicolaiarocci.com/so-tired-of-homebrew-messing-up-with-my-stuff/",
+    "datePublished": "2021-05-25T08:05Z",
+    "dateModified": "2021-05-25T08:05Z",
     
-    "keywords": "links, programming, writing",
+    "keywords": "homebrew, macOS",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/on-programming-and-writing/"
+        "@id": "https://nicolaiarocci.com/so-tired-of-homebrew-messing-up-with-my-stuff/"
     }
 }
     </script>
@@ -259,71 +257,60 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">On Programming and Writing</h1>
+        <h1 class="post-title">So tired of Homebrew messing up with my stuff</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-05-25T07:05:25&#43;01:00">
+          <time class="post-date" datetime="2021-05-25T08:05:25&#43;01:00">
             May 25, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/homebrew/">#homebrew</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/programming/">#programming</a></span>
-         
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/writing/">#writing</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/macos/">#macOS</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>My brilliant friend Salvatore Sanfilippo (otherwise known as antirez of Redis
-fame) has an interesting write-up on <a href="http://antirez.com/news/135">his website</a>. How similar is
-programming to prose writing? After getting his own feet wet with novel
-writing, he is convinced that the two activities share many common traits.</p>
+      <p>Pardon me while I&rsquo;m venting out my frustration. I am so tired of Homebrew
+messing up with my stuff. It used to be the perfect tool for the right job
+until they decided to auto-brew-update-and-cleanup at every new install.
+Another day another issue, today with vim not running anymore:</p>
 
-<blockquote>
-<p>One year ago I paused my programming life and started writing a novel, with
-the illusion that my new activity was deeply different than the previous one.
-A river of words later, written but more often rewritten, I’m pretty sure of
-the contrary: programming big systems and writing novels have many common
-traits and similar processes.</p>
-</blockquote>
+<pre><code>dyld: Library not loaded: /usr/local/opt/lua/lib/liblua.5.3.dylib
+Referenced from: /user/local/bin/vi
+Reason: image not found
+</code></pre>
 
-<p>It is a worthy read. I especially appreciate his conclusions on what
-programming can actually learn from writing:</p>
+<p>Lua has suddenly gone missing. Ah, but of course. I installed something with
+Homebrew this morning. The fix is to <code>brew reinstall vim</code>, which then leads to
+the following error:</p>
 
-<blockquote>
-<p>I believe programming, in this regard, can learn something from writing: when
-writing the first core of a new system, when the original creator is still
-alone, isolated, able to do anything, she should pretend that this first core
-is her only bullet. During the genesis of the system she should rewrite this
-primitive kernel again and again, in order to find the best possible design. My
-hypothesis is that this initial design will greatly inform what will happen
-later: growing organically something that has a good initial structure will
-result in a better system, even after years of distance from the original
-creation, and even if the original core was just a tiny faction of the future
-mass the system would eventually assume.</p>
-</blockquote>
+<pre><code>Error: python@3.9 the bottle needs the Apple Command LIne Tools to be installed.
+You can install them, if desired, with:
+xcode-select --install
+</code></pre>
 
-<p>I suspect that his line of reasoning might be influenced by some sort
-of confirmation bias<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">1</a></sup>.  We are inclined to notice similarities between our
-own activities, especially so when we perform them passionately. While common
-patterns emerge naturally, differences, even remarkable ones, tend to go
-unnoticed.</p>
+<p>An <code>xcode-select install</code> and another <code>brew reinstall</code> later, vim is back home.
+It&rsquo;s only a minor annoyance —only a few wasted minutes, but the point is, they
+didn&rsquo;t need to be wasted. If you&rsquo;re frequently installing stuff via Homebrew,
+this is quite a common, unpleasant occurrence (python virtual environments
+being hit with alarming frequency).</p>
+
+<p>I know that one can disable automatic cleanups by setting the
+<code>HOMEBREW_NO_INSTALL_CLEANUP</code> environment variable. I will end up doing that
+out of frustration sooner or later. Again, the point is I should not need to do
+that.  It all adds unnecessary friction, especially for someone who&rsquo;s been
+religiously running manual cleanups (I concede that an un-maintained brew cache
+can grow to <em>very</em> sizable dimensions).</p>
+
+<p>Homebrew is still an essential tool; just not so enjoyable anymore. It&rsquo;s not
+like we have a valid alternative at hand, anyway.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:2">The term <em>confirmation bias</em> is probably misused in this context. I am sure there is a better definition; it just eludes me and my own ignorance.
- <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-</ol>
-</div>
 
     </section>
 
@@ -378,17 +365,10 @@ unnoticed.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/so-tired-of-homebrew-messing-up-with-my-stuff/">
-          <section class="post">
-              <h2>So tired of Homebrew messing up with my stuff</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/book-review-the-voice-of-the-sirens.-the-greeks-and-the-art-of-persuasion/">
+      <a class="read-next-story prev" style="no-cover" href="/on-programming-and-writing/">
           <section class="post">
-              <h2>Book Review: The Voice of the Sirens. The Greeks and the art of persuasion</h2>
+              <h2>On Programming and Writing</h2>
           </section>
       </a>
   
