@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 12 May 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 25 May 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/links/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>On Programming and Writing</title>
+      <link>https://nicolaiarocci.com/on-programming-and-writing/</link>
+      <pubDate>Tue, 25 May 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/on-programming-and-writing/</guid>
+      <description>My brilliant friend Salvatore Sanfilippo (otherwise known as antirez of Redis fame) has an interesting write-up on his website. How similar is programming to prose writing? After getting his own feet wet with novel writing, he is convinced that the two activities share many common traits.
+ One year ago I paused my programming life and started writing a novel, with the illusion that my new activity was deeply different than the previous one.</description>
+    </item>
     
     <item>
       <title>The Grim Secret of Nordic Happiness</title>
