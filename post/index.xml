@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 29 May 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jun 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Open Source: What Happens When the Free Lunch Ends?</title>
+      <link>https://nicolaiarocci.com/open-source-what-happens-when-the-free-lunch-ends/</link>
+      <pubDate>Fri, 04 Jun 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/open-source-what-happens-when-the-free-lunch-ends/</guid>
+      <description>The article I&amp;rsquo;m linking today is authored by Aaron Stannard and focuses on the drama currently going on in the .NET Open Source ecosystem. We&amp;rsquo;ve all been there. A dependency we took aeons ago goes unmaintained or changes its licensing model in an attempt. Why does this happen? Because at some point, projects need to become sustainable or else they fail.
+ [&amp;hellip;] it&amp;rsquo;s inexpensive for maintainers to support a small number of users with relatively similar demands - but once a project achieves critical mass and the demand on the maintainers exceeds their desire to supply, something will have to give.</description>
+    </item>
     
     <item>
       <title>Trade Wars 2002 and its connection to Eve Online</title>

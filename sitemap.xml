@@ -29,19 +29,36 @@
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-05-29T07:05:25+01:00</lastmod>
+    <lastmod>2021-06-04T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/open-source-what-happens-when-the-free-lunch-ends/</loc>
+    <lastmod>2021-06-04T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-05-29T07:05:25+01:00</lastmod>
+    <lastmod>2021-06-04T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-05-29T07:05:25+01:00</lastmod>
+    <lastmod>2021-06-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/links/</loc>
+    <lastmod>2021-06-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/open-source/</loc>
+    <lastmod>2021-06-04T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -52,12 +69,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/eve-online/</loc>
-    <lastmod>2021-05-29T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/links/</loc>
     <lastmod>2021-05-29T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -865,12 +876,6 @@
   <url>
     <loc>https://nicolaiarocci.com/eve-sdk-for-net-v0-2-is-out-in-the-wild/</loc>
     <lastmod>2016-08-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/open-source/</loc>
-    <lastmod>2016-08-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
