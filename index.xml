@@ -64,11 +64,11 @@ I&amp;#8217;m a coder at heart author of several open source projects, a Microso
     </item>
     
     <item>
-      <title>Custom default values for unexisting dictionary items (and a lesson learned)</title>
-      <link>https://nicolaiarocci.com/custom-default-values-for-unexisting-dictionary-items-and-a-lesson-learned/</link>
+      <title>Custom default values for not existing dictionary items (and a lesson learned)</title>
+      <link>https://nicolaiarocci.com/custom-default-values-for-not-existing-dictionary-items-and-a-lesson-learned/</link>
       <pubDate>Fri, 11 Jun 2021 07:05:25 +0100</pubDate>
       
-      <guid>https://nicolaiarocci.com/custom-default-values-for-unexisting-dictionary-items-and-a-lesson-learned/</guid>
+      <guid>https://nicolaiarocci.com/custom-default-values-for-not-existing-dictionary-items-and-a-lesson-learned/</guid>
       <description>When dealing with dictionaries, a typical problem is when an operation attempts to retrieve an element using a key that does not exist in the dictionary. In .NET, a KeyNotFoundException is raised, and that&amp;rsquo;s the desired behaviour in most circumstances. Sometimes, however, you know that your program will frequently try to retrieve keys that do not exist. In such cases, it is more efficient to use the TryGetValue method:
  This method returns the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter is returned (source)</description>
     </item>
