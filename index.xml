@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 05 Jun 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 11 Jun 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -61,6 +61,15 @@ MongoDB è un database NoSQL open source, facilmente scalabile e ad alte presta
       <guid>https://nicolaiarocci.com/about/</guid>
       <description>Hello, my name is Nicola and this is my personal website. Here I keep memories and thoughts. Every once in a while I even post some technical stuff.
 I&amp;#8217;m a coder at heart author of several open source projects, a Microsoft MVP, Conference Speaker, teacher and consultant. I live in Ravenna, Italy, where I work on the Amica 10 project. In my hometown I run the local CoderDojo, a coding club for kids.</description>
+    </item>
+    
+    <item>
+      <title>Custom default values for unexisting dictionary items (and a lesson learned)</title>
+      <link>https://nicolaiarocci.com/custom-default-values-for-unexisting-dictionary-items-and-a-lesson-learned/</link>
+      <pubDate>Fri, 11 Jun 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/custom-default-values-for-unexisting-dictionary-items-and-a-lesson-learned/</guid>
+      <description>When dealing with dictionaries, a typical problem is what to do when an operation attempts to retrieve an element using a key that does not exist in the dictionary. In .NET, a KeyNotFoundException is raised, and that&amp;rsquo;s the desired behaviour in most circumstances. Sometimes, however, you know that your program will frequently try to retrieve keys that do not exist. In such cases, it is more efficient to use the TryGetValue method:</description>
     </item>
     
     <item>
