@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Custom default values for not existing dictionary items (and a lesson learned)"/>
+<meta name="twitter:title" content="Linus Torvalds addresses an anti-vaxxer"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Custom default values for not existing dictionary items (and a lesson learned) &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="Linus Torvalds addresses an anti-vaxxer &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/custom-default-values-for-not-existing-dictionary-items-and-a-lesson-learned/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/linus-torvalds-addresses-an-anti-vaxxer/" />
 
     
         
@@ -29,21 +29,21 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-06-11T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-06-14T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="til" />
+    <meta property="article:tag" content="links" />
     
-    <meta property="article:tag" content="dotnet" />
+    <meta property="article:tag" content="covid19" />
     
-    <meta property="article:tag" content="programming" />
+    <meta property="article:tag" content="torvalds" />
     
     
 
-    <title>Custom default values for not existing dictionary items (and a lesson learned) &middot; Nicola Iarocci</title>
+    <title>Linus Torvalds addresses an anti-vaxxer &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="When dealing with dictionaries, a typical problem is when an operation attempts to retrieve an element using a key that does not exist in the dictionary. In .NE" />
+    <meta name="description" content="Linus Torvalds&amp;rsquo; reply to an anti-vaxxer on the Linux kernel list is a must-read. Pre-2018, Linus would have destroyed the poor chump. He&amp;rsquo;s discourag" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -69,7 +69,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/custom-default-values-for-not-existing-dictionary-items-and-a-lesson-learned/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/linus-torvalds-addresses-an-anti-vaxxer/" />
 
     
       
@@ -106,23 +106,23 @@
             
         ]
     },
-    "headline": "Custom default values for not existing dictionary items (and a lesson learned)",
-    "name": "Custom default values for not existing dictionary items (and a lesson learned)",
-    "wordCount":  436 ,
-    "timeRequired": "PT3M",
+    "headline": "Linus Torvalds addresses an anti-vaxxer",
+    "name": "Linus Torvalds addresses an anti-vaxxer",
+    "wordCount":  80 ,
+    "timeRequired": "PT1M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/custom-default-values-for-not-existing-dictionary-items-and-a-lesson-learned/",
-    "datePublished": "2021-06-11T07:05Z",
-    "dateModified": "2021-06-11T07:05Z",
+    "url": "https://nicolaiarocci.com/linus-torvalds-addresses-an-anti-vaxxer/",
+    "datePublished": "2021-06-14T07:05Z",
+    "dateModified": "2021-06-14T07:05Z",
     
-    "keywords": "til, dotnet, programming",
+    "keywords": "links, covid19, torvalds",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/custom-default-values-for-not-existing-dictionary-items-and-a-lesson-learned/"
+        "@id": "https://nicolaiarocci.com/linus-torvalds-addresses-an-anti-vaxxer/"
     }
 }
     </script>
@@ -259,88 +259,33 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Custom default values for not existing dictionary items (and a lesson learned)</h1>
+        <h1 class="post-title">Linus Torvalds addresses an anti-vaxxer</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-06-11T07:05:25&#43;01:00">
-            Jun 11, 2021
+          <time class="post-date" datetime="2021-06-14T07:05:25&#43;01:00">
+            Jun 14, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/dotnet/">#dotnet</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/covid19/">#covid19</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/programming/">#programming</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/torvalds/">#torvalds</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>When dealing with dictionaries, a typical problem is when an operation attempts
-to retrieve an element using a key that does not exist in the dictionary. In
-.NET, a <code>KeyNotFoundException</code> is raised, and that&rsquo;s the desired behaviour in
-most circumstances. Sometimes, however, you know that your program will
-frequently try to retrieve keys that do not exist. In such cases, it is more
-efficient to use the <code>TryGetValue</code> method:</p>
+      <p>Linus Torvalds&rsquo; <a href="https://lore.kernel.org/ksummit/CAHk-=wiB6FJknDC5PMfpkg4gZrbSuC3d391VyReM4Wb0+JYXXA@mail.gmail.com/">reply to an anti-vaxxer</a> on the Linux kernel list is
+a must-read. Pre-2018, Linus would have destroyed the poor chump. He&rsquo;s
+discouraging further discussion (Kernel list is not the place for that) while
+providing crystal clear and detailed mRNA vaccine information, all without
+renouncing to an opening salvo of his good-ole, grumpy style.</p>
 
-<blockquote>
-<p>This method returns the value associated with the specified key, if the key
-is found; otherwise, the default value for the type of the value parameter is
-returned (<a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2.trygetvalue?view=net-5.0">source</a>)</p>
-</blockquote>
-
-<p>The devil hides in details. <code>TryGetValue</code> returns the default value for the
-type of the <code>value</code> parameter. So, if you use <code>TryGetValue</code> to look into
-a dictionary of strings, <code>null</code> is returned on a missing key. That is probably
-ok in most cases. Howewer, if your logic requires a custom default value
-instead, then you are out of luck. You have to set it yourself on <code>TryGetValue</code>
-failure. A typical implementation would be:</p>
-
-<pre><code>    var result = MyDictionary.TryGetValue(&quot;key&quot;, var out value) 
-        ? value
-        : &quot;not found&quot;;
-</code></pre>
-
-<p>It is a minor annoyance but still a hassle. Our solution has always been
-a homemade <code>GetValueOrDefault</code> extension method, something like this:</p>
-
-<pre><code>    public static TValue GetValueOrDefault&lt;TKey, TValue&gt; 
-        (this IDictionary&lt;TKey, TValue&gt; dictionary, TKey key, TValue defaultValue)
-    {
-        return dictionary.TryGetValue(key, var out value) 
-            ? value
-            : defaultValue;
-    }
-</code></pre>
-
-<p>Usage:</p>
-
-<pre><code>    var result = MyDictionary.GetValueOrDefault(&quot;key&quot;, &quot;not found&quot;);
-</code></pre>
-
-<p>We&rsquo;ve been using it since forever, and we are still using it even in recent
-projects.</p>
-
-<p>Today, as I was looking at something only tangentially related, I learned that
-our extension method is obsolete, and it&rsquo;s been for a while. NetStandard
-2.1 and NetCore 2 added a new extension method to the official API. It&rsquo;s
-called, you guessed it, <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.collectionextensions.getvalueordefault?view=net-5.0"><code>GetValueOrDefault</code></a>. It extends
-<code>ÌReadOnlyDictionary&lt;TKey, TValue&gt;</code>, so it applies to all generic dictionaries,
-which is cool.</p>
-
-<p>We could continue with our extension method. It has the advantage of working
-across all .NET platforms, not just recent ones. Implementations are likely
-similar, and there’s probably little (if any) performance difference (I am too
-lazy to compare). With NETCore (now NET5), APIs have not only acquired
-cross-platform compatibility and improved performance but they have also been
-expanded and amended, something often not very apparent. Not to me, at least.</p>
-
-<p>The point I want to make here, I think, is that nothing is set in stone. Today&rsquo;s
-little event shows how my knowledge becomes stagnant over time. Setting apart
-the time to learn new things is good, but acquired ones need sharping too.</p>
+<p>As John Gruber <a href="https://daringfireball.net/linked/2021/06/10/linus-torvalds">affirms</a>, this is one rant we can all get behind.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
@@ -397,17 +342,10 @@ the time to learn new things is good, but acquired ones need sharping too.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/linus-torvalds-addresses-an-anti-vaxxer/">
-          <section class="post">
-              <h2>Linus Torvalds addresses an anti-vaxxer</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/book-review-alpi-ribelli-storie-di-montagna-resistenza-e-utopia/">
+      <a class="read-next-story prev" style="no-cover" href="/custom-default-values-for-not-existing-dictionary-items-and-a-lesson-learned/">
           <section class="post">
-              <h2>Book Review: Alpi Ribelli: Storie di montagna, resistenza e utopia</h2>
+              <h2>Custom default values for not existing dictionary items (and a lesson learned)</h2>
           </section>
       </a>
   
