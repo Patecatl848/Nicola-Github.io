@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 11 Jun 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jun 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>covid19</title>
+      <link>https://nicolaiarocci.com/tags/covid19/</link>
+      <pubDate>Mon, 14 Jun 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/covid19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>links</title>
+      <link>https://nicolaiarocci.com/tags/links/</link>
+      <pubDate>Mon, 14 Jun 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>torvalds</title>
+      <link>https://nicolaiarocci.com/tags/torvalds/</link>
+      <pubDate>Mon, 14 Jun 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/torvalds/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>dotnet</title>
@@ -63,15 +90,6 @@
       <pubDate>Sat, 05 Jun 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/reviews/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>links</title>
-      <link>https://nicolaiarocci.com/tags/links/</link>
-      <pubDate>Fri, 04 Jun 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/links/</guid>
       <description></description>
     </item>
     
