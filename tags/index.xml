@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 14 Jun 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 16 Jun 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>motorcycling</title>
+      <link>https://nicolaiarocci.com/tags/motorcycling/</link>
+      <pubDate>Wed, 16 Jun 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/motorcycling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tomcc</title>
+      <link>https://nicolaiarocci.com/tags/tomcc/</link>
+      <pubDate>Wed, 16 Jun 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/tomcc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>youtube</title>
+      <link>https://nicolaiarocci.com/tags/youtube/</link>
+      <pubDate>Wed, 16 Jun 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/youtube/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>covid19</title>
@@ -1422,15 +1449,6 @@
       <pubDate>Thu, 31 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/cna/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>youtube</title>
-      <link>https://nicolaiarocci.com/tags/youtube/</link>
-      <pubDate>Thu, 31 May 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/youtube/</guid>
       <description></description>
     </item>
     
