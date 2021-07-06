@@ -7,10 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 28 Jun 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jul 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>dotnet</title>
+      <link>https://nicolaiarocci.com/tags/dotnet/</link>
+      <pubDate>Tue, 06 Jul 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inteview</title>
+      <link>https://nicolaiarocci.com/tags/inteview/</link>
+      <pubDate>Tue, 06 Jul 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/inteview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open source</title>
+      <link>https://nicolaiarocci.com/tags/open-source/</link>
+      <pubDate>Tue, 06 Jul 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>podcast</title>
+      <link>https://nicolaiarocci.com/tags/podcast/</link>
+      <pubDate>Tue, 06 Jul 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/podcast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://nicolaiarocci.com/tags/python/</link>
+      <pubDate>Tue, 06 Jul 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>alps</title>
@@ -112,15 +157,6 @@
     </item>
     
     <item>
-      <title>dotnet</title>
-      <link>https://nicolaiarocci.com/tags/dotnet/</link>
-      <pubDate>Fri, 11 Jun 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/dotnet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>programming</title>
       <link>https://nicolaiarocci.com/tags/programming/</link>
       <pubDate>Fri, 11 Jun 2021 07:05:25 +0100</pubDate>
@@ -162,15 +198,6 @@
       <pubDate>Sat, 05 Jun 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/reviews/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>open source</title>
-      <link>https://nicolaiarocci.com/tags/open-source/</link>
-      <pubDate>Fri, 04 Jun 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/open-source/</guid>
       <description></description>
     </item>
     
@@ -225,15 +252,6 @@
       <pubDate>Fri, 14 May 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/flask/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://nicolaiarocci.com/tags/python/</link>
-      <pubDate>Fri, 14 May 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/python/</guid>
       <description></description>
     </item>
     
@@ -828,15 +846,6 @@
       <pubDate>Mon, 20 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/msdn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>podcast</title>
-      <link>https://nicolaiarocci.com/tags/podcast/</link>
-      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/podcast/</guid>
       <description></description>
     </item>
     

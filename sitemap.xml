@@ -28,26 +28,61 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/an-unexpected-return-to-the-alps/</loc>
-    <lastmod>2021-06-28T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/my-dotnetpodcast-interview/</loc>
+    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-06-28T07:05:25+01:00</lastmod>
+    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-06-28T07:05:25+01:00</lastmod>
+    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-06-28T07:05:25+01:00</lastmod>
+    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
+    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/inteview/</loc>
+    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/open-source/</loc>
+    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/podcast/</loc>
+    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/python/</loc>
+    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/an-unexpected-return-to-the-alps/</loc>
+    <lastmod>2021-06-28T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -137,12 +172,6 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
-    <lastmod>2021-06-11T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/tags/programming/</loc>
     <lastmod>2021-06-11T07:05:25+01:00</lastmod>
     <priority>0</priority>
@@ -180,12 +209,6 @@
   <url>
     <loc>https://nicolaiarocci.com/open-source-what-happens-when-the-free-lunch-ends/</loc>
     <lastmod>2021-06-04T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/open-source/</loc>
-    <lastmod>2021-06-04T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -245,12 +268,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/flask/</loc>
-    <lastmod>2021-05-14T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/python/</loc>
     <lastmod>2021-05-14T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1182,12 +1199,6 @@
   <url>
     <loc>https://nicolaiarocci.com/talk-python-to-me-podcast-episode-1-eve-restful-apis-for-humans/</loc>
     <lastmod>2015-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/podcast/</loc>
-    <lastmod>2015-04-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
