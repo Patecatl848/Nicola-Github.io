@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 11 Jun 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jul 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Will .NET 6 Minimal APIs turn heads?</title>
+      <link>https://nicolaiarocci.com/will-.net-6-minimal-apis-turn-heads/</link>
+      <pubDate>Wed, 14 Jul 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/will-.net-6-minimal-apis-turn-heads/</guid>
+      <description>I am pretty excited about the Minimal APIs feature that is coming with .NET 6. Three lines of code will be enough to build a fully functional REST microservice1:
+var app = WebApplication.Create(args); app.MapGet(&amp;quot;/&amp;quot;, () =&amp;gt; &amp;quot;Hello World!&amp;quot;); await app.RunAsync();  If you&amp;rsquo;re a seasoned ASP.NET MVC/WebApi developer, the snippet caught your attention because, pre-.NET 6, achieving the same result will have you messing with a lot of extra cruft2. I suspect, however, that this feature is not primarily targeted at existing .</description>
+    </item>
     
     <item>
       <title>Custom default values for not existing dictionary items (and a lesson learned)</title>

@@ -28,26 +28,43 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/book-review-power-to-the-words/</loc>
-    <lastmod>2021-07-09T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-07-09T07:05:25+01:00</lastmod>
+    <lastmod>2021-07-14T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-07-09T07:05:25+01:00</lastmod>
+    <lastmod>2021-07-14T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-07-09T07:05:25+01:00</lastmod>
+    <lastmod>2021-07-14T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/will-.net-6-minimal-apis-turn-heads/</loc>
+    <lastmod>2021-07-14T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
+    <lastmod>2021-07-14T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/programming/</loc>
+    <lastmod>2021-07-14T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/book-review-power-to-the-words/</loc>
+    <lastmod>2021-07-09T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -71,12 +88,6 @@
   <url>
     <loc>https://nicolaiarocci.com/my-dotnetpodcast-interview/</loc>
     <lastmod>2021-07-06T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
-    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -192,12 +203,6 @@
   <url>
     <loc>https://nicolaiarocci.com/custom-default-values-for-not-existing-dictionary-items-and-a-lesson-learned/</loc>
     <lastmod>2021-06-11T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/programming/</loc>
-    <lastmod>2021-06-11T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

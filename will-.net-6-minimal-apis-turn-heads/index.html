@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Will .NET 6 Minimal APIs turn heads?"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="Will .NET 6 Minimal APIs turn heads? &middot; Nicola Iarocci" />
+  	<meta property="og:site_name" content="Nicola Iarocci" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/will-.net-6-minimal-apis-turn-heads/" />
+
+    
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-07-14T07:05:25&#43;01:00" />
+
+    
+    <meta property="article:tag" content="dotnet" />
+    
+    <meta property="article:tag" content="programming" />
+    
+    
+
+    <title>Will .NET 6 Minimal APIs turn heads? &middot; Nicola Iarocci</title>
+
+    
+    <meta name="description" content="I am pretty excited about the Minimal APIs feature that is coming with .NET 6. Three lines of code will be enough to build a fully functional REST microservice1" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
+
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+
+    
+      
+          <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Nicola Iarocci" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.55.4" />
+
+    <link rel="canonical" href="https://nicolaiarocci.com/will-.net-6-minimal-apis-turn-heads/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name":  null ,
+        "logo": "https://nicolaiarocci.com/images/avatar.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name":  null ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://nicolaiarocci.com/images/avatar.png",
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": "https://nicolaiarocci.com",
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": "Will .NET 6 Minimal APIs turn heads?",
+    "name": "Will .NET 6 Minimal APIs turn heads?",
+    "wordCount":  737 ,
+    "timeRequired": "PT4M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": "en"
+    },
+    "url": "https://nicolaiarocci.com/will-.net-6-minimal-apis-turn-heads/",
+    "datePublished": "2021-07-14T07:05Z",
+    "dateModified": "2021-07-14T07:05Z",
+    
+    "keywords": "dotnet, programming",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://nicolaiarocci.com/will-.net-6-minimal-apis-turn-heads/"
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-19006041-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Home</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/about">About</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/opensource">Open Source</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/speaking">Speaking</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/books-i-have-read">Reading</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/il-piccolo-libro-di-mongodb-edizione-italiana">MongoDB</a>
+            </li>
+        
+            <h3>Subscribe</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://nicolaiarocci.substack.com">Newsletter</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://nicolaiarocci.com/index.xml">RSS feed</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/nicolaiarocci">Twitter</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/nicolaiarocci">Github</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://stackoverflow.com/users/323269/nicola-iarocci?tab=profile">Stack Overflow</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://speakerdeck.com/u/nicola">Speaker Deck</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://www.linkedin.com/in/nicolaiarocci">LinkedIn</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="https://nicolaiarocci.com/"><img src="/images/avatar.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Will .NET 6 Minimal APIs turn heads?</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2021-07-14T07:05:25&#43;01:00">
+            Jul 14, 2021
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/dotnet/">#dotnet</a></span>
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/programming/">#programming</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>I am pretty excited about the <a href="https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-preview-4/#introducing-minimal-apis">Minimal APIs</a> feature that is coming with
+.NET 6. Three lines of code will be enough to build a fully functional REST
+microservice<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">1</a></sup>:</p>
+
+<pre><code>var app = WebApplication.Create(args);
+app.MapGet(&quot;/&quot;, () =&gt; &quot;Hello World!&quot;);
+await app.RunAsync();
+</code></pre>
+
+<p>If you&rsquo;re a seasoned ASP.NET MVC/WebApi developer, the snippet caught your
+attention because, pre-.NET 6, achieving the same result will have you messing
+with a lot of extra cruft<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">2</a></sup>. I suspect, however, that this feature is not
+primarily targeted at existing .NET developers. Developers new and old looking
+at .NET for the first time, or those like me returning after a long break;
+these are, I think, the designated audience.</p>
+
+<p>A long time ago, I left C# and .NET behind <em>precisely</em> because I had to write
+REST APIs, and back then, the options available in .NET were, to put it mildly,
+cumbersome. Admittedly, there were other reasons for switching, like .NET not
+being cross-platform - I wanted to run my APIs on Linux - and general
+dissatisfaction with the Microsoft ecosystem. Long story short, I went with
+Python. Check out this snippet from Flask&rsquo;s renowned <a href="https://flask.palletsprojects.com/en/2.0.x/quickstart/#a-minimal-application">Quickstart</a>:</p>
+
+<pre><code>app = Flask(__name__)
+
+@app.route(&quot;/&quot;)
+def hello_world():
+    return &quot;&lt;p&gt;Hello, World!&lt;/p&gt;&quot;
+</code></pre>
+
+<p>Launched with the compelling motto &lsquo;web development, one drop at a time&rsquo; and
+presented as a &lsquo;micro&rsquo; web framework, Flask immediately caught my attention<sup class="footnote-ref" id="fnref:5"><a href="#fn:5">3</a></sup>.
+Cruft-free and elegant APIs are not a Flask (or Python, for the matter)
+exclusive. A Node code snippet for a REST API would be similar. Now, with NET
+6 Minimal APIs, we&rsquo;re finally matching the industry standard for code clarity
+and simplicity. Moreover, .NET has better performance<sup class="footnote-ref" id="fnref:6"><a href="#fn:6">4</a></sup> and strongly typed
+languages that offer excellent type inference (F# reigns supreme there, with C#
+catching up nicely.) I&rsquo;d dare to say that the C# snippet is a winner. I mean,
+look at that inline lambda, with no casts!</p>
+
+<p>Minimal APIs typical use-case is everyone&rsquo;s favourite, microservices. I do not
+doubt the delivery. The challenge, I think, is the actual adoption rate.
+Whether veterans will adopt them or not (over time, they will) is relatively
+significant, I guess. The critical question is, will Minimal APIs succeed in
+attracting new developers to .NET?</p>
+
+<p>That will mainly depend on communication. Will evangelism be robust, persistent
+and persuasive enough? That&rsquo;s the tricky part. Every time I speak to the Python
+or JavaScript crowd, I  am amazed that the majority don&rsquo;t even know that .NET
+is now open-source, cross-platform, and blazingly performant. Most, if not all,
+are tied to the old idea of a Windows-only, cumbersome, black-boxed,
+enterprise-oriented offering. That&rsquo;s not the case anymore. .NET is on par with
+the other cool stacks or is getting there very rapidly. I am afraid it&rsquo;s just
+a little bit too late for the vast majority of the web development crowd to
+take notice. It will take an enormous, coordinated effort to bring the message
+across.</p>
+
+<p>With the platform now ready, effective communication, branding, and evangelism
+will eventually change the tide.  It will take an enormous, coordinated effort
+to bring the message across. Tutorials, getting-started guides, conference
+talks, YouTube videos, and workshops should all be explicitly conceived for new
+developers. The process started already. The observant can see the numerous
+efforts being made in this area. Will it be enough to attract new crowds? It is
+a hard bet, but I sure hope so because C# and F# are great languages, and NET
+6 is modern, robust,  feature-rich, and powerful enough to go at war, with no
+fear.</p>
+
+<p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:2">You will still be able to scale up to (or start right away with) a fully-functional WebApi/MVC application, with all its classes and controllers.
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:4">Mind you. The dev team isn&rsquo;t just adding a layer of abstraction on top of the existing code. Quoting fellow MVP <a href="https://www.telerik.com/blogs/low-ceremony-high-value-tour-minimal-apis-dotnet-6">Dave Brock</a> &ldquo;With minimal APIs, the goal is to move out core API-building capabilities—the ones that only exist in MVC today—and allow them to be used outside of MVC. When extracting these components away to a new paradigm, you can rely on middleware-like performance.&rdquo;
+ <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
+<li id="fn:5">Long story short, besides lazily maintaining my Python open source <a href="/opensource">projects</a>, I am mostly back to C# these days.
+ <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
+<li id="fn:6">Sure, all benchmarks should be taken with a grain of salt, but <a href="https://www.techempower.com/benchmarks/#section=data-r20&amp;hw=ph&amp;test=plaintext">check this out</a>. ASPCORE ranks at #2; Flask and Node #338 and #173 respectively. And NET 6 is expected to still improve on performance,
+ <a class="footnote-return" href="#fnref:6"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://nicolaiarocci.com/" style="background-image: url(/images/avatar.png)"><span class="hidden">Nicola Iarocci's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://nicolaiarocci.com/">Nicola Iarocci</a></h4>
+  
+  <p>Read <a href="https://nicolaiarocci.com/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ravenna, Italy</span>
+    <span class="author-link icon-link"><a href="https://nicolaiarocci.com">https://nicolaiarocci.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="/book-review-power-to-the-words/">
+          <section class="post">
+              <h2>Book Review: Power to the Words</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Nicola Iarocci</a> All rights reserved</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    
+</body>
+</html>
+
