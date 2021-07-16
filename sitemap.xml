@@ -29,25 +29,42 @@
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-07-15T07:05:25+01:00</lastmod>
+    <lastmod>2021-07-16T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-07-15T07:05:25+01:00</lastmod>
+    <lastmod>2021-07-16T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/</loc>
+    <lastmod>2021-07-16T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/yet-another-reason-to-use-duckduckgo/</loc>
+    <lastmod>2021-07-16T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/duckduckgo/</loc>
+    <lastmod>2021-07-16T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/til/</loc>
+    <lastmod>2021-07-16T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/prousts-madeleine-was-originally-a-slice-of-toast/</loc>
     <lastmod>2021-07-15T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-07-15T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -214,12 +231,6 @@
   <url>
     <loc>https://nicolaiarocci.com/custom-default-values-for-not-existing-dictionary-items-and-a-lesson-learned/</loc>
     <lastmod>2021-06-11T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/til/</loc>
-    <lastmod>2021-06-11T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
