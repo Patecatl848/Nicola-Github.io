@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="On GitHub Copilot"/>
+<meta name="twitter:title" content="How to remove a file from Git history"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="On GitHub Copilot &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="How to remove a file from Git history &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/on-github-copilot/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/how-to-remove-a-file-from-git-history/" />
 
     
         
@@ -29,21 +29,21 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-07-24T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-07-30T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="links" />
+    <meta property="article:tag" content="til" />
     
-    <meta property="article:tag" content="github" />
+    <meta property="article:tag" content="git" />
     
-    <meta property="article:tag" content="programming" />
+    <meta property="article:tag" content="tools" />
     
     
 
-    <title>On GitHub Copilot &middot; Nicola Iarocci</title>
+    <title>How to remove a file from Git history &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="Like everyone else on the planet, I&amp;rsquo;ve been following GitHub Copilot since its launch. It is an impressive achievement and a remarkable milestone for the " />
+    <meta name="description" content="Today I learned how to remove a file from a git repository while also cleaning it from the history. When you delete it with git rm or git rm --cached, tracks re" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -69,7 +69,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/on-github-copilot/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/how-to-remove-a-file-from-git-history/" />
 
     
       
@@ -106,23 +106,23 @@
             
         ]
     },
-    "headline": "On GitHub Copilot",
-    "name": "On GitHub Copilot",
-    "wordCount":  603 ,
-    "timeRequired": "PT3M",
+    "headline": "How to remove a file from Git history",
+    "name": "How to remove a file from Git history",
+    "wordCount":  393 ,
+    "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/on-github-copilot/",
-    "datePublished": "2021-07-24T07:05Z",
-    "dateModified": "2021-07-24T07:05Z",
+    "url": "https://nicolaiarocci.com/how-to-remove-a-file-from-git-history/",
+    "datePublished": "2021-07-30T07:05Z",
+    "dateModified": "2021-07-30T07:05Z",
     
-    "keywords": "links, github, programming",
+    "keywords": "til, git, tools",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/on-github-copilot/"
+        "@id": "https://nicolaiarocci.com/how-to-remove-a-file-from-git-history/"
     }
 }
     </script>
@@ -259,88 +259,83 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">On GitHub Copilot</h1>
+        <h1 class="post-title">How to remove a file from Git history</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-07-24T07:05:25&#43;01:00">
-            Jul 24, 2021
+          <time class="post-date" datetime="2021-07-30T07:05:25&#43;01:00">
+            Jul 30, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/github/">#github</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/git/">#git</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/programming/">#programming</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/tools/">#tools</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>Like everyone else on the planet, I&rsquo;ve been following <a href="https://copilot.github.com/">GitHub Copilot</a> since
-its launch. It is an impressive achievement and a remarkable milestone for the
-deep learning industry, that&rsquo;s for sure. We are obviously at the early stages
-in deep learning applied to software development, and it is somewhat unsettling
-to ponder what the future might hold in this field.</p>
+      <p>Today I learned how to remove a file from a git repository while also cleaning
+it from the history. When you delete it with <code>git rm</code> or <code>git rm --cached</code>,
+tracks remain in the commit history (the reflog). That might not be a big deal,
+but if the file has sensitive contents that you want to disappear from version
+control entirely, then you also want it cleaned from the reflog. That&rsquo;s when
+<a href="https://git-scm.com/docs/git-filter-branch"><code>git filter-branch</code></a> comes to the rescue.</p>
 
-<p>Like many others, however, I worry about code quality issues and the risk of
-license infringements<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">1</a></sup>. I am also concerned that the advent of Copilot-like
-tools might fundamentally change the software developer experience, if not the
-software developer role as a whole, and for the worst.</p>
+<p>To be on the safe side, I fist cloned the repository to a test directory:</p>
 
-<p>I wrote down some notes preparing for an in-depth Copilot article, but then
-I stumbled on Jeremy Howard&rsquo;s &lsquo;<a href="https://copilot.github.com/">Is Copilot a blessing, or a curse?</a>&rsquo;. In
-that piece, Jeremy covers all of my points and then some more. Also, given his
-background, Jeremy&rsquo;s musings on deep learning carry way more weight than mine.
-My advice is to read his article. I especially appreciate his critique on
-Copilot&rsquo;s so-advertised role as &ldquo;AI pair programmer&rdquo;:</p>
+<pre><code>$ git clone &lt;REPOSITORY&gt; test
+$ cd test
+</code></pre>
 
-<blockquote>
-<p>GitHub markets Copilot as a “pair programmer”. But I’m not sure this really
-captures what it’s doing. A good pair programmer is someone who helps you
-question your assumptions, identify hidden problems, and see the bigger
-picture. Copilot doesn’t do any of those things – quite the opposite, it
-blindly assumes that your assumptions are appropriate and focuses entirely on
-churning out code based on the immediate context of where your text cursor is
-right now.</p>
-</blockquote>
+<p>Once into the test directory, this is the command that saved the day:</p>
 
-<p>He then mentions both <em>automation</em> and <em>anchoring</em> biases and explains how they
-might influence the developers using advanced AI-powered automation tools like
-Copilot.</p>
+<pre><code># make sure you insert the whole file path, relative to the repository root
+$ git filter-branch --force --index-filter \
+  &quot;git rm --cached --ignore-unmatch PATH-TO-THE-FILE&quot; \
+  --prune-empty --tag-name-filter cat -- --all
+</code></pre>
 
-<p>The code proposed to Copilot seems to solve most problems, yes, but it appears
-to average quality at best. Jeremy explains why: Copilot trains on public
-repositories, with no filter on the overall quality of the material at hand
-&ndash;something complicated to achieve, indeed. The developer is expected to
-carefully review the suggestions, and that&rsquo;s where automation and anchoring
-biases might affect judgment. Besides, who enjoys doing code reviews?
-I certainly don&rsquo;t. Any day, I&rsquo;d instead take on the challenge and churn out my
-own solution. Yes, it might require effort and time, or see me googling for
-some help (those Stack Overflow hints have usually been reviewed, amended and
-commented on by fellow programmers; both quality <em>and</em> review, right there).
-When my solution works, I am thrilled. That feel of self-accomplishment and
-satisfaction is what I enjoy the most. It&rsquo;s what I look forward to in the
-morning when I sit at my desk.</p>
+<p>The command above will go through the history, find all commits where the file
+is involved, and alter them to eliminate the file. Yes, history changes,
+so a force-push will be required at the end.</p>
 
-<p>I also don&rsquo;t want to renounce deep understanding. When we delegate code
-creation, we&rsquo;re taking a step toward shallow knowledge in our field. Eric
-Sink&rsquo;s &lsquo;<a href="https://ericsink.com/entries/depth.html">Will deep understanding still be valuable?</a>&rsquo; has an excellent
-discussion around this topic:</p>
+<p>To test that the file has indeed been removed, I used <code>git blame</code>:</p>
 
-<blockquote>
-<p>In my nearly 4 decades of writing code, I have consistently found that the
-most valuable thing is to know how things work. Nothing in software
-development is more effective than the ability to see deeper. [&hellip;] I am
-utterly convinced that deep understanding is important. But increasingly,
-I feel like I&rsquo;m swimming upstream. It seems like most people in our industry
-care far more about &ldquo;how to do&rdquo; rather than &ldquo;how does it work&rdquo;.</p>
-</blockquote>
+<pre><code>$ git blame PATH-TO-THE-FILE
+fatal: no such path 'PATH-TO-THE-FILE' in HEAD
+</code></pre>
 
-<p>Copilot is great and feels like magic<sup class="footnote-ref" id="fnref:5"><a href="#fn:5">2</a></sup>. And precisely for that reason, at my
-company, we&rsquo;re not going to adopt it.</p>
+<p>If the file needs to stay in the local directory, you can add it to
+<code>.gitignore</code>:</p>
+
+<pre><code>$ echo &quot;PATH-TO-THE-FILE&quot; &gt;&gt; .gitignore
+$ git add .gitignore
+$ git commit -m &quot;add FILE to .gitignore&quot;
+</code></pre>
+
+<p>Once everything was ready, I went back to the original clone directory,
+replayed all the above, then force-pushed back to the remote:</p>
+
+<pre><code>$ git push origin --force --all
+</code></pre>
+
+<p>If you have remote tags, those need to be force-pushed as well:</p>
+
+<pre><code>$ git push origin --force --tags
+</code></pre>
+
+<p>In my case, the repository is private with no forks, so the changing
+history was not a big deal for the few colleagues with access to it. Of
+course, any other existing clone will need to be updated<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">1</a></sup>.</p>
+
+<p>In so many years with git, this is the very first time I had to do something
+similar. Typically, you don&rsquo;t commit sensitive data to version control, but we
+all make mistakes every once in a while, don&rsquo;t we?</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 <div class="footnotes">
@@ -348,10 +343,8 @@ company, we&rsquo;re not going to adopt it.</p>
 <hr />
 
 <ol>
-<li id="fn:2">For example, see Armin Ronacher&rsquo;s  on Copilot <a href="https://twitter.com/mitsuhiko/status/1410886329924194309">regurgitating famous, GPL-license code</a>.
+<li id="fn:2">Keep in mind, eventual stashed changes will be lost after <code>git filter-branch</code>. Make sure you unstash before issuing the command.
  <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-<li id="fn:5">Any sufficiently advanced technology is indistinguishable from magic <em>&ndash;Arthur C. Clark</em>
- <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
 </ol>
 </div>
 
@@ -408,17 +401,10 @@ company, we&rsquo;re not going to adopt it.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/how-to-remove-a-file-from-git-history/">
-          <section class="post">
-              <h2>How to remove a file from Git history</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/book-review.-eight-days-in-may-the-final-collapse-of-the-third-reich/">
+      <a class="read-next-story prev" style="no-cover" href="/on-github-copilot/">
           <section class="post">
-              <h2>Book Review. Eight Days in May: The Final Collapse of the Third Reich</h2>
+              <h2>On GitHub Copilot</h2>
           </section>
       </a>
   

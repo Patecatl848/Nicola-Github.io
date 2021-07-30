@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 24 Jul 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jul 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git</title>
+      <link>https://nicolaiarocci.com/tags/git/</link>
+      <pubDate>Fri, 30 Jul 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>til</title>
+      <link>https://nicolaiarocci.com/tags/til/</link>
+      <pubDate>Fri, 30 Jul 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://nicolaiarocci.com/tags/tools/</link>
+      <pubDate>Fri, 30 Jul 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/tools/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>github</title>
@@ -108,15 +135,6 @@
       <pubDate>Fri, 16 Jul 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/duckduckgo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>til</title>
-      <link>https://nicolaiarocci.com/tags/til/</link>
-      <pubDate>Fri, 16 Jul 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/til/</guid>
       <description></description>
     </item>
     
@@ -333,24 +351,6 @@
       <pubDate>Wed, 12 May 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/north/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://nicolaiarocci.com/tags/git/</link>
-      <pubDate>Thu, 29 Apr 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tools</title>
-      <link>https://nicolaiarocci.com/tags/tools/</link>
-      <pubDate>Thu, 29 Apr 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/tools/</guid>
       <description></description>
     </item>
     
