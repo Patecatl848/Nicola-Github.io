@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Travel is no cure for the mind"/>
+<meta name="twitter:title" content="How to restore a single Postgres database from a pg_dumpall dump"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Travel is no cure for the mind &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="How to restore a single Postgres database from a pg_dumpall dump &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/travel-is-no-cure-for-the-mind/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/how-to-restore-a-single-postgres-database-from-a-pg_dumpall-dump/" />
 
     
         
@@ -29,23 +29,19 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-08-23T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-08-25T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="links" />
+    <meta property="article:tag" content="til" />
     
-    <meta property="article:tag" content="seneca" />
-    
-    <meta property="article:tag" content="personal growth" />
-    
-    <meta property="article:tag" content="travel" />
+    <meta property="article:tag" content="postgres" />
     
     
 
-    <title>Travel is no cure for the mind &middot; Nicola Iarocci</title>
+    <title>How to restore a single Postgres database from a pg_dumpall dump &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="I stumbled upon a personal growth article this weekend, and that&amp;rsquo;s odd because I tend to stay clear from such things. Yet I found it quite relevant, so mu" />
+    <meta name="description" content="Today I learned how to restore a single Postgres database from a global dump generated with pg_dumpall. Now, pg_dumpall is handy when you want to back up an ent" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -71,7 +67,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/travel-is-no-cure-for-the-mind/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/how-to-restore-a-single-postgres-database-from-a-pg_dumpall-dump/" />
 
     
       
@@ -108,23 +104,23 @@
             
         ]
     },
-    "headline": "Travel is no cure for the mind",
-    "name": "Travel is no cure for the mind",
-    "wordCount":  313 ,
+    "headline": "How to restore a single Postgres database from a pg_dumpall dump",
+    "name": "How to restore a single Postgres database from a pg_dumpall dump",
+    "wordCount":  364 ,
     "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/travel-is-no-cure-for-the-mind/",
-    "datePublished": "2021-08-23T07:05Z",
-    "dateModified": "2021-08-23T07:05Z",
+    "url": "https://nicolaiarocci.com/how-to-restore-a-single-postgres-database-from-a-pg_dumpall-dump/",
+    "datePublished": "2021-08-25T07:05Z",
+    "dateModified": "2021-08-25T07:05Z",
     
-    "keywords": "links, seneca, personal growth, travel",
+    "keywords": "til, postgres",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/travel-is-no-cure-for-the-mind/"
+        "@id": "https://nicolaiarocci.com/how-to-restore-a-single-postgres-database-from-a-pg_dumpall-dump/"
     }
 }
     </script>
@@ -261,58 +257,70 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Travel is no cure for the mind</h1>
+        <h1 class="post-title">How to restore a single Postgres database from a pg_dumpall dump</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-08-23T07:05:25&#43;01:00">
-            Aug 23, 2021
+          <time class="post-date" datetime="2021-08-25T07:05:25&#43;01:00">
+            Aug 25, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/seneca/">#seneca</a></span>
-         
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/personal-growth/">#personal growth</a></span>
-         
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/travel/">#travel</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/postgres/">#postgres</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>I stumbled upon a personal growth article this weekend, and that&rsquo;s odd because
-I tend to stay clear from such things. Yet I found it quite relevant, so much
-that I thought I would <a href="https://medium.com/personal-growth/travel-is-no-cure-for-the-mind-e449d3109d71">share it</a> (the delivery is also amusing, which is
-something new for this kind of content).</p>
+      <p>Today I learned how to restore a single Postgres database from a global dump
+generated with <a href="https://www.postgresql.org/docs/current/app-pg-dumpall.html"><code>pg_dumpall</code></a>. Now, <code>pg_dumpall</code> is handy when you want to back
+up an entire Postgres cluster. It will dump all databases and global objects in
+a single text file. In contrast, <a href="https://www.postgresql.org/docs/current/app-pgdump.html"><code>pg_dump</code></a>, the go-to tool for Postgres
+backups, offers more control but only works with a single database and doesn&rsquo;t
+dump global objects, such as the roles/users linked to the database.</p>
 
-<blockquote>
-<p>It’s just another day… and you’re just doing what you need to do. You’re
-getting things done, and the day moves forward in this continuous sequence of
-checklists, actions, and respites. But at various moments of your routine,
-you pause and take a good look at your surroundings. The scenes of your
-everyday life. The blur of this all-too-familiar film. And you can’t help but
-to wonder… If there is more to it all. For some reason — this country, this
-city, this neighborhood, this particular street — is the place you are living
-a majority of your life in. And it is this thought that allows a daydream to
-seep in. You start thinking of all the other places you could be in this
-world. Or more accurately, all the places you’d rather be in. Somewhere more
-exciting. Somewhere new. Somewhere that can provide experiences that are
-foreign to you.</p>
-</blockquote>
+<p>The problem with <code>pg_dumpall</code> comes when you want to restore just one database
+from the dump file. That&rsquo;s not supported out of the box, but it is achievable
+with some tinkering.</p>
 
-<p>While I agree with the article, I&rsquo;d also mention that travel or putting some
-distance from the Box of Daily Experience, as the author calls it, is a great
-way to appreciate what we leave behind; to re-evaluate it from a different
-perspective.</p>
+<p>The <code>pg_dumpall</code> dump is a plain text file that contains all the SQL commands
+needed to restore the cluster. All database instructions are there as well; we
+only need to extract them. Say we have one &ldquo;mydb&rdquo; database that we need to
+retrieve. Open the dump file and look for a string starting with &ldquo;connect
+mydb&rdquo;. That&rsquo;s where our database instructions begin. Then look for the first
+occurrence of &ldquo;PostgreSQL database dump complete&rdquo;. That&rsquo;s where the
+instructions end. <a href="https://stackoverflow.com/a/48866503/323269">This</a> script, which I have to say makes clever use of <code>sed</code>,
+will do just that for us:</p>
 
-<p>As I read the article, I kept thinking, this is not particularly original;
-I read something like this before. Then, by the end of the piece, a note tells
-us that the text is, in fact, an adaptation of Seneca&rsquo;s letter to Lucilius on
-the subject of travel. Seneca&rsquo;s moral letters to Lucilius are just pure
-awesomeness.</p>
+<pre><code>#!/bin/bash
+[ $# -lt 2 ] &amp;&amp; { echo &quot;Usage: $0 &lt;postgresql dump&gt; &lt;dbname&gt;&quot;; exit 1; }
+sed  &quot;/connect.*$2/,\$!d&quot; $1 | sed &quot;/PostgreSQL database dump complete/,\$d&quot;
+</code></pre>
+
+<p>The output will be to STDOUT; we want to pipe it into a file. If we named the
+script <code>pg_extract.sh</code>, as I did, we&rsquo;d do:</p>
+
+<pre><code>./pg_extract.sh dumpall.sql mydb &gt;&gt; mydb.dump
+</code></pre>
+
+<p>Now we have the specific DB dump, and we can restore it like this:</p>
+
+<pre><code>psql (connection options) mydb &lt; mydb.dump
+</code></pre>
+
+<p>If the database still exists on the cluster, we first want to drop it, or we&rsquo;ll
+only get error messages:</p>
+
+<pre><code>psql (connection options) -d postgres -C &quot;DROP DATABASE IF EXISTS mydb&quot;
+psql (connection options) -d postgres -C &quot;CREATE DATABASE mydb&quot;
+</code></pre>
+
+<p><code>DROP DATABASE</code> will fail if there are active connections. Either
+<a href="https://stackoverflow.com/a/5408501/323269">force-drop</a> all active connections or tell your peers to leave the database
+alone. Merging the above passages in a script is an option.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
@@ -369,17 +377,10 @@ awesomeness.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/how-to-restore-a-single-postgres-database-from-a-pg_dumpall-dump/">
-          <section class="post">
-              <h2>How to restore a single Postgres database from a pg_dumpall dump</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/book-review-nomadland/">
+      <a class="read-next-story prev" style="no-cover" href="/travel-is-no-cure-for-the-mind/">
           <section class="post">
-              <h2>Book Review: Nomadland</h2>
+              <h2>Travel is no cure for the mind</h2>
           </section>
       </a>
   
