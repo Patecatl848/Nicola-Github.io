@@ -28,36 +28,53 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/how-to-restore-a-single-postgres-database-from-a-pg_dumpall-dump/</loc>
-    <lastmod>2021-08-25T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/how-to-read-windows-1252-encoded-files-with-.netcore/.net5-/</loc>
+    <lastmod>2021-08-27T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-08-25T07:05:25+01:00</lastmod>
+    <lastmod>2021-08-27T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-08-25T07:05:25+01:00</lastmod>
+    <lastmod>2021-08-27T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-08-25T07:05:25+01:00</lastmod>
+    <lastmod>2021-08-27T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/postgres/</loc>
-    <lastmod>2021-08-25T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
+    <lastmod>2021-08-27T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/programming/</loc>
+    <lastmod>2021-08-27T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/til/</loc>
+    <lastmod>2021-08-27T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/how-to-restore-a-single-postgres-database-from-a-pg_dumpall-dump/</loc>
+    <lastmod>2021-08-25T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/postgres/</loc>
     <lastmod>2021-08-25T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -160,12 +177,6 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/programming/</loc>
-    <lastmod>2021-07-24T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/book-review.-eight-days-in-may-the-final-collapse-of-the-third-reich/</loc>
     <lastmod>2021-07-18T07:05:25+01:00</lastmod>
   </url>
@@ -224,12 +235,6 @@
   <url>
     <loc>https://nicolaiarocci.com/will-.net-6-minimal-apis-turn-heads/</loc>
     <lastmod>2021-07-14T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
-    <lastmod>2021-07-14T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
