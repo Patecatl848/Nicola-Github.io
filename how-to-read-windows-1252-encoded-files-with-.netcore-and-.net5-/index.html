@@ -43,7 +43,7 @@
     <title>How to read Windows-1252 encoded files with .NETCore and .NET5&#43; &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="Another day, another lesson learned: modern .NET does not support Windows-1252 encoding out of the box. Today my colleague was happily porting a legacy NET4&#43; ap" />
+    <meta name="description" content="Another day, another lesson learned: modern .NET does not support the Windows-1252 encoding out of the box. Today my colleague was happily porting a legacy NET4" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -108,7 +108,7 @@
     },
     "headline": "How to read Windows-1252 encoded files with .NETCore and .NET5+",
     "name": "How to read Windows-1252 encoded files with .NETCore and .NET5+",
-    "wordCount":  252 ,
+    "wordCount":  253 ,
     "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
@@ -279,13 +279,13 @@
     </header>
 
     <section class="post-content">
-      <p>Another day, another lesson learned: modern .NET does not support Windows-1252
-encoding out of the box. Today my colleague was happily porting a legacy NET4+
-app to NET6. As usual, the port was super-easy; it would compile and run just
-fine, so he was surprised when the app crashed reading a few specific XML
-files. That&rsquo;s when I was called in. A closer inspection revealed a pattern: all
-those crashing files were Windows 1252-encoded (the rest, a vast majority, were
-UTF-8.)</p>
+      <p>Another day, another lesson learned: modern .NET does not support the
+Windows-1252 encoding out of the box. Today my colleague was happily porting
+a legacy NET4+ app to NET6. As usual, the port was super-easy; it would compile
+and run just fine, so he was surprised when the app crashed reading a few
+specific XML files. That&rsquo;s when I was called in. A closer inspection revealed
+a pattern: all those crashing files were Windows 1252-encoded (the rest, a vast
+majority, were UTF-8.)</p>
 
 <p>It turns out that under NETCore/NET5+, to read Windows-1252 encoded files, we
 first need to take a dependency on <code>System.Text.Encoding.CodePages</code>:</p>
