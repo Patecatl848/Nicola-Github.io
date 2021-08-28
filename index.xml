@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 27 Aug 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 28 Aug 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,7 +29,7 @@ MongoDB è un database NoSQL open source, facilmente scalabile e ad alte presta
       
       <guid>https://nicolaiarocci.com/books-i-have-read/</guid>
       <description>This is a partial list of the books I have read. I have it both to jog my memory and because I have read a lot of stuff I have loved, and want other people to find it.
-2021  Nomadland, Jessica Bruder Eight Days in May: The Final Collapse of the Third Reich, Volker Ullrich Potere alle Parole, Vera Gheno Alpi ribelli, Enrico Camanni The Voice of the Sirens.</description>
+2021  Proud tobea Flyer, Matteo Sola Nomadland, Jessica Bruder Eight Days in May: The Final Collapse of the Third Reich, Volker Ullrich Potere alle Parole, Vera Gheno Alpi ribelli, Enrico Camanni The Voice of the Sirens.</description>
     </item>
     
     <item>
@@ -61,6 +61,15 @@ MongoDB è un database NoSQL open source, facilmente scalabile e ad alte presta
       <guid>https://nicolaiarocci.com/about/</guid>
       <description>Hello, my name is Nicola and this is my personal website. Here I keep memories and thoughts. Every once in a while I even post some technical stuff.
 I&amp;#8217;m a coder at heart author of several open source projects, a Microsoft MVP, Conference Speaker, teacher and consultant. I live in Ravenna, Italy, where I work on the Amica 10 project. In my hometown I run the local CoderDojo, a coding club for kids.</description>
+    </item>
+    
+    <item>
+      <title>Book Review: Proud tobea Flyer</title>
+      <link>https://nicolaiarocci.com/book-review-proud-tobea-flyer/</link>
+      <pubDate>Sat, 28 Aug 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/book-review-proud-tobea-flyer/</guid>
+      <description>I happened across this book by pure chance. After having ice cream in our favourite place in Milano Marittima, my wife and I visited a small street market with all kinds of booths. Of course, there was a used book stand toward which I immediately gravitated. A quick scan revealed nothing of interest, so I moved along. But Serena, who arrived at the booth moments after I left, knew more. A simple, no-frills, cardboard-covered book which carried a giant PROUD 2BEA FLYER title on the spine caught her attention.</description>
     </item>
     
     <item>
