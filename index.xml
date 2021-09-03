@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 28 Aug 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 03 Sep 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -61,6 +61,16 @@ MongoDB è un database NoSQL open source, facilmente scalabile e ad alte presta
       <guid>https://nicolaiarocci.com/about/</guid>
       <description>Hello, my name is Nicola and this is my personal website. Here I keep memories and thoughts. Every once in a while I even post some technical stuff.
 I&amp;#8217;m a coder at heart author of several open source projects, a Microsoft MVP, Conference Speaker, teacher and consultant. I live in Ravenna, Italy, where I work on the Amica 10 project. In my hometown I run the local CoderDojo, a coding club for kids.</description>
+    </item>
+    
+    <item>
+      <title>Performance improvements in .NET6</title>
+      <link>https://nicolaiarocci.com/performance-improvements-in-.net6/</link>
+      <pubDate>Fri, 03 Sep 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/performance-improvements-in-.net6/</guid>
+      <description>I&amp;rsquo;m pretty psyched about the upcoming .NET6 release. I&amp;rsquo;ve already touched on ASP.NET 6 Minimal APIs. Continuing on the long-established tradition, the team has also worked hard on the performance side of things. File IO, for example, is seeing impressive gains:
+ For .NET 6, we have made FileStream much faster and more reliable, thanks to an almost entire re-write. For same cases, the async implementation is now a few times faster!</description>
     </item>
     
     <item>
