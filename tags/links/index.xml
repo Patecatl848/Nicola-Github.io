@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 03 Sep 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 04 Sep 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/links/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get the Fucking Vaccine Already, You Fucking Fucks</title>
+      <link>https://nicolaiarocci.com/get-the-fucking-vaccine-already-you-fucking-fucks/</link>
+      <pubDate>Sat, 04 Sep 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/get-the-fucking-vaccine-already-you-fucking-fucks/</guid>
+      <description>Wendy Molyneux writing unabashedly for McSweeney&amp;rsquo;s:
+ You think vaccines don’t fucking work? Oh, fuck off into the trash, you attention-seeking fuckworm-faced shitbutt. This isn’t even a point worth discussing, you fuck-o-rama fuck-stival of ignorance. Vaccines got rid of smallpox and polio and all the other disgusting diseases that used to kill off little fucks like you en masse. Your relatives got fucking vaccinated and let you live, and now here you are signing up to be killed by a fucking disease against which there is a ninety-nine-percent effective vaccine.</description>
+    </item>
     
     <item>
       <title>Performance improvements in .NET6</title>

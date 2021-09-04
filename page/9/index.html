@@ -1015,6 +1015,10 @@
     
         
     
+        
+    
+        
+    
 
     
 
@@ -1034,6 +1038,96 @@
 </nav>
 
     </div>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/taming-portable-class-libraries-and-net-framework-4/">Taming Portable Class Libraries and .NET Framework 4</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p><p>If your project is a Portable Class Library and you want it to run with the .NET Framework 4 well, you are in for a few surprises. Especially so if you are using InstallShield for building your deployment package. We&#8217;ve been going through this a few days ago and it&#8217;s been kind of a wild ride. I thought I could pin the whole thing down so that others might enjoy a painless journey through all this mess.</p>
+
+<h2 id="portable-class-libraries-and-net-framework-4">Portable Class Libraries and .NET Framework 4</h2>
+
+<p>The first thing you should know is that while the .NET Framework 4 does support PCLs, in fact it won&#8217;t run them without a patch. For whatever reason, Microsoft decided that PCL compatibility wasn&#8217;t a worth a 4.0.4 update. That leaves us with the need to not only make sure that target machines are running the up-to-date .NET4 release (v4.0.3) but also that they&#8217;ve been updated with <a href="https://support.microsoft.com/kb/2468871" target="_blank">KB2468871</a>.</p>
+
+<p>You might be wondering why this is an issue in the first place. We could simply install the .NET Framework 4.5 which is backward compatible with the .NET4 and includes the afore mentioned KB2468871. Even better, we could just target the .NET 4.5 on our PCL. Problem is that besides iOS, Android, WinPhone and Silverlight we also want our libraries to run seamlessly on as many Windows editions as possible, Windows XP included. Here is the catch: <a href="https://connect.microsoft.com/VisualStudio/feedback/details/730732/net-framework-4-5-should-support-windows-xp-sp3," target="_blank">.NET4 is the last framework version to run on Windows XP</a>. And yes, we got the memo, Microsoft officially abandoned Windows XP a while ago so why bother? Well it turns out that millions of users are still running XP, especially so in the enterprise and SMB. These PCL are targeting exactly that, precisely the accounting software segment, and believe me there&#8217;s a huge number of users happily invoicing and accounting on their <em>old-fart-but-still-splendidly-doing-its-job-for-cheap</em> boxes. Oh and the .NET Framework 3.5 is not an option as it doesn&#8217;t support Portable Classes at all.</p> <a class="read-more" href="/taming-portable-class-libraries-and-net-framework-4/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/installshield/">#installshield</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/kb2468871/">#kb2468871</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/pcl/">#pcl</a>,
+            
+        
+        <time class="post-date" datetime="2014-08-28T00:00:00Z">
+            28 Aug 2014
+        </time>
+    </footer>
+</article>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/eve-0-4-cerberus-0-7-released/">Eve 0.4 and Cerberus 0.7 Released</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Eve 0.4 adds cool features like Document Versioning and Coherence Mode. Cerberus 0.7 allows regex validation amongst other niceties. Make sure to check the official v0.4 announcement for all the details. <a class="read-more" href="/eve-0-4-cerberus-0-7-released/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2014-07-10T00:00:00Z">
+            10 Jul 2014
+        </time>
+    </footer>
+</article>
 
     
         <article class="post post">
@@ -1717,85 +1811,6 @@ This is a JavaScript guide intended to introduce new developers and help experie
         on
             
                 <a href="https://nicolaiarocci.com//tags/javascript/">#javascript</a>,
-            
-        
-        <time class="post-date" datetime="2014-01-22T00:00:00Z">
-            22 Jan 2014
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/python-and-flask-are-ridiculously-powerful/">Python and Flask Are Ridiculously Powerful</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>As a developer, I sometimes forget the power I yield. It&#8217;s easy to forget that, when something doesn&#8217;t work the way I&#8217;d like, I have the power to change it.
- via Python and Flask Are Ridiculously Powerful. <a class="read-more" href="/python-and-flask-are-ridiculously-powerful/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/flask/">#flask</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
-            
-        
-        <time class="post-date" datetime="2014-01-22T00:00:00Z">
-            22 Jan 2014
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/today-my-startup-failed/">Today my startup failed</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Shit happens. Way more often than what most people think.
- It may seem surprising that a seemingly successful product could fail, but it happens all the time. Although we arguably found product/market fit, we couldn’t quite crack the business side of things.
- via Chris Hates Writing • Today my startup failed. <a class="read-more" href="/today-my-startup-failed/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/startups/">#startups</a>,
             
         
         <time class="post-date" datetime="2014-01-22T00:00:00Z">

@@ -28,8 +28,37 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/get-the-fucking-vaccine-already-you-fucking-fucks/</loc>
+    <lastmod>2021-09-04T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-09-03T07:05:25+01:00</lastmod>
+    <lastmod>2021-09-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/post/</loc>
+    <lastmod>2021-09-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/</loc>
+    <lastmod>2021-09-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/covid/</loc>
+    <lastmod>2021-09-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/links/</loc>
+    <lastmod>2021-09-04T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -39,25 +68,7 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-09-03T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-09-03T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
-    <lastmod>2021-09-03T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/links/</loc>
     <lastmod>2021-09-03T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -881,6 +892,11 @@
   
   <url>
     <loc>https://nicolaiarocci.com/upcoming-speaking-engagements-with-ramblings/</loc>
+    <lastmod>2021-01-29T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/title/</loc>
     <lastmod>2021-01-29T07:05:25+01:00</lastmod>
   </url>
   
