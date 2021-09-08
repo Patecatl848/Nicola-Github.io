@@ -251,6 +251,51 @@
 	
 	   <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="/feature-overview-the-eve-oplog/">Feature Overview: The Eve OpLog</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p><p>The operations log or OpLog is a new <a href="http://python-eve.org">Eve</a> feature that I&#8217;m currently developing on the <a href="https://github.com/nicolaiarocci/eve/tree/oplog"><code>oplog</code></a> experimental branch. It&#8217;s supposed to help in addressing a subtle issue that we&#8217;ve been dealing with, but I believe it can also emerge as a very useful all-around tool. I am posting about it in the hope of gathering some feedback from Eve contributors and users, so that I can better pinpoint design and implementation before I merge it to the main development branch.</p>
+
+<h2 id="what-is-the-oplog">What is the OpLog?</h2>
+
+<p>The OpLog is a special resource that keeps a record of operations that modify the data stored by the API. Every <code>POST</code>, <code>PATCH</code>, <code>PUT</code> and <code>DELETE</code> operation can eventually be recorded by the oplog.</p>
+
+<p>At its core the oplog is simply a server log, something that&#8217;s always been on the Eve roadmap. What makes it a little bit different is its ability to be exposed as a read-only API endpoint. This would in turn allow clients to query it as they would with any other standard endpoint.</p> <a class="read-more" href="/feature-overview-the-eve-oplog/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2014-10-06T00:00:00Z">
+            6 Oct 2014
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="/ordered-dictionaries-with-python-2-4-2-6/">Ordered Dictionaries with Python 2.4-2.6</a></h2>
     </header>
     <section class="post-excerpt">
@@ -996,46 +1041,6 @@ The following Jonathan Oliver totally resonates with my experience.
         
         <time class="post-date" datetime="2014-01-27T00:00:00Z">
             27 Jan 2014
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/got-tips-tricks-terminal-mac-os-x/">Got any tips or tricks for Terminal in Mac OS X?</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Best collection of Terminal tricks ever:
-Got any tips or tricks for Terminal in Mac OS X? &#8211; Ask Different. <a class="read-more" href="/got-tips-tricks-terminal-mac-os-x/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/osx/">#osx</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/terminal/">#terminal</a>,
-            
-        
-        <time class="post-date" datetime="2014-01-22T00:00:00Z">
-            22 Jan 2014
         </time>
     </footer>
 </article>
