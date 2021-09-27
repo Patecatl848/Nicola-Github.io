@@ -719,7 +719,7 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
       <pubDate>Mon, 27 Sep 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/an-nginx-playground/</guid>
-      <description>&lt;p&gt;Everyingle time I need nginx, I end up spending way too much time fiddling
+      <description>&lt;p&gt;Every single time I need nginx, I end up spending way too much time fiddling
 around with its configuration. If you&amp;rsquo;re like me, rejoice! Julia Evans built
 a lovely, helpful little tool called nginx playground.&lt;/p&gt;
 
