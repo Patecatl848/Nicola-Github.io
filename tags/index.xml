@@ -7,17 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 27 Sep 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 30 Sep 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>fungi</title>
+      <link>https://nicolaiarocci.com/tags/fungi/</link>
+      <pubDate>Thu, 30 Sep 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/fungi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>links</title>
       <link>https://nicolaiarocci.com/tags/links/</link>
-      <pubDate>Mon, 27 Sep 2021 07:05:25 +0100</pubDate>
+      <pubDate>Thu, 30 Sep 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://nicolaiarocci.com/tags/web/</link>
+      <pubDate>Thu, 30 Sep 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/web/</guid>
       <description></description>
     </item>
     
@@ -1683,15 +1701,6 @@
       <pubDate>Wed, 30 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/xamarin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web</title>
-      <link>https://nicolaiarocci.com/tags/web/</link>
-      <pubDate>Wed, 23 May 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/web/</guid>
       <description></description>
     </item>
     
