@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 30 Sep 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 07 Oct 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -710,6 +710,71 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Drama going on at the .NET Foundation</title>
+      <link>https://nicolaiarocci.com/drama-going-on-at-the-.net-foundation/</link>
+      <pubDate>Thu, 07 Oct 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/drama-going-on-at-the-.net-foundation/</guid>
+      <description>&lt;p&gt;A few months after I released my first &lt;a href=&#34;https://fatturaelettronicaopensource.org/&#34;&gt;.NET open source project&lt;/a&gt; (a niche
+one targeting the Italian fintech world), I was contacted by a representative
+of Team Digitale, the digital innovation branch of the Italian Public
+Administration. He suggested joining the Developers Italia initiative and
+moving my project to the their organization on GitHub &amp;ldquo;to enjoy
+enhanced visibility and broaden the audience&amp;rdquo;. I politely refused. I did not
+doubt my counterpart&amp;rsquo;s good faith. At the same time, I was concerned about the
+possible long-term consequences of a seemingly easy move. Moving a GitHub
+project away from your profile or an organization you control means ceding
+control over it. I was assured I would keep control of the project. But what
+happens if sometime in the future, when people in charge might even have
+changed, they revoke my access rights? As long as I am involved with my
+project, I should be in control. Also, I was not convinced that the move would
+help promote the project. We live in the search-engine age; people search for
+solutions to their problems. I was, and still am, confident that if I did my
+due diligence and my project is any good, people will find it&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, the worst-case scenario pictured above, or worse, appears to
+be happening these days, not to me, but to the many open-source maintainers
+who, in recent years, agreed to move their projects under the .NET Foundation
+umbrella.  The drama is unfolding in these very same hours, and it is
+painful. On my Twitter feed, I first noticed &lt;a href=&#34;https://twitter.com/eric_sink/status/1445096990153613323&#34;&gt;Eric Sink&amp;rsquo;s note&lt;/a&gt; on the issue.
+The next day, a &lt;a href=&#34;https://www.theregister.com/2021/10/05/microsoft_net_foundation_under_fire/&#34;&gt;detailed article&lt;/a&gt; surfaces on The Register. Then, just
+yesterday, the Executive Director of the DNF posted an &lt;a href=&#34;https://github.com/dotnet-foundation/Home/discussions/39&#34;&gt;I am Sorry&lt;/a&gt; message on
+GitHub, which most maintainers consider disappointing, to say the least.
+Maintainers see the ownership of their projects being moved over to DNF. Some
+projects are transferred to GitHub Enterprise for no apparent reason. DNF
+Executive Director opened a Pull Request, which was closed by the maintainers
+and then reopened (twice!) by the Director (who also happens to be a former
+maintainer). You can get all the details at the links above. The I am Sorry
+thread is especially worth reading.&lt;/p&gt;
+
+&lt;p&gt;I think the foundation is well-intentioned. I question whether independent
+open-source projects should belong there, though—maybe very few major and
+commercially inclined ones. To offer legal protection, DNF needs some control
+over its projects, and that&amp;rsquo;s something not every maintainer is willing to give
+away. On the other hand, Maintainers might have underestimated the consequences
+of moving their projects to DNF. I can feel their pain.&lt;/p&gt;
+
+&lt;p&gt;Overall, this is all concerning. As someone &lt;a href=&#34;https://news.ycombinator.com/item?id=28759630&#34;&gt;commented&lt;/a&gt; on Hacker News, with the
+.NET ecosystem, Microsoft has made so many surprisingly good moves in recent
+years that there is room for a couple of fuck-ups, but this is a big one.
+Besides, most maintainers involved in this drama are highly influential and
+very well respected individuals in the .NET world. The DNF needs to get its
+acts together and react immediately, at the risk of losing all its credibility.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:6&#34;&gt;One year later, someone from the same team got in touch and proposed the move again. I refused for the same reasons. The story is actually longer than that. A few months later, I was also invited to join Team Digitale. I even had a brief video call with their recruiter. I chukled when he realized I was a grey beard, not the typical just-out-of-college boy or girl they usually head-hunt.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:6&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
