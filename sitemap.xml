@@ -28,26 +28,49 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/i-met-with-the-wolves/</loc>
-    <lastmod>2021-10-20T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/book-review-language-of-the-spirit-an-introduction-to-classical-music/</loc>
+    <lastmod>2021-10-26T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-10-20T07:05:25+01:00</lastmod>
+    <lastmod>2021-10-26T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-10-20T07:05:25+01:00</lastmod>
+    <lastmod>2021-10-26T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-10-20T07:05:25+01:00</lastmod>
+    <lastmod>2021-10-26T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/books/</loc>
+    <lastmod>2021-10-26T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/music/</loc>
+    <lastmod>2021-10-26T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/reviews/</loc>
+    <lastmod>2021-10-26T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/i-met-with-the-wolves/</loc>
+    <lastmod>2021-10-20T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -144,18 +167,6 @@
   <url>
     <loc>https://nicolaiarocci.com/book-review-nausea/</loc>
     <lastmod>2021-09-22T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/books/</loc>
-    <lastmod>2021-09-22T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/reviews/</loc>
-    <lastmod>2021-09-22T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -895,12 +906,6 @@
   <url>
     <loc>https://nicolaiarocci.com/five-minutes-to-make-you-love-classical-music/</loc>
     <lastmod>2021-02-25T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/music/</loc>
-    <lastmod>2021-02-25T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
