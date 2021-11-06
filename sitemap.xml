@@ -28,26 +28,49 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/book-review-king-and-emperor-a-new-life-of-charlemagne/</loc>
-    <lastmod>2021-10-31T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/is-eve-still-maintained/</loc>
+    <lastmod>2021-11-06T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-10-31T07:05:25+01:00</lastmod>
+    <lastmod>2021-11-06T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-10-31T07:05:25+01:00</lastmod>
+    <lastmod>2021-11-06T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-10-31T07:05:25+01:00</lastmod>
+    <lastmod>2021-11-06T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/eve/</loc>
+    <lastmod>2021-11-06T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/open-source/</loc>
+    <lastmod>2021-11-06T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/python/</loc>
+    <lastmod>2021-11-06T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/book-review-king-and-emperor-a-new-life-of-charlemagne/</loc>
+    <lastmod>2021-10-31T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -109,12 +132,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
-    <lastmod>2021-10-07T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/open-source/</loc>
     <lastmod>2021-10-07T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -444,12 +461,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/podcast/</loc>
-    <lastmod>2021-07-06T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/python/</loc>
     <lastmod>2021-07-06T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1205,12 +1216,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/cerberus/</loc>
-    <lastmod>2017-04-27T11:23:05+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/eve/</loc>
     <lastmod>2017-04-27T11:23:05+02:00</lastmod>
     <priority>0</priority>
   </url>

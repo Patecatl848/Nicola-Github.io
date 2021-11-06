@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 31 Oct 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 06 Nov 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -712,6 +712,65 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Is Eve still maintained?</title>
+      <link>https://nicolaiarocci.com/is-eve-still-maintained/</link>
+      <pubDate>Sat, 06 Nov 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/is-eve-still-maintained/</guid>
+      <description>&lt;p&gt;Tonight someone opened &lt;a href=&#34;https://github.com/pyeve/eve/issues/1458&#34;&gt;a ticket&lt;/a&gt; on
+the Eve repository. I jotted down a quick reply and was about to hit the
+Comment button when I thought a more articulated reply was in order. I also
+want it published on my website.&lt;/p&gt;
+
+&lt;p&gt;So the question is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Is Eve still maintained?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;My reply goes like this:&lt;/p&gt;
+
+&lt;p&gt;Hello, yes, &lt;a href=&#34;https://python-eve.org&#34;&gt;Eve&lt;/a&gt; is in &amp;lsquo;maintenance mode&amp;rsquo;, as I call
+it. I don&amp;rsquo;t actively develop new features anymore. Still, I am more than
+willing to code-review and merge relevant pull requests, especially so if they
+are bug fixes or improvements over existing features.&lt;/p&gt;
+
+&lt;p&gt;Long story short, after many years of development, the &lt;a href=&#34;https://docs.python-eve.org/en/stable/funding.html&#34;&gt;funding
+campaign&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; that would have
+allowed me to keep working on the project failed miserably. People are using
+the framework worldwide, probably making a profit out of it, but they are not
+interested in investing in it&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. The good news is that the framework is, I think,
+stable and mature enough to meet most needs.&lt;/p&gt;
+
+&lt;p&gt;With &lt;a href=&#34;https://python-cerberus.org&#34;&gt;Cerberus&lt;/a&gt;, I was lucky enough to find
+a worthy, skilled  maintainer in the person of
+&lt;a href=&#34;https://github.com/funkyfuture&#34;&gt;@funkyfuture&lt;/a&gt;, who&amp;rsquo;s keeping the project
+going. I am hoping the same happens with Eve. So, if anyone familiar with the
+code-base is willing to help, this is your moment to come forward. Maybe start
+with triaging open tickets, maybe pull-request for some low-hanging fruits, and
+then challenge yourself with more demanding tasks, like &lt;a href=&#34;https://github.com/pyeve/eve/issues/1278&#34;&gt;updating Eve to the
+latest version of Cerberus&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I had so &lt;a href=&#34;https://www.patreon.com/nicolaiarocci&#34;&gt;many things&lt;/a&gt; planned for Eve.
+ Hopefully someone will join the ranks, maybe take the helm, and help bring it
+ to the next level.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:2&#34;&gt;For some rationale behind the campaign, see &lt;a href=&#34;http://localhost:1313/eve-and-cerberus-funding-campaign/&#34;&gt;this post&lt;/a&gt; from 2017.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34;&gt;I must admit, this failure hit me hard.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
