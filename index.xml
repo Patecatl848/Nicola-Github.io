@@ -716,11 +716,11 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
     </item>
     
     <item>
-      <title>My ASP.NET migration from .NET 5 to .NET 6</title>
-      <link>https://nicolaiarocci.com/my-asp.net-migration-from-.net-5-to-.net-6/</link>
+      <title>My ASP.NET 5 migration to .NET 6</title>
+      <link>https://nicolaiarocci.com/my-asp.net-5-migration-to-.net-6/</link>
       <pubDate>Sun, 14 Nov 2021 07:05:25 +0100</pubDate>
       
-      <guid>https://nicolaiarocci.com/my-asp.net-migration-from-.net-5-to-.net-6/</guid>
+      <guid>https://nicolaiarocci.com/my-asp.net-5-migration-to-.net-6/</guid>
       <description>
 
 &lt;p&gt;I spent the last few days converting our WebApi REST API services, MVC web
@@ -933,7 +933,7 @@ internal class MyEntityConfiguratin : IEntityTypeConfiguration&amp;lt;MyEntity&a
 Actual values are UTC as before. A custom converter is attached to the &lt;code&gt;Date&lt;/code&gt;
 property at the application level to ensure that values are correctly handled.&lt;/p&gt;
 
-&lt;p&gt;Our stack is now fully running on .NET 6. Upgrading a standard ASP.NET .NET
+&lt;p&gt;Our stack is now fully running on .NET 6. Upgrading a standard ASP.NET
 5 project to .NET 6 was revealed to be relatively straightforward. The EF Core
 6.0 migration can be more involved, while the Npgsql 6 migration requires some
 attention but, remember, you can always opt-out of the delicate timestamps
