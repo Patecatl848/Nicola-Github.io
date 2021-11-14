@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 06 Nov 2021 08:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 14 Nov 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -712,6 +712,239 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My ASP.NET migration from .NET 5 to .NET 6</title>
+      <link>https://nicolaiarocci.com/my-asp.net-migration-from-.net-5-to-.net-6/</link>
+      <pubDate>Sun, 14 Nov 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/my-asp.net-migration-from-.net-5-to-.net-6/</guid>
+      <description>
+
+&lt;p&gt;I spent the last few days converting our WebApi REST API services, MVC web
+applications and Blazor server apps from .NET 5 to the recently released .NET
+6. Overall the process was pretty straightforward. The few issues I went
+through were easy to solve and well documented. Things got more involved with
+the EF Core 6 transition, especially with the Npgsql Entity Framework Core
+Provider.&lt;/p&gt;
+
+&lt;p&gt;The official &lt;a href=&#34;https://docs.microsoft.com/en-us/aspnet/core/migration/50-to-60&#34;&gt;ASP.NET Core 5.0 to 6.0 migration guide&lt;/a&gt; was my first stop. It
+offers the perfect entry point, rich with in-depth links. At this stage, I am
+not interested in switching to the new .NET 6 minimal hosting model (aka
+Minimal APIs). I think it&amp;rsquo;s a significant improvement, and we will likely adopt
+it for new projects, but our production projects aren&amp;rsquo;t going to be refactored
+right away. Should minimal APIs also prove to be remarkably performant, we&amp;rsquo;ll
+reconsider them.&lt;/p&gt;
+
+&lt;p&gt;The first step was updating the target framework moniker to &lt;code&gt;net6.0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;Project Sdk=&amp;quot;Microsoft.NET.Sdk.Web&amp;quot;&amp;gt;
+  &amp;lt;PropertyGroup&amp;gt;
+    &amp;lt;TargetFramework&amp;gt;net6.0&amp;lt;/TargetFramework&amp;gt;
+  &amp;lt;/PropertyGroup&amp;gt;
+&amp;lt;/Project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, I updated all &lt;code&gt;Microsoft.AspNetCore.*&lt;/code&gt; and &lt;code&gt;Microsoft.Extensions.*&lt;/code&gt; package
+references to version 6.0.0.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ItemGroup&amp;gt;
+  &amp;lt;PackageReference Include=&amp;quot;Microsoft.AspNetCore.JsonPatch&amp;quot; Version=&amp;quot;6.0.0&amp;quot; /&amp;gt;
+  &amp;lt;PackageReference Include=&amp;quot;Microsoft.Extensions.Caching.[...]&amp;quot; Version=&amp;quot;6.0.0&amp;quot; /&amp;gt;
+&amp;lt;/ItemGroup&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s all I needed to do to update the MVC application. The only other thing
+left for me was to update Dockerfile&amp;rsquo;s &lt;code&gt;FROM&lt;/code&gt; statements to pull the new .NET
+6 image:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# build stage
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /build
+[..]
+# final stage/image
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
+[..]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Migrating the WebApi/REST services required more work. I got a few errors and
+warnings, either at compile or runtime. Let&amp;rsquo;s go through them one by one.&lt;/p&gt;
+
+&lt;h3 id=&#34;new-jsonserializer-source-generator-overloads&#34;&gt;New &lt;code&gt;JsonSerializer&lt;/code&gt; source generator overloads&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The call is ambiguous between the following methods or properties:
+&amp;lsquo;JsonSerializer.Serialize(TValue, JsonSerializerOptions?)&amp;rsquo; and
+&amp;lsquo;JsonSerializer.Serialize(TValue, JsonTypeInfo)&amp;rsquo;&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In .NET 6, the &lt;code&gt;Sytem.Text.Json.JsonSerializer&lt;/code&gt; &lt;a href=&#34;https://docs.microsoft.com/en-us/dotnet/core/compatibility/serialization/6.0/jsonserializer-source-generator-overloads&#34;&gt;acquired two new overloads&lt;/a&gt; that
+support pre-generated type information via source-generators. Previously, you
+could write code that passed &lt;code&gt;null&lt;/code&gt; (or &lt;code&gt;default&lt;/code&gt;) as the value for the
+&lt;code&gt;JsonSeralizerOptions&lt;/code&gt; parameter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;entity.Property(e =&amp;gt; e.Value)
+    .HasConversion(
+        v =&amp;gt; JsonSerializer.Serialize(v, null),
+        v =&amp;gt; JsonSerializer.Deserialize(v, null));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, the new source-generator-enabled overloads will cause ambiguity if you
+pass &lt;code&gt;null&lt;/code&gt;. The solution was to add simply an explicit cast to the intended
+target:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;entity.Property(e =&amp;gt; e.Value)
+    .HasConversion(
+        v =&amp;gt; JsonSerializer.Serialize(v, (JsonSerializerOptions)null), 
+        v =&amp;gt; JsonSerializer.Deserialize(v, (JsonSerializerOptions)null));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;the-rngcryptoserviceprovider-is-now-obsolete&#34;&gt;The &lt;code&gt;RNGCryptoServiceProvider&lt;/code&gt; is now obsolete&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;SYSLIB0023: RNGCryptoServiceProvider is obsolete&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As it turns out, &lt;code&gt;RNGCryptoServiceProvider&lt;/code&gt; is &lt;a href=&#34;https://docs.microsoft.com/en-us/dotnet/fundamentals/syslib-diagnostics/syslib0023&#34;&gt;marked as obsolete in .NET 6&lt;/a&gt;. The
+new preferred way to generate a random number is using one of the
+&lt;code&gt;RandomNunmberGenerator&lt;/code&gt; static methods.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  // old
+  using var rng = new RNGCryptoServiceProvider();
+  var uintBuffer = new byte[sizeof(uint)];
+  rng.GetBytes(uintBuffer);
+  var num = BitConverter.ToUInt32(uintBuffer, 0);
+
+  // new
+  using var rng = RandomNumberGenerator.Create();
+  var uintBuffer = new byte[sizeof(uint)];
+  rng.GetBytes(uintBuffer);
+  var num = BitConverter.ToUInt32(uintBuffer, 0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The two issues above are essentially the only ones I met with .NET 6 itself. As
+mentioned, I also encountered a few EF Core 6 annoyances. They are listed
+below.&lt;/p&gt;
+
+&lt;h3 id=&#34;new-imodelcachekeyfactory-create-overload&#34;&gt;New &lt;code&gt;IModelCacheKeyFactory.Create()&lt;/code&gt; overload&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The requested configuration is not stored in the read-optimized model, please
+use DbContext.GetService&amp;lt;IDesignTimeModel&amp;gt;().Model.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If, like me, you happen to have a custom &lt;code&gt;IModelCacheKeyFactory&lt;/code&gt;
+implementation, you will likely get this error at runtime. Starting with EF
+Core 6, &lt;a href=&#34;https://github.com/dotnet/EntityFramework.Docs/pull/3305/files&#34;&gt;you must implement&lt;/a&gt; the new overload of the &lt;code&gt;Create&lt;/code&gt; method that
+handles design-time model caching.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// old
+public class DynamicModelCacheKeyFactoryDesignTimeSupport : IModelCacheKeyFactory
+{
+   public object Create(DbContext context) =&amp;gt; 
+     context is DynamicContext dynamicContext
+       ? (context.GetType(), dynamicContext.UseIntProperty)
+       : (object)context.GetType();
+
+    public object Create(DbContext context) =&amp;gt; Create(context, false);
+}
+
+// new
+public class DynamicModelCacheKeyFactoryDesignTimeSupport : IModelCacheKeyFactory
+{
+   public object Create(DbContext context, bool designTime) =&amp;gt; 
+     context is DynamicContext dynamicContext
+       ? (context.GetType(), dynamicContext.UseIntProperty, designTime)
+       : (object)context.GetType();
+
+    public object Create(DbContext context) =&amp;gt; Create(context, false);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;nested-optional-dependents-with-no-required-properties&#34;&gt;Nested optional dependents with no required properties&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Entity type &amp;lsquo;[EntityType]&amp;rsquo; is an optional dependent using table sharing and
+containing other dependents without any required non shared property to
+identify whether the entity exists. If all nullable properties contain a null
+value in database then an object instance won&amp;rsquo;t be created in the query
+causing nested dependent&amp;rsquo;s values to be lost. Add a required property to
+create instances with null values for other properties or mark the incoming
+navigation as required to always create an instance.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The message above is a consequence of a &lt;a href=&#34;https://docs.microsoft.com/en-us/ef/core/what-is-new/ef-core-6.0/breaking-changes#high-impact-changes&#34;&gt;high-impact breaking change&lt;/a&gt; introduced
+in EF Core 6.0. In the past, you could have models with nested optional dependents
+sharing the same table, each with no required properties. In such
+circumstances, data loss could occur (see the &lt;a href=&#34;https://docs.microsoft.com/en-us/ef/core/what-is-new/ef-core-6.0/breaking-changes#high-impact-changes&#34;&gt;documentation&lt;/a&gt; for details
+and examples). My solution was to mark at least one property of dependent
+models with the &lt;code&gt;RequiredAttribute&lt;/code&gt; (which, in every single case, was the right
+thing to do anyway)&lt;/p&gt;
+
+&lt;h3 id=&#34;the-efcore-namingconvetions-package-is-missing-a-method&#34;&gt;The &lt;code&gt;EFCore.NamingConvetions&lt;/code&gt; package is missing a method&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Method &amp;lsquo;GetServiceProviderHashCode&amp;rsquo; in type &amp;lsquo;ExtensionInfo&amp;rsquo; from assembly
+&amp;lsquo;EFCore.NamingConventions&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The message says it all: there&amp;rsquo;s currently a missing method in the latest
+stable version of the &lt;code&gt;EFCore.NamingConvetions&lt;/code&gt; package. At the time of this
+writing, &lt;code&gt;v6.0&lt;/code&gt; of the package has not been released, but there is a pre-release
+available that includes the missing implementation. Switch to &lt;code&gt;v6.0.0-rc.1&lt;/code&gt; and
+you&amp;rsquo;ll be fine (ticket is &lt;a href=&#34;https://github.com/efcore/EFCore.NamingConventions/issues/108&#34;&gt;here&lt;/a&gt;). I&amp;rsquo;m sure the new stable release will be
+out by the time you read this.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-npgsql-timestamps-breaking-change&#34;&gt;The Npgsql timestamps breaking change&lt;/h3&gt;
+
+&lt;p&gt;While the above situations were quick to fix, the new, updated Npgsql provider
+offers a different threat level. There&amp;rsquo;s &lt;a href=&#34;https://www.npgsql.org/efcore/release-notes/6.0.html#major-changes-to-timestamp-mapping&#34;&gt;one significant breaking change&lt;/a&gt;
+that impacts &lt;code&gt;DateTime&lt;/code&gt; fields (timestamps). As the documentation suggests, it is
+possible to opt out of this change to preserve backward compatibility, but
+I decided to take the plunge and embrace it. The short version is that
+Postgres&amp;rsquo;s &lt;code&gt;timestamp&lt;/code&gt; fields (&amp;lsquo;timestamps without timezone&amp;rsquo;) are changed to
+&lt;code&gt;timestampz&lt;/code&gt; (&amp;lsquo;timestamps with time zones&amp;rsquo;). In the application, when dealing
+with Npgsql, &lt;code&gt;DateTime&lt;/code&gt; properties must be treated as UTC by setting the &lt;code&gt;Kind&lt;/code&gt;
+property to &lt;code&gt;DateTimeKind.UTC&lt;/code&gt;. When you run the migration tool, a migration is
+created to accomodate the change, which can impact existing data. Make sure you
+read the &lt;a href=&#34;https://www.npgsql.org/efcore/release-notes/6.0.html#migrating-columns-from-timestamp-to-timestamptz&#34;&gt;detailed notes&lt;/a&gt; to assess the impact on your data. I let the
+migration run, then updated models configuration by setting a custom
+&lt;code&gt;DateTimeUtcValueConverter&lt;/code&gt; for DateTime properties:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// custom DateTime converter
+protected readonly ValueConverter DateTimeToUtcConverter = 
+  new ValueConverter&amp;lt;DateTime, DateTime&amp;gt;(
+    v =&amp;gt; DateTime.SpecifyKind(v, DateTimeKind.Utc),
+    v =&amp;gt; v);
+
+// Entity configuration 
+internal class MyEntityConfiguratin : IEntityTypeConfiguration&amp;lt;MyEntity&amp;gt; 
+{
+  public override void Configure(EntityTypeBuilder&amp;lt;MyEntity&amp;gt; builder)
+  {
+    builder.Property(o =&amp;gt; o.Date).HasConversion(DateTimeToUtcConverter);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now Postgres timestamps are stored as &amp;lsquo;timestamp with timezone (timestampz).
+Actual values are UTC as before. A custom converter is attached to the &lt;code&gt;Date&lt;/code&gt;
+property at the application level to ensure that values are correctly handled.&lt;/p&gt;
+
+&lt;p&gt;Our stack is now fully running on .NET 6. Upgrading a standard ASP.NET .NET
+5 project to .NET 6 was revealed to be relatively straightforward. The EF Core
+6.0 migration can be more involved, while the Npgsql 6 migration requires some
+attention but, remember, you can always opt-out of the delicate timestamps
+change. Was the upgrade worth it? I think so for a few reasons. First, .NET
+6 is LTS, while .NET 5 will be out of support in six months. Second, .&lt;a href=&#34;https://devblogs.microsoft.com/dotnet/announcing-net-6&#34;&gt;NET 6 is
+the fastest yet&lt;/a&gt;, with a remarkable margin (EF Core 6 alone is &lt;a href=&#34;https://docs.microsoft.com/en-us/ef/core/what-is-new/ef-core-6.0/whatsnew#improved-performance-on-techempower-fortunes&#34;&gt;70%
+faster&lt;/a&gt;.) While the primary migration is done, there are a lot of changes
+and new features that are worth considering for our codebase, which is
+something we will be doing in the upcoming weeks.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

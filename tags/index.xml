@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 06 Nov 2021 08:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 14 Nov 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>aspnet</title>
+      <link>https://nicolaiarocci.com/tags/aspnet/</link>
+      <pubDate>Sun, 14 Nov 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/aspnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dotnet</title>
+      <link>https://nicolaiarocci.com/tags/dotnet/</link>
+      <pubDate>Sun, 14 Nov 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://nicolaiarocci.com/tags/programming/</link>
+      <pubDate>Sun, 14 Nov 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/programming/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>dogs</title>
@@ -130,15 +157,6 @@
     </item>
     
     <item>
-      <title>dotnet</title>
-      <link>https://nicolaiarocci.com/tags/dotnet/</link>
-      <pubDate>Thu, 07 Oct 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/dotnet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>fungi</title>
       <link>https://nicolaiarocci.com/tags/fungi/</link>
       <pubDate>Thu, 30 Sep 2021 07:05:25 +0100</pubDate>
@@ -171,15 +189,6 @@
       <pubDate>Sun, 26 Sep 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/ageing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://nicolaiarocci.com/tags/programming/</link>
-      <pubDate>Thu, 23 Sep 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/programming/</guid>
       <description></description>
     </item>
     

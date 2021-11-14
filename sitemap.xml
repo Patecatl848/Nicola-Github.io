@@ -28,20 +28,43 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/my-asp.net-migration-from-.net-5-to-.net-6/</loc>
+    <lastmod>2021-11-14T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-11-06T08:05:25+01:00</lastmod>
+    <lastmod>2021-11-14T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-11-06T08:05:25+01:00</lastmod>
+    <lastmod>2021-11-14T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-11-06T08:05:25+01:00</lastmod>
+    <lastmod>2021-11-14T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/aspnet/</loc>
+    <lastmod>2021-11-14T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
+    <lastmod>2021-11-14T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/programming/</loc>
+    <lastmod>2021-11-14T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -154,12 +177,6 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
-    <lastmod>2021-10-07T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/the-word-for-web-is-forest/</loc>
     <lastmod>2021-09-30T07:05:25+01:00</lastmod>
   </url>
@@ -201,12 +218,6 @@
   <url>
     <loc>https://nicolaiarocci.com/asp.net-6-migration-cheatsheet-and-faq/</loc>
     <lastmod>2021-09-23T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/programming/</loc>
-    <lastmod>2021-09-23T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
