@@ -735,7 +735,7 @@ not interested in switching to the new .NET 6 minimal hosting model (aka
 Minimal APIs). I think it&amp;rsquo;s a significant improvement, and we will likely adopt
 it for new projects, but our production projects aren&amp;rsquo;t going to be refactored
 right away. Should minimal APIs also prove to be remarkably performant, we&amp;rsquo;ll
-reconsider them.&lt;/p&gt;
+reconsider them&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;The first step was updating the target framework moniker to &lt;code&gt;net6.0&lt;/code&gt;.&lt;/p&gt;
 
@@ -944,6 +944,15 @@ and new features that are worth considering for our codebase, which is
 something we will be doing in the upcoming weeks.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:11&#34;&gt;My initial ramblings on Minimal APIs are available &lt;a href=&#34;https://nicolaiarocci.com/will-.net-6-minimal-apis-turn-heads/&#34;&gt;here&lt;/a&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:11&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
