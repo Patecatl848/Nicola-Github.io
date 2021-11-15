@@ -882,7 +882,7 @@ and examples). My solution was to mark at least one property of dependent
 models with the &lt;code&gt;RequiredAttribute&lt;/code&gt; (which, in every single case, was the right
 thing to do anyway)&lt;/p&gt;
 
-&lt;h3 id=&#34;the-efcore-namingconvetions-package-is-missing-a-method&#34;&gt;The &lt;code&gt;EFCore.NamingConvetions&lt;/code&gt; package is missing a method&lt;/h3&gt;
+&lt;h3 id=&#34;the-efcore-namingconventions-package-is-missing-a-method&#34;&gt;The &lt;code&gt;EFCore.NamingConventions&lt;/code&gt; package is missing a method&lt;/h3&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Method &amp;lsquo;GetServiceProviderHashCode&amp;rsquo; in type &amp;lsquo;ExtensionInfo&amp;rsquo; from assembly
@@ -890,7 +890,7 @@ thing to do anyway)&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The message says it all: there&amp;rsquo;s currently a missing method in the latest
-stable version of the &lt;code&gt;EFCore.NamingConvetions&lt;/code&gt; package. At the time of this
+stable version of the &lt;code&gt;EFCore.NamingConventions&lt;/code&gt; package. At the time of this
 writing, &lt;code&gt;v6.0&lt;/code&gt; of the package has not been released, but there is a pre-release
 available that includes the missing implementation. Switch to &lt;code&gt;v6.0.0-rc.1&lt;/code&gt; and
 you&amp;rsquo;ll be fine (ticket is &lt;a href=&#34;https://github.com/efcore/EFCore.NamingConventions/issues/108&#34;&gt;here&lt;/a&gt;). I&amp;rsquo;m sure the new stable release will be

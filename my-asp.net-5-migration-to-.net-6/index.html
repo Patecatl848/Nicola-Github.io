@@ -440,7 +440,7 @@ and examples). My solution was to mark at least one property of dependent
 models with the <code>RequiredAttribute</code> (which, in every single case, was the right
 thing to do anyway)</p>
 
-<h3 id="the-efcore-namingconvetions-package-is-missing-a-method">The <code>EFCore.NamingConvetions</code> package is missing a method</h3>
+<h3 id="the-efcore-namingconventions-package-is-missing-a-method">The <code>EFCore.NamingConventions</code> package is missing a method</h3>
 
 <blockquote>
 <p>Method &lsquo;GetServiceProviderHashCode&rsquo; in type &lsquo;ExtensionInfo&rsquo; from assembly
@@ -448,7 +448,7 @@ thing to do anyway)</p>
 </blockquote>
 
 <p>The message says it all: there&rsquo;s currently a missing method in the latest
-stable version of the <code>EFCore.NamingConvetions</code> package. At the time of this
+stable version of the <code>EFCore.NamingConventions</code> package. At the time of this
 writing, <code>v6.0</code> of the package has not been released, but there is a pre-release
 available that includes the missing implementation. Switch to <code>v6.0.0-rc.1</code> and
 you&rsquo;ll be fine (ticket is <a href="https://github.com/efcore/EFCore.NamingConventions/issues/108">here</a>). I&rsquo;m sure the new stable release will be
