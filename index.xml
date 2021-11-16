@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 14 Nov 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 16 Nov 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -712,6 +712,34 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learn in public</title>
+      <link>https://nicolaiarocci.com/learn-in-public/</link>
+      <pubDate>Tue, 16 Nov 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/learn-in-public/</guid>
+      <description>&lt;p&gt;Today I searched the internet for something, and the first result I got from
+&lt;a href=&#34;https://duckduckgo.com/&#34;&gt;@duckduckgo&lt;/a&gt; was a note I wrote months ago to my future self; how meta is
+that.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://nicolaiarocci.com/images/duckduckgo-search.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.swyx.io/learn-in-public/&#34;&gt;Learn in public&lt;/a&gt;; it gives superpowers&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Also, in recent years, adopting
+&lt;a href=&#34;https://indieweb.org/POSSE&#34;&gt;POSSE&lt;/a&gt; was the best thing I did for my personal development.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:4&#34;&gt;I should do better. Post more &lt;a href=&#34;https://nicolaiarocci.com/tags/til/&#34;&gt;TILs&lt;/a&gt;, for example.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
