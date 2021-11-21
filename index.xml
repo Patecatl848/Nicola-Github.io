@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 16 Nov 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 21 Nov 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -712,6 +712,65 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to automatically pull and deploy updated Docker images</title>
+      <link>https://nicolaiarocci.com/how-to-automatically-pull-and-deploy-updated-docker-images/</link>
+      <pubDate>Sun, 21 Nov 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/how-to-automatically-pull-and-deploy-updated-docker-images/</guid>
+      <description>&lt;p&gt;We want our test and production stacks to be automatically updated every time
+something new is pushed to the &lt;code&gt;test&lt;/code&gt; or &lt;code&gt;release&lt;/code&gt; branch. CI builds the docker
+image on successful test runs, then stores it in our private registry. But how
+do you automatically pull and deploy those updated images?&lt;/p&gt;
+
+&lt;p&gt;I looked into the &lt;a href=&#34;https://containrrr.dev/watchtower/&#34;&gt;Watchtower&lt;/a&gt; project, which is interesting. You add
+Watchtower to the stack, and it will diligently check for new versions of the
+images used by the containers in the stack, pulling, building and deploying as
+needed while the stack is up and running. In my experiments, however, I had
+&lt;a href=&#34;https://github.com/containrrr/watchtower/issues/1113&#34;&gt;little luck&lt;/a&gt; in making it talk with our private registry. Also, I&amp;rsquo;m not too
+fond of polluting my stack with foreign containers. I want my docker stack to
+be simple, tidy, clean, and single-tasked.&lt;/p&gt;
+
+&lt;p&gt;I ended up doing something super simple. A cronjob routinely invokes a script
+that pulls relevant images from our registry. If updated images are downloaded,
+then the &lt;code&gt;docker stack up&lt;/code&gt; command is issued.  Finally, a &lt;code&gt;docker image prune
+-af&lt;/code&gt; ensures obsolete images are deleted. For the simplest scenario, where we
+only need to take care of one image, the script looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+set -e
+
+readonly IMAGE=[image]
+readonly TAG=[tag]
+
+out=$(docker pull $IMAGE:$TAG)
+
+if [[ $out != *&amp;quot;up to date&amp;quot;* ]]; then
+    echo &amp;quot;an updated image has been donwloaded for &#39;$IMAGE:$TAG&#39;&amp;quot;
+    # we actually launch a script here:
+    docker stack up -c stack.yml mystack --with-registry-auth
+    docker image prune -af
+else
+    echo &amp;quot;no updates available for &#39;$IMAGE:$TAG&#39;&amp;quot;
+fi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I expected &lt;code&gt;docker pull&lt;/code&gt; to return &lt;code&gt;1&lt;/code&gt; on successful pulls; it turns out it
+always returns &lt;code&gt;0&lt;/code&gt;, so I&amp;rsquo;m checking its output for confirmation (thanks to
+StackOverflow for the &lt;a href=&#34;https://stackoverflow.com/a/51628017/323269&#34;&gt;hint&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;You might be wondering why we don&amp;rsquo;t directly execute &lt;code&gt;docker stack up&lt;/code&gt; in our
+cronjob. It updates the stack resolving new images by default. The problem is
+that, in our experience, it also briefly stops the services. Not an issue if
+you run this command sporadically. We want our stacks refreshed minutes after
+the initial developer push, though, so the cronjob runs frequently. With our
+pre-fetch approach, actual deployment only happens when an updated image has
+been found and downloaded.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

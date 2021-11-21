@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 16 Nov 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 21 Nov 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>docker</title>
+      <link>https://nicolaiarocci.com/tags/docker/</link>
+      <pubDate>Sun, 21 Nov 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>til</title>
+      <link>https://nicolaiarocci.com/tags/til/</link>
+      <pubDate>Sun, 21 Nov 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/til/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>meta</title>
@@ -18,15 +36,6 @@
       <pubDate>Tue, 16 Nov 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/meta/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>til</title>
-      <link>https://nicolaiarocci.com/tags/til/</link>
-      <pubDate>Tue, 16 Nov 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/til/</guid>
       <description></description>
     </item>
     
