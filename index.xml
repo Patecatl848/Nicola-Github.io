@@ -759,8 +759,8 @@ fi
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I expected &lt;code&gt;docker pull&lt;/code&gt; to return &lt;code&gt;1&lt;/code&gt; on successful pulls; it turns out it
-always returns &lt;code&gt;0&lt;/code&gt;, so I&amp;rsquo;m checking its output for confirmation (thanks to
-StackOverflow for the &lt;a href=&#34;https://stackoverflow.com/a/51628017/323269&#34;&gt;hint&lt;/a&gt;).&lt;/p&gt;
+always returns &lt;code&gt;0&lt;/code&gt;, so I&amp;rsquo;m checking its output for confirmation (I got the hint
+&lt;a href=&#34;https://stackoverflow.com/a/51628017/323269&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;You might be wondering why we don&amp;rsquo;t directly execute &lt;code&gt;docker stack up&lt;/code&gt; in our
 cronjob. It updates the stack resolving new images by default. The problem is

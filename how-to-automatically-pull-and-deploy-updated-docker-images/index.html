@@ -106,7 +106,7 @@
     },
     "headline": "How to automatically pull and deploy updated Docker images",
     "name": "How to automatically pull and deploy updated Docker images",
-    "wordCount":  375 ,
+    "wordCount":  374 ,
     "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
@@ -313,8 +313,8 @@ fi
 </code></pre>
 
 <p>I expected <code>docker pull</code> to return <code>1</code> on successful pulls; it turns out it
-always returns <code>0</code>, so I&rsquo;m checking its output for confirmation (thanks to
-StackOverflow for the <a href="https://stackoverflow.com/a/51628017/323269">hint</a>).</p>
+always returns <code>0</code>, so I&rsquo;m checking its output for confirmation (I got the hint
+<a href="https://stackoverflow.com/a/51628017/323269">here</a>).</p>
 
 <p>You might be wondering why we don&rsquo;t directly execute <code>docker stack up</code> in our
 cronjob. It updates the stack resolving new images by default. The problem is
