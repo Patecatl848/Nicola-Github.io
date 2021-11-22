@@ -106,8 +106,8 @@
     },
     "headline": "How to automatically pull and deploy updated Docker images",
     "name": "How to automatically pull and deploy updated Docker images",
-    "wordCount":  374 ,
-    "timeRequired": "PT2M",
+    "wordCount":  446 ,
+    "timeRequired": "PT3M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
@@ -323,6 +323,13 @@ you run this command sporadically. We want our stacks refreshed minutes after
 the initial developer push, though, so the cronjob runs frequently. With our
 pre-fetch approach, actual deployment only happens when an updated image has
 been found and downloaded.</p>
+
+<p>Now, when I push to, say, <code>test</code> branch, I have the updated services up and
+running a minute later, without me doing anything on the docker or server side
+of things. Mission accomplished I guess, but I am sure there are other, better
+ways around this problem. If you happen to know one, please let me know about
+it (keep in mind, we don&rsquo;t use alternative orchestrators, just the builtin
+&lsquo;swarm&rsquo; thing.)</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
