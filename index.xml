@@ -771,10 +771,10 @@ pre-fetch approach, actual deployment only happens when an updated image has
 been found and downloaded.&lt;/p&gt;
 
 &lt;p&gt;Now, when I push to, say, &lt;code&gt;test&lt;/code&gt; branch, I have the updated services up and
-running a minute later, without me doing anything on the docker or server side
-of things. Mission accomplished I guess, but I am sure there are other, better
+running a minute later, without me doing anything on the docker or server-side
+of things. Mission accomplished, I guess, but I am sure there are other, better
 ways around this problem. If you happen to know one, please let me know about
-it (keep in mind, we don&amp;rsquo;t use alternative orchestrators, just the builtin
+it (keep in mind, we don&amp;rsquo;t use alternative orchestrators, just the built-in
 &amp;lsquo;swarm&amp;rsquo; thing.)&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
