@@ -990,6 +990,8 @@ available that includes the missing implementation. Switch to &lt;code&gt;v6.0.0
 you&amp;rsquo;ll be fine (ticket is &lt;a href=&#34;https://github.com/efcore/EFCore.NamingConventions/issues/108&#34;&gt;here&lt;/a&gt;). I&amp;rsquo;m sure the new stable release will be
 out by the time you read this.&lt;/p&gt;
 
+&lt;p&gt;&lt;em&gt;Update: EFCore.NamingConventions v6 has now been released.&lt;/em&gt;&lt;/p&gt;
+
 &lt;h3 id=&#34;the-npgsql-timestamps-breaking-change&#34;&gt;The Npgsql timestamps breaking change&lt;/h3&gt;
 
 &lt;p&gt;While the above situations were quick to fix, the new, updated Npgsql provider
