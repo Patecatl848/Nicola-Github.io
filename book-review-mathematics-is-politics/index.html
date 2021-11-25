@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="How to automatically pull and deploy updated Docker images"/>
+<meta name="twitter:title" content="Book Review: Mathematics is politics"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="How to automatically pull and deploy updated Docker images &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="Book Review: Mathematics is politics &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/how-to-automatically-pull-and-deploy-updated-docker-images/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/book-review-mathematics-is-politics/" />
 
     
         
@@ -29,19 +29,25 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2021-11-21T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2021-11-25T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="til" />
+    <meta property="article:tag" content="books" />
     
-    <meta property="article:tag" content="docker" />
+    <meta property="article:tag" content="reviews" />
+    
+    <meta property="article:tag" content="essays" />
+    
+    <meta property="article:tag" content="mathematics" />
+    
+    <meta property="article:tag" content="politics" />
     
     
 
-    <title>How to automatically pull and deploy updated Docker images &middot; Nicola Iarocci</title>
+    <title>Book Review: Mathematics is politics &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="We want our test and production stacks to be automatically updated every time something new is pushed to the test or release branch. CI builds the docker image " />
+    <meta name="description" content="Mathematics as the study of relationships: in this aspect lies the similarity and affinity with politics. And then the need in both cases to proceed with stubbo" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -67,7 +73,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/how-to-automatically-pull-and-deploy-updated-docker-images/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/book-review-mathematics-is-politics/" />
 
     
       
@@ -104,23 +110,23 @@
             
         ]
     },
-    "headline": "How to automatically pull and deploy updated Docker images",
-    "name": "How to automatically pull and deploy updated Docker images",
-    "wordCount":  445 ,
-    "timeRequired": "PT3M",
+    "headline": "Book Review: Mathematics is politics",
+    "name": "Book Review: Mathematics is politics",
+    "wordCount":  269 ,
+    "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/how-to-automatically-pull-and-deploy-updated-docker-images/",
-    "datePublished": "2021-11-21T07:05Z",
-    "dateModified": "2021-11-21T07:05Z",
+    "url": "https://nicolaiarocci.com/book-review-mathematics-is-politics/",
+    "datePublished": "2021-11-25T07:05Z",
+    "dateModified": "2021-11-25T07:05Z",
     
-    "keywords": "til, docker",
+    "keywords": "books, reviews, essays, mathematics, politics",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/how-to-automatically-pull-and-deploy-updated-docker-images/"
+        "@id": "https://nicolaiarocci.com/book-review-mathematics-is-politics/"
     }
 }
     </script>
@@ -257,79 +263,59 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">How to automatically pull and deploy updated Docker images</h1>
+        <h1 class="post-title">Book Review: Mathematics is politics</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2021-11-21T07:05:25&#43;01:00">
-            Nov 21, 2021
+          <time class="post-date" datetime="2021-11-25T07:05:25&#43;01:00">
+            Nov 25, 2021
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/books/">#books</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/docker/">#docker</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/reviews/">#reviews</a></span>
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/essays/">#essays</a></span>
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/mathematics/">#mathematics</a></span>
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/politics/">#politics</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>We want our test and production stacks to be automatically updated every time
-something new is pushed to the <code>test</code> or <code>release</code> branch. CI builds the docker
-image on successful test runs, then stores it in our private registry. But how
-do you automatically pull and deploy those updated images?</p>
+      <p>Mathematics as the study of relationships: in this aspect lies the similarity
+and affinity with politics. And then the need in both cases to proceed with
+stubbornness and trust, without fearing error which, as in all difficult
+things, is not only lying in wait but inherent, and often, when it is
+discovered, it is the stimulus and engine of new successes and goals. Hence the
+need to respect rules and (not or, mind you) the compelling need for
+revolutions. The parallel narration of the author&rsquo;s life and the change, over
+the years, of her own beliefs and points of view, makes this short essay more
+credible and streamlines the story.</p>
 
-<p>I looked into the <a href="https://containrrr.dev/watchtower/">Watchtower</a> project, which is interesting. You add
-Watchtower to the stack, and it will diligently check for new versions of the
-images used by the containers in the stack, pulling, building and deploying as
-needed while the stack is up and running. In my experiments, however, I had
-<a href="https://github.com/containrrr/watchtower/issues/1113">little luck</a> in making it talk with our private registry. Also, I&rsquo;m not too
-fond of polluting my stack with foreign containers. I want my docker stack to
-be simple, tidy, clean, and single-tasked.</p>
+<blockquote>
+<p>Mathematics was my apprenticeship to revolution because it taught me to
+distrust absolute truths and unquestionable authorities. Democracy and
+mathematics, from a political point of view, are similar: like all creative
+processes, they can&rsquo;t stand remaining unchanged.</p>
+</blockquote>
 
-<p>I ended up doing something super simple. A cronjob routinely invokes a script
-that pulls relevant images from our registry. If updated images are downloaded,
-then the <code>docker stack up</code> command is issued.  Finally, a <code>docker image prune
--af</code> ensures obsolete images are deleted. For the simplest scenario, where we
-only need to take care of one image, the script looks like this:</p>
+<p><img src="/images/matematica-politica.jpg#right" alt="La matematica è politica" />
+Not a book for everyone, perhaps, but suitable to those who like to think and
+be challenged with ideas. Background theme to which I am susceptible: the
+necessity for school to illuminate our existences. I wouldn&rsquo;t say I liked the
+frequent references to contingent situations in Italian politics. I bought an
+short essay on the interconnections between mathematics and politics; I expect
+it to make me fly high, far away from the quarrels and events of daily
+politics. Also, sometimes the similarities between the two fields seem a bit
+too far fetched.</p>
 
-<pre><code>#!/bin/bash
-set -e
-
-readonly IMAGE=[image]
-readonly TAG=[tag]
-
-out=$(docker pull $IMAGE:$TAG)
-
-if [[ $out != *&quot;up to date&quot;* ]]; then
-    echo &quot;an updated image has been donwloaded for '$IMAGE:$TAG'&quot;
-    # we actually launch a script here:
-    docker stack up -c stack.yml mystack --with-registry-auth
-    docker image prune -af
-else
-    echo &quot;no updates available for '$IMAGE:$TAG'&quot;
-fi
-</code></pre>
-
-<p>I expected <code>docker pull</code> to return <code>1</code> on successful pulls; it turns out it
-always returns <code>0</code>, so I&rsquo;m checking its output for confirmation (I got the hint
-<a href="https://stackoverflow.com/a/51628017/323269">here</a>).</p>
-
-<p>You might be wondering why we don&rsquo;t directly execute <code>docker stack up</code> in our
-cronjob. It updates the stack resolving new images by default. The problem is
-that, in our experience, it also briefly stops the services. Not an issue if
-you run this command sporadically. We want our stacks refreshed minutes after
-the initial developer push, though, so the cronjob runs frequently. With our
-pre-fetch approach, actual deployment only happens when an updated image has
-been found and downloaded.</p>
-
-<p>Now, when I push to, say, <code>test</code> branch, I have the updated services up and
-running a minute later, without me doing anything on the docker or server-side
-of things. Mission accomplished, I guess, but I am sure there are other, better
-ways around this problem. If you happen to know one, please let me know about
-it (keep in mind, we don&rsquo;t use alternative orchestrators, just the built-in
-&lsquo;swarm&rsquo; thing.)</p>
+<p>I don&rsquo;t think this book is currently available in English. I read it in the
+original Italian edition.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
@@ -386,17 +372,10 @@ it (keep in mind, we don&rsquo;t use alternative orchestrators, just the built-i
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/book-review-mathematics-is-politics/">
-          <section class="post">
-              <h2>Book Review: Mathematics is politics</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/learn-in-public/">
+      <a class="read-next-story prev" style="no-cover" href="/how-to-automatically-pull-and-deploy-updated-docker-images/">
           <section class="post">
-              <h2>Learn in public</h2>
+              <h2>How to automatically pull and deploy updated Docker images</h2>
           </section>
       </a>
   
