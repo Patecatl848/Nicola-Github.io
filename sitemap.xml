@@ -28,26 +28,43 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/im-a-moka-guy/</loc>
-    <lastmod>2021-11-27T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/book-review-endurance-shackletons-incredible-voyage/</loc>
+    <lastmod>2021-11-28T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-11-27T07:05:25+01:00</lastmod>
+    <lastmod>2021-11-28T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-11-27T07:05:25+01:00</lastmod>
+    <lastmod>2021-11-28T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-11-27T07:05:25+01:00</lastmod>
+    <lastmod>2021-11-28T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/books/</loc>
+    <lastmod>2021-11-28T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/reviews/</loc>
+    <lastmod>2021-11-28T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/im-a-moka-guy/</loc>
+    <lastmod>2021-11-27T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -68,12 +85,6 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/books/</loc>
-    <lastmod>2021-11-25T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/tags/essays/</loc>
     <lastmod>2021-11-25T07:05:25+01:00</lastmod>
     <priority>0</priority>
@@ -87,12 +98,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/politics/</loc>
-    <lastmod>2021-11-25T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/reviews/</loc>
     <lastmod>2021-11-25T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
