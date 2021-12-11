@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Migrating a Windows 10 VM to Windows 11 in Parallels Desktop: a story of TPM chips and BIOS upgrades"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="Migrating a Windows 10 VM to Windows 11 in Parallels Desktop: a story of TPM chips and BIOS upgrades &middot; Nicola Iarocci" />
+  	<meta property="og:site_name" content="Nicola Iarocci" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/migrating-a-windows-10-vm-to-windows-11-in-parallels-desktop-a-story-of-tpm-chips-and-bios-upgrades/" />
+
+    
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2021-12-11T07:05:25&#43;01:00" />
+
+    
+    <meta property="article:tag" content="til" />
+    
+    <meta property="article:tag" content="windows11" />
+    
+    <meta property="article:tag" content="parallels" />
+    
+    
+
+    <title>Migrating a Windows 10 VM to Windows 11 in Parallels Desktop: a story of TPM chips and BIOS upgrades &middot; Nicola Iarocci</title>
+
+    
+    <meta name="description" content="This weekend assignment was to upgrade a couple of old Windows 10 VMs to Windows 11 in Parallels Desktop 17. I couldn&amp;rsquo;t do that right away because Windows" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
+
+    
+    <link rel="stylesheet" href="/css/custom.css">
+    
+
+    
+
+    
+      
+          <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Nicola Iarocci" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.55.4" />
+
+    <link rel="canonical" href="https://nicolaiarocci.com/migrating-a-windows-10-vm-to-windows-11-in-parallels-desktop-a-story-of-tpm-chips-and-bios-upgrades/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name":  null ,
+        "logo": "https://nicolaiarocci.com/images/avatar.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name":  null ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://nicolaiarocci.com/images/avatar.png",
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": "https://nicolaiarocci.com",
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ]
+    },
+    "headline": "Migrating a Windows 10 VM to Windows 11 in Parallels Desktop: a story of TPM chips and BIOS upgrades",
+    "name": "Migrating a Windows 10 VM to Windows 11 in Parallels Desktop: a story of TPM chips and BIOS upgrades",
+    "wordCount":  515 ,
+    "timeRequired": "PT3M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": "en"
+    },
+    "url": "https://nicolaiarocci.com/migrating-a-windows-10-vm-to-windows-11-in-parallels-desktop-a-story-of-tpm-chips-and-bios-upgrades/",
+    "datePublished": "2021-12-11T07:05Z",
+    "dateModified": "2021-12-11T07:05Z",
+    
+    "keywords": "til, windows11, parallels",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://nicolaiarocci.com/migrating-a-windows-10-vm-to-windows-11-in-parallels-desktop-a-story-of-tpm-chips-and-bios-upgrades/"
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-19006041-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Home</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/about">About</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/opensource">Open Source</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/speaking">Speaking</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/books-i-have-read">Reading</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/il-piccolo-libro-di-mongodb-edizione-italiana">MongoDB</a>
+            </li>
+        
+            <h3>Subscribe</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://nicolaiarocci.substack.com">Newsletter</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://nicolaiarocci.com/index.xml">RSS feed</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/nicolaiarocci">Twitter</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/nicolaiarocci">Github</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://stackoverflow.com/users/323269/nicola-iarocci?tab=profile">Stack Overflow</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://speakerdeck.com/u/nicola">Speaker Deck</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://www.linkedin.com/in/nicolaiarocci">LinkedIn</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="https://nicolaiarocci.com/"><img src="/images/avatar.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Migrating a Windows 10 VM to Windows 11 in Parallels Desktop: a story of TPM chips and BIOS upgrades</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2021-12-11T07:05:25&#43;01:00">
+            Dec 11, 2021
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/windows11/">#windows11</a></span>
+         
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/parallels/">#parallels</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>This weekend assignment was to upgrade a couple of old Windows 10 VMs to
+Windows 11 in Parallels Desktop 17. I couldn&rsquo;t do that right away because
+Windows Update was complaining about the lack of the TPM chip. A little
+research revealed that TPM chips only work on UEFI BIOS.  To check which BIOS
+version was being used in my VMs, I used the msinfo32 (System Information)
+application. It showed the BIOS to be of &ldquo;Legacy&rdquo; type. So my task was now to
+switch it to UEFI.</p>
+
+<p><img src="/images/windows10-bios-legacy-mode.png" alt="Windows 10 BIOS in Legacy  mode" /></p>
+
+<p>I looked high and low with little luck. Parallels the product is incredible.
+Not so much its documentation and online support.  At some point, I landed in
+the Parallels forums, a vast ocean of scarcely useful threads from which
+I usually try to stay the hell away. The Parallels personnel there has
+a long-standing tendency to copy &amp; paste ready-made and irrelevant solutions.
+Users are left to their own, and, luckily, one of them posted the <a href="https://forum.parallels.com/threads/process-for-converting-from-legacy-to-uefi-in-prep-for-win-11.354888/">perfect
+solution</a> to my Legacy-to-UEFI BIOS migration problem. I am reposting it
+here, with minor edits, for future reference (my future self <a href="https://nicolaiarocci.com/learn-in-public/">will be
+grateful</a>):</p>
+
+<ol>
+<li>Back up your VM</li>
+<li>Boot into your Windows 10 VM as usual</li>
+<li>While holding down Shift key: Start -&gt; Power -&gt; Restart</li>
+<li>Select Troubleshoot, then Advanced options</li>
+<li>Select Command Prompt</li>
+<li>Log in with your account and Microsoft password (not your pin)</li>
+<li>Type: <code>mbr2gpt /validate</code> and hit return; this will check your hard disk</li>
+<li>If there&rsquo;s a problem, type: <code>mbr2gpt /validate /allowFullOS</code> and hit return</li>
+<li>Type <code>mbr2gpt /convert</code> and hit return. It will convert the MBR disk partition scheme to GUID. It might complain about WinRE or something, but generally, if it says &ldquo;conversion was a success,&rdquo; you can type <code>exit</code> and hit return to kill the command prompt and return to the advanced menu</li>
+<li>Choose &ldquo;Turn off PC.&rdquo; You don&rsquo;t want to restart Windows yet</li>
+<li>Find your VM file in the Finder, right-click on it, and choose: &ldquo;Show Package Contents.&rdquo;</li>
+<li>Find the config.pvs file and open it with a text editor</li>
+<li>Search for the section <code>&lt;Bios dyn_lists=&quot;&quot;&gt;</code></li>
+<li>Change <code>&lt;EfiEnabled&gt;</code> from 0 to 1</li>
+<li>Change <code>&lt;EfiSecureBoot&gt;</code> from 0 to 1</li>
+<li>Save the file</li>
+<li>Open the VM Configuration, go to the Hardware tab, click the &ldquo;+&rdquo;, and add the TPM Chip</li>
+</ol>
+
+<p>At this point you can run Windows 10 as you usually would. At fist launch,
+right after the login, I got a critical error and a hard restart (the original
+poster reported the same experience.) After that, the VM is stable. A quick
+msinfo32 check confirms that the VM is now on UEFI BIOS.</p>
+
+<p><img src="/images/windows10-bios-uefi-mode.png" alt="Windows 10 BIOS in UEFI mode" /></p>
+
+<p>Should Windows Update still complain, that&rsquo;s probably because of the CPU
+limitation check. You can disable it:</p>
+
+<ol>
+<li>Open the Registry Editor</li>
+<li>Navigate to <code>HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup</code></li>
+<li>Search for <code>AllowUpgradesWithUnsupportedTPMOrCPU</code></li>
+<li>Change its value to 1</li>
+<li>Restart the VM</li>
+</ol>
+
+<p>Personally, I did not need to alter the registry, and I got <em>very</em> old VMs to
+upgrade. At the time of this writing, Windows 11 installation is at 94% and
+I am confident it will be successful.</p>
+
+<p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://nicolaiarocci.com/" style="background-image: url(/images/avatar.png)"><span class="hidden">Nicola Iarocci's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://nicolaiarocci.com/">Nicola Iarocci</a></h4>
+  
+  <p>Read <a href="https://nicolaiarocci.com/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Ravenna, Italy</span>
+    <span class="author-link icon-link"><a href="https://nicolaiarocci.com">https://nicolaiarocci.com</a></span>
+  </div>
+</section>
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="/a-big-nail-in-the-coffin-of-mysql/">
+          <section class="post">
+              <h2>A big nail in the coffin of MySQL</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Nicola Iarocci</a> All rights reserved</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    
+</body>
+</html>
+

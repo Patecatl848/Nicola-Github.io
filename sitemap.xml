@@ -28,26 +28,49 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/a-big-nail-in-the-coffin-of-mysql/</loc>
-    <lastmod>2021-12-09T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/migrating-a-windows-10-vm-to-windows-11-in-parallels-desktop-a-story-of-tpm-chips-and-bios-upgrades/</loc>
+    <lastmod>2021-12-11T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-12-09T07:05:25+01:00</lastmod>
+    <lastmod>2021-12-11T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-12-09T07:05:25+01:00</lastmod>
+    <lastmod>2021-12-11T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-12-09T07:05:25+01:00</lastmod>
+    <lastmod>2021-12-11T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/parallels/</loc>
+    <lastmod>2021-12-11T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/til/</loc>
+    <lastmod>2021-12-11T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/windows11/</loc>
+    <lastmod>2021-12-11T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/a-big-nail-in-the-coffin-of-mysql/</loc>
+    <lastmod>2021-12-09T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -153,12 +176,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/docker/</loc>
-    <lastmod>2021-11-21T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/til/</loc>
     <lastmod>2021-11-21T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>

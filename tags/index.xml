@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Thu, 09 Dec 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 11 Dec 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>parallels</title>
+      <link>https://nicolaiarocci.com/tags/parallels/</link>
+      <pubDate>Sat, 11 Dec 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/parallels/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>til</title>
+      <link>https://nicolaiarocci.com/tags/til/</link>
+      <pubDate>Sat, 11 Dec 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows11</title>
+      <link>https://nicolaiarocci.com/tags/windows11/</link>
+      <pubDate>Sat, 11 Dec 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/windows11/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>links</title>
@@ -117,15 +144,6 @@
       <pubDate>Sun, 21 Nov 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>til</title>
-      <link>https://nicolaiarocci.com/tags/til/</link>
-      <pubDate>Sun, 21 Nov 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/til/</guid>
       <description></description>
     </item>
     
