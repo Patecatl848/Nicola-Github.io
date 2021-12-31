@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 28 Dec 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 31 Dec 2021 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Three Good Books I Read in 2021</title>
+      <link>https://nicolaiarocci.com/three-good-books-i-read-in-2021/</link>
+      <pubDate>Fri, 31 Dec 2021 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/three-good-books-i-read-in-2021/</guid>
+      <description>This year I&amp;rsquo;ve read twenty-one books or 5903 pages. That&amp;rsquo;s fewer books than last year (28&amp;frasl;8064), the year before (25&amp;frasl;8394), and the one before that (30&amp;frasl;8447). Heck, I must look back at 2014 to score a win in my very own yearly reading challenge. What surprises me is not much the number of books but the pages I read, which constitutes more relevant metric. Over the previous three years, that number stayed firmly over 8k while dropping to 6k this year.</description>
+    </item>
     
     <item>
       <title>Book Review: Consider the Lobster</title>
@@ -1057,7 +1066,7 @@ By enveloping the message into an original short, touching story, he achieves tw
     </item>
     
     <item>
-      <title>Five good books I read in 2020</title>
+      <title>Five Good Books I Read in 2020</title>
       <link>https://nicolaiarocci.com/five-good-books-i-read-in-2020/</link>
       <pubDate>Mon, 04 Jan 2021 07:05:25 +0100</pubDate>
       
