@@ -28,32 +28,43 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/book-review-finnish-fairy-tales/</loc>
+    <lastmod>2022-01-04T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2021-12-31T07:05:25+01:00</lastmod>
+    <lastmod>2022-01-04T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2021-12-31T07:05:25+01:00</lastmod>
+    <lastmod>2022-01-04T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2021-12-31T07:05:25+01:00</lastmod>
+    <lastmod>2022-01-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/books/</loc>
+    <lastmod>2022-01-04T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/reviews/</loc>
+    <lastmod>2022-01-04T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/three-good-books-i-read-in-2021/</loc>
     <lastmod>2021-12-31T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/books/</loc>
-    <lastmod>2021-12-31T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -69,12 +80,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/dfw/</loc>
-    <lastmod>2021-12-28T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/reviews/</loc>
     <lastmod>2021-12-28T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>

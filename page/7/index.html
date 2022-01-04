@@ -1077,6 +1077,8 @@
     
         
     
+        
+    
 
     
 
@@ -1096,6 +1098,41 @@
 </nav>
 
     </div>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/fatturaelettronica-for-.net-v0.9-has-been-released/">FatturaElettronica for .NET v0.9 has been released</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>FatturaElettronica for .NET v0.9 has been released. The companion Extensions package also hits v0.4.
+The main new feature is the FromJson() extension method which allows, you guessed it, for deserialization of a JSON stream into a Fattura class instance:
+var fattura = Fattura.CreateInstance(Instance.Privati); fattura.FromJson(new JsonTextReader(new StringReader(json))); // or, if FatturaElettronica.Extensions v0.4 is being used:  fattura.FromJson(json); // Invoice is now ready for inspection.  foreach (var documento in fattura.Body) { var dati = documento. <a class="read-more" href="/fatturaelettronica-for-.net-v0.9-has-been-released/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        
+        <time class="post-date" datetime="2018-10-27T09:05:25&#43;02:00">
+            27 Oct 2018
+        </time>
+    </footer>
+</article>
 
     
         <article class="post post">
@@ -1819,48 +1856,6 @@ How it works First, you need to set the ApplicatioName. This is also going to be
         
         <time class="post-date" datetime="2016-07-20T00:00:00Z">
             20 Jul 2016
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/evegenie-makes-eve-schema-generation-breeze/">EveGenie makes Eve schema generation a breeze</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Released by the nice folks at Drud, EveGenie is a tool for making Eve schema generation easier.
- Eve’s schema definitions are full of features, but can take a good amount of time to create when dealing with lots of complex resources. From our experience, it’s often helpful to describe an endpoint in JSON before creating it as an Eve schema. This allows you to make quick decisions about the structure of your entities without spending time moving schema code around. <a class="read-more" href="/evegenie-makes-eve-schema-generation-breeze/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/eve/">#eve</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/open-source/">#open source</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
-            
-        
-        <time class="post-date" datetime="2016-06-15T00:00:00Z">
-            15 Jun 2016
         </time>
     </footer>
 </article>
