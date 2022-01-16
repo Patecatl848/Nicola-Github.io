@@ -783,7 +783,7 @@ job with something similar to:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;0 4 * * * /home/user/dir/cleanup.sh
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Which ensures the scrupt runs daily at 4 am. For a weekend task, I&amp;rsquo;m happy with
+&lt;p&gt;Which ensures the script runs daily at 4 am. For a weekend task, I&amp;rsquo;m happy with
 the result.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
