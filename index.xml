@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 10 Jan 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jan 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -726,6 +726,67 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automatic deletion of older records in Postgres</title>
+      <link>https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/</link>
+      <pubDate>Sun, 16 Jan 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/</guid>
+      <description>&lt;p&gt;We have a Postgres cluster with a database for each user. Each database has
+a table that records events, and we want this table to only record the last 15
+days.&lt;/p&gt;
+
+&lt;p&gt;If we were on MongoDB, we could use a &lt;a href=&#34;https://docs.mongodb.com/manual/core/capped-collections/&#34;&gt;capped collection&lt;/a&gt;, but we are in
+Postgres, which does not have equivalent functionality. In Postgres, you have
+to make do with something homemade. My first idea was to install a cron job in
+the system. It would execute daily, deleting older events in each user
+database.&lt;/p&gt;
+
+&lt;p&gt;Before jumping in, I looked at what others do. One surprising popular approach
+appears to be using &lt;a href=&#34;https://www.postgresql.org/docs/current/sql-createtrigger.html&#34;&gt;triggers&lt;/a&gt;: older ones are pruned when a new row is
+inserted in the table. For my use case, this seems unnecessarily taxing to the
+system. I&amp;rsquo;m happy with running a single maintenance task late in the night when
+the system is underused. Two other solutions are &lt;a href=&#34;https://www.pgadmin.org/docs/pgadmin4/latest/pgagent.html&#34;&gt;pgAgent&lt;/a&gt; or &lt;a href=&#34;https://github.com/citusdata/pg_cron&#34;&gt;pg_cron&lt;/a&gt;.
+pgAgent is an external UI tool, so hard No to pgAgent from me. pg_cron
+essentially offers cron jobs baked into the database, which is good, but, like
+pg_Agent, it requires you to install the tool itself, create a Postgres
+extension, change Postgres configuration, optionally grant usage to a schema,
+etc. There&amp;rsquo;s also &lt;a href=&#34;https://www.postgresql.org/docs/current/ddl-partitioning.html&#34;&gt;partitioning&lt;/a&gt;, which seems way overboard for our use
+case. It seems that these approaches demand new dependencies and unnecessary
+work for something I can easily accomplish by leveraging what is already
+available, for free, in the system. So, it&amp;rsquo;s good old Linux cron jobs for me.&lt;/p&gt;
+
+&lt;p&gt;Because we run Postgres in Docker, a little more work is involved, but overall,
+the solution is pretty straightforward. Here is the script I came up with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;readonly CONTAINER=$(docker ps -q -f name=postgres)
+readonly USER=dbuser
+docker exec -i $CONTAINER \
+    psql -U $USER -d postgres -t \
+        -c &amp;quot;select datname from pg_database where datname like &#39;cus_%&#39;&amp;quot; | \
+    xargs -n 1 -I&amp;quot;{}&amp;quot; docker exec -i $CONTAINER psql -U $USER -d {} -t \
+        -c &amp;quot;delete from mytable where datetime &amp;lt; now() - interval &#39;15 days&#39;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;First, we find the id of the docker container (it runs in a swarm, so we don&amp;rsquo;t
+have exact container names). We need it because we want to execute psql from
+within the container. The second row sets a Postgres user other than the
+default one. That&amp;rsquo;s because we don&amp;rsquo;t allow default user logins. Then comes the
+Linux pipeline. First, we execute a query that returns all user database names;
+then, we pipe those into the query that deletes obsolete rows. The query
+executes against each target database. The script is then installed as a cron
+job with something similar to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0 4 * * * /home/user/dir/cleanup.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which ensures the scrupt runs daily at 4 am. For a weekend task, I&amp;rsquo;m happy with
+the result.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 25 Aug 2021 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jan 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/postgres/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automatic deletion of older records in Postgres</title>
+      <link>https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/</link>
+      <pubDate>Sun, 16 Jan 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/</guid>
+      <description>We have a Postgres cluster with a database for each user. Each database has a table that records events, and we want this table to only record the last 15 days.
+If we were on MongoDB, we could use a capped collection, but we are in Postgres, which does not have equivalent functionality. In Postgres, you have to make do with something homemade. My first idea was to install a cron job in the system.</description>
+    </item>
     
     <item>
       <title>How to restore a single Postgres database from a pg_dumpall dump</title>

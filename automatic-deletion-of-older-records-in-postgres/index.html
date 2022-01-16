@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Go James Webb"/>
+<meta name="twitter:title" content="Automatic deletion of older records in Postgres"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Go James Webb &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="Automatic deletion of older records in Postgres &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/go-james-webb/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/" />
 
     
         
@@ -29,19 +29,19 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2022-01-10T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2022-01-16T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="links" />
+    <meta property="article:tag" content="til" />
     
-    <meta property="article:tag" content="space" />
+    <meta property="article:tag" content="postgres" />
     
     
 
-    <title>Go James Webb &middot; Nicola Iarocci</title>
+    <title>Automatic deletion of older records in Postgres &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="It&amp;rsquo;s now old news that the James Webb Telescope was successfully launched on Christmas Day. But last Saturday marked another historic moment for this incr" />
+    <meta name="description" content="We have a Postgres cluster with a database for each user. Each database has a table that records events, and we want this table to only record the last 15 days." />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -67,7 +67,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/go-james-webb/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/" />
 
     
       
@@ -104,23 +104,23 @@
             
         ]
     },
-    "headline": "Go James Webb",
-    "name": "Go James Webb",
-    "wordCount":  151 ,
-    "timeRequired": "PT1M",
+    "headline": "Automatic deletion of older records in Postgres",
+    "name": "Automatic deletion of older records in Postgres",
+    "wordCount":  472 ,
+    "timeRequired": "PT3M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/go-james-webb/",
-    "datePublished": "2022-01-10T07:05Z",
-    "dateModified": "2022-01-10T07:05Z",
+    "url": "https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/",
+    "datePublished": "2022-01-16T07:05Z",
+    "dateModified": "2022-01-16T07:05Z",
     
-    "keywords": "links, space",
+    "keywords": "til, postgres",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/go-james-webb/"
+        "@id": "https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/"
     }
 }
     </script>
@@ -257,42 +257,74 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Go James Webb</h1>
+        <h1 class="post-title">Automatic deletion of older records in Postgres</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2022-01-10T07:05:25&#43;01:00">
-            Jan 10, 2022
+          <time class="post-date" datetime="2022-01-16T07:05:25&#43;01:00">
+            Jan 16, 2022
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/space/">#space</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/postgres/">#postgres</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>It&rsquo;s now old news that the <a href="https://www.jwst.nasa.gov/index.html">James Webb Telescope</a> was successfully launched
-on Christmas Day. But last Saturday marked another historic moment for this
-incredible human artifact:</p>
+      <p>We have a Postgres cluster with a database for each user. Each database has
+a table that records events, and we want this table to only record the last 15
+days.</p>
 
-<blockquote>
-<p>After a quarter-century of effort by tens of thousands of people, more than
-$10 billion in taxpayer funding, and some 350 deployment mechanisms that had
-to go just so, the James Webb Space Telescope fully unfurled its wings. The
-massive spacecraft completed its final deployments, and, by God, the process
-went smoothly.</p>
-</blockquote>
+<p>If we were on MongoDB, we could use a <a href="https://docs.mongodb.com/manual/core/capped-collections/">capped collection</a>, but we are in
+Postgres, which does not have equivalent functionality. In Postgres, you have
+to make do with something homemade. My first idea was to install a cron job in
+the system. It would execute daily, deleting older events in each user
+database.</p>
 
-<p>Ars Technica&rsquo;s Eric Berger has long been my go-to pusher for space-related
-stuff. <a href="https://arstechnica.com/science/2022/01/remarkably-nasa-has-completed-deployment-of-the-webb-space-telescope/">His report</a> on Saturday&rsquo;s milestone is accurate and to the point as
-usual. Today he has <a href="https://arstechnica.com/science/2022/01/all-hail-the-ariane-5-rocket-which-doubled-the-webb-telescopes-lifetime/">another article</a> on ESA Arianne 5&rsquo;s fundamental
-contribution to the mission. I love how modern, successful space missions are
-almost always the result of no-bullshit joint efforts by multiple international
-actors.</p>
+<p>Before jumping in, I looked at what others do. One surprising popular approach
+appears to be using <a href="https://www.postgresql.org/docs/current/sql-createtrigger.html">triggers</a>: older ones are pruned when a new row is
+inserted in the table. For my use case, this seems unnecessarily taxing to the
+system. I&rsquo;m happy with running a single maintenance task late in the night when
+the system is underused. Two other solutions are <a href="https://www.pgadmin.org/docs/pgadmin4/latest/pgagent.html">pgAgent</a> or <a href="https://github.com/citusdata/pg_cron">pg_cron</a>.
+pgAgent is an external UI tool, so hard No to pgAgent from me. pg_cron
+essentially offers cron jobs baked into the database, which is good, but, like
+pg_Agent, it requires you to install the tool itself, create a Postgres
+extension, change Postgres configuration, optionally grant usage to a schema,
+etc. There&rsquo;s also <a href="https://www.postgresql.org/docs/current/ddl-partitioning.html">partitioning</a>, which seems way overboard for our use
+case. It seems that these approaches demand new dependencies and unnecessary
+work for something I can easily accomplish by leveraging what is already
+available, for free, in the system. So, it&rsquo;s good old Linux cron jobs for me.</p>
+
+<p>Because we run Postgres in Docker, a little more work is involved, but overall,
+the solution is pretty straightforward. Here is the script I came up with:</p>
+
+<pre><code>readonly CONTAINER=$(docker ps -q -f name=postgres)
+readonly USER=dbuser
+docker exec -i $CONTAINER \
+    psql -U $USER -d postgres -t \
+        -c &quot;select datname from pg_database where datname like 'cus_%'&quot; | \
+    xargs -n 1 -I&quot;{}&quot; docker exec -i $CONTAINER psql -U $USER -d {} -t \
+        -c &quot;delete from mytable where datetime &lt; now() - interval '15 days'&quot;
+</code></pre>
+
+<p>First, we find the id of the docker container (it runs in a swarm, so we don&rsquo;t
+have exact container names). We need it because we want to execute psql from
+within the container. The second row sets a Postgres user other than the
+default one. That&rsquo;s because we don&rsquo;t allow default user logins. Then comes the
+Linux pipeline. First, we execute a query that returns all user database names;
+then, we pipe those into the query that deletes obsolete rows. The query
+executes against each target database. The script is then installed as a cron
+job with something similar to:</p>
+
+<pre><code>0 4 * * * /home/user/dir/cleanup.sh
+</code></pre>
+
+<p>Which ensures the scrupt runs daily at 4 am. For a weekend task, I&rsquo;m happy with
+the result.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
@@ -349,17 +381,10 @@ actors.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/automatic-deletion-of-older-records-in-postgres/">
-          <section class="post">
-              <h2>Automatic deletion of older records in Postgres</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/moxie-on-web3/">
+      <a class="read-next-story prev" style="no-cover" href="/go-james-webb/">
           <section class="post">
-              <h2>Moxie on Web3</h2>
+              <h2>Go James Webb</h2>
           </section>
       </a>
   
