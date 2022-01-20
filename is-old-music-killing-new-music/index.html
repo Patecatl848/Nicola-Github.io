@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Automatic deletion of older records in Postgres"/>
+<meta name="twitter:title" content="Is Old Music Killing New Music?"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Automatic deletion of older records in Postgres &middot; Nicola Iarocci" />
+  	<meta property="og:title" content="Is Old Music Killing New Music? &middot; Nicola Iarocci" />
   	<meta property="og:site_name" content="Nicola Iarocci" />
-  	<meta property="og:url" content="https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/" />
+  	<meta property="og:url" content="https://nicolaiarocci.com/is-old-music-killing-new-music/" />
 
     
         
@@ -29,19 +29,19 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2022-01-16T07:05:25&#43;01:00" />
+    <meta property="article:published_time" content="2022-01-20T07:05:25&#43;01:00" />
 
     
-    <meta property="article:tag" content="til" />
+    <meta property="article:tag" content="links" />
     
-    <meta property="article:tag" content="postgres" />
+    <meta property="article:tag" content="music" />
     
     
 
-    <title>Automatic deletion of older records in Postgres &middot; Nicola Iarocci</title>
+    <title>Is Old Music Killing New Music? &middot; Nicola Iarocci</title>
 
     
-    <meta name="description" content="We have a Postgres cluster with a database for each user. Each database has a table that records events, and we want this table to only record the last 15 days." />
+    <meta name="description" content="I had a hunch that old songs were taking over music streaming platforms—but even I was shocked when I saw the most recent numbers. According to MRC Data, old so" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -67,7 +67,7 @@
     
     <meta name="generator" content="Hugo 0.55.4" />
 
-    <link rel="canonical" href="https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/" />
+    <link rel="canonical" href="https://nicolaiarocci.com/is-old-music-killing-new-music/" />
 
     
       
@@ -104,23 +104,23 @@
             
         ]
     },
-    "headline": "Automatic deletion of older records in Postgres",
-    "name": "Automatic deletion of older records in Postgres",
-    "wordCount":  472 ,
-    "timeRequired": "PT3M",
+    "headline": "Is Old Music Killing New Music?",
+    "name": "Is Old Music Killing New Music?",
+    "wordCount":  118 ,
+    "timeRequired": "PT1M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/",
-    "datePublished": "2022-01-16T07:05Z",
-    "dateModified": "2022-01-16T07:05Z",
+    "url": "https://nicolaiarocci.com/is-old-music-killing-new-music/",
+    "datePublished": "2022-01-20T07:05Z",
+    "dateModified": "2022-01-20T07:05Z",
     
-    "keywords": "til, postgres",
+    "keywords": "links, music",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://nicolaiarocci.com/automatic-deletion-of-older-records-in-postgres/"
+        "@id": "https://nicolaiarocci.com/is-old-music-killing-new-music/"
     }
 }
     </script>
@@ -257,74 +257,36 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Automatic deletion of older records in Postgres</h1>
+        <h1 class="post-title">Is Old Music Killing New Music?</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2022-01-16T07:05:25&#43;01:00">
-            Jan 16, 2022
+          <time class="post-date" datetime="2022-01-20T07:05:25&#43;01:00">
+            Jan 20, 2022
           </time>
         
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/til/">#til</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/links/">#links</a></span>
          
-          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/postgres/">#postgres</a></span>
+          <span class="post-tag small"><a href="https://nicolaiarocci.com//tags/music/">#music</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>We have a Postgres cluster with a database for each user. Each database has
-a table that records events, and we want this table to only record the last 15
-days.</p>
+      <blockquote>
+<p>I had a hunch that old songs were taking over music streaming platforms—but
+even I was shocked when I saw the most recent numbers. According to MRC Data,
+old songs now represent 70% of the US music market. Those who make a living
+from new music—especially that endangered species known as the working
+musician—have to look at these figures with fear and trembling. But the news
+gets worse.</p>
+</blockquote>
 
-<p>If we were on MongoDB, we could use a <a href="https://docs.mongodb.com/manual/core/capped-collections/">capped collection</a>, but we are in
-Postgres, which does not have equivalent functionality. In Postgres, you have
-to make do with something homemade. My first idea was to install a cron job in
-the system. It would execute daily, deleting older events in each user
-database.</p>
-
-<p>Before jumping in, I looked at what others do. One surprising popular approach
-appears to be using <a href="https://www.postgresql.org/docs/current/sql-createtrigger.html">triggers</a>: older ones are pruned when a new row is
-inserted in the table. For my use case, this seems unnecessarily taxing to the
-system. I&rsquo;m happy with running a single maintenance task late in the night when
-the system is underused. Two other solutions are <a href="https://www.pgadmin.org/docs/pgadmin4/latest/pgagent.html">pgAgent</a> or <a href="https://github.com/citusdata/pg_cron">pg_cron</a>.
-pgAgent is an external UI tool, so hard No to pgAgent from me. pg_cron
-essentially offers cron jobs baked into the database, which is good, but, like
-pg_Agent, it requires you to install the tool itself, create a Postgres
-extension, change Postgres configuration, optionally grant usage to a schema,
-etc. There&rsquo;s also <a href="https://www.postgresql.org/docs/current/ddl-partitioning.html">partitioning</a>, which seems way overboard for our use
-case. It seems that these approaches demand new dependencies and unnecessary
-work for something I can easily accomplish by leveraging what is already
-available, for free, in the system. So, it&rsquo;s good old Linux cron jobs for me.</p>
-
-<p>Because we run Postgres in Docker, a little more work is involved, but overall,
-the solution is pretty straightforward. Here is the script I came up with:</p>
-
-<pre><code>readonly CONTAINER=$(docker ps -q -f name=postgres)
-readonly USER=dbuser
-docker exec -i $CONTAINER \
-    psql -U $USER -d postgres -t \
-        -c &quot;select datname from pg_database where datname like 'cus_%'&quot; | \
-    xargs -n 1 -I&quot;{}&quot; docker exec -i $CONTAINER psql -U $USER -d {} -t \
-        -c &quot;delete from mytable where datetime &lt; now() - interval '15 days'&quot;
-</code></pre>
-
-<p>First, we find the id of the docker container (it runs in a swarm, so we don&rsquo;t
-have exact container names). We need it because we want to execute psql from
-within the container. The second row sets a Postgres user other than the
-default one. That&rsquo;s because we don&rsquo;t allow default user logins. Then comes the
-Linux pipeline. First, we execute a query that returns all user database names;
-then, we pipe those into the query that deletes obsolete rows. The query
-executes against each target database. The script is then installed as a cron
-job with something similar to:</p>
-
-<pre><code>0 4 * * * /home/user/dir/cleanup.sh
-</code></pre>
-
-<p>Which ensures the script runs daily at 4 am. For a weekend task, I&rsquo;m happy with
-the result.</p>
+<p>I can&rsquo;t say I can relate as my kids of ages 21, 18, and 16 do their best to
+stay clear from the music I like, but anyways, Ted Gioia&rsquo;s <a href="https://tedgioia.substack.com/p/is-old-music-killing-new-music">latest piece</a> on
+recent music trends is super-interesting.</p>
 
 <p><em>Subscribe to the <a href="https://nicolaiarocci.substack.com">newsletter</a>, the <a href="https://nicolaiarocci.com/index.xml">RSS feed</a>, or follow @<a href="http://twitter.com/nicolaiarocci">nicolaiarocci</a> on Twitter</em></p>
 
@@ -381,17 +343,10 @@ the result.</p>
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="/is-old-music-killing-new-music/">
-          <section class="post">
-              <h2>Is Old Music Killing New Music?</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="/go-james-webb/">
+      <a class="read-next-story prev" style="no-cover" href="/automatic-deletion-of-older-records-in-postgres/">
           <section class="post">
-              <h2>Go James Webb</h2>
+              <h2>Automatic deletion of older records in Postgres</h2>
           </section>
       </a>
   
