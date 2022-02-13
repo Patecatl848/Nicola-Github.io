@@ -19,7 +19,7 @@
       
       <guid>https://nicolaiarocci.com/work-in-progress-on-eve-2.0/</guid>
       <description>I&amp;rsquo;ve been back at the forge working on Eve 2.0. Version 2 will support Python 3.7+ and drop Python 2.7, 3.5 and 3.6. It will bring support for PyMongo 4+ as well, along with several other minor fixes and improvements (changelog). It would be nice if you guys and gals, users of Eve, would give it a spin before the release.
-I&amp;rsquo;d like to address the last long-standing issue: Cerberus v1+ deprecation warnings.</description>
+I know. I recently stated that Eve was in maintenance mode.</description>
     </item>
     
     <item>
