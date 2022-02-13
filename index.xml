@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 09 Feb 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 13 Feb 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -726,6 +726,31 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Work in progress on Eve 2.0</title>
+      <link>https://nicolaiarocci.com/work-in-progress-on-eve-2.0/</link>
+      <pubDate>Sun, 13 Feb 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/work-in-progress-on-eve-2.0/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been back at the forge working on Eve 2.0. Version 2 will support Python
+3.7+ and drop Python 2.7, 3.5 and 3.6. It will bring support for PyMongo 4+ as
+well, along with several other minor fixes and improvements (&lt;a href=&#34;https://github.com/pyeve/eve/issues/1278&#34;&gt;changelog&lt;/a&gt;).
+It would be nice if you guys and gals, users of Eve, would give it a spin
+before the release.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d like to address the last long-standing issue: &lt;a href=&#34;https://github.com/pyeve/eve/issues/1278&#34;&gt;Cerberus v1+ support&lt;/a&gt;.
+That would improve validation at the cost of some compatibility breakage. As
+the original author and maintainer of Cerberus, not having updated this
+dependency has been painful. Time and bandwidth are the constraints, as usual.
+If anyone wants to lend a hand, you are welcome.&lt;/p&gt;
+
+&lt;p&gt;I know. I &lt;a href=&#34;https://nicolaiarocci.com/is-eve-still-maintained/&#34;&gt;recently&lt;/a&gt; stated that Eve was in maintenance mode. All of
+those considerations still apply, but what can I say? I want Eve 2 out.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
