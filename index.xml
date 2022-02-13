@@ -737,7 +737,7 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
       <guid>https://nicolaiarocci.com/work-in-progress-on-eve-2.0/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been back at the forge working on Eve 2.0. Version 2 will support Python
 3.7+ and drop Python 2.7, 3.5 and 3.6. It will bring support for PyMongo 4+ as
-well, along with several other minor fixes and improvements (&lt;a href=&#34;https://github.com/pyeve/eve/issues/1278&#34;&gt;changelog&lt;/a&gt;).
+well, along with several other minor fixes and improvements (&lt;a href=&#34;https://docs.python-eve.org/en/latest/changelog.html&#34;&gt;changelog&lt;/a&gt;).
 It would be nice if you guys and gals, users of Eve, would give it a spin
 before the release.&lt;/p&gt;
 
