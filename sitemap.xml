@@ -28,20 +28,37 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/google-search-is-dying/</loc>
+    <lastmod>2022-02-15T07:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2022-02-13T07:05:25+01:00</lastmod>
+    <lastmod>2022-02-15T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2022-02-13T07:05:25+01:00</lastmod>
+    <lastmod>2022-02-15T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2022-02-13T07:05:25+01:00</lastmod>
+    <lastmod>2022-02-15T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/google/</loc>
+    <lastmod>2022-02-15T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/links/</loc>
+    <lastmod>2022-02-15T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -109,12 +126,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/blockchain/</loc>
-    <lastmod>2022-02-07T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/links/</loc>
     <lastmod>2022-02-07T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -3606,12 +3617,6 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/font/</loc>
-    <lastmod>2011-07-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/google/</loc>
     <lastmod>2011-07-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

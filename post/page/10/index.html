@@ -251,6 +251,49 @@
 	
 	   <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="/fattura-elettronica-open-source/">Fattura Elettronica Open Source</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p><p><em>this post is about an all-italian open source release, so it&#8217;s going to be in italian</em></p>
+
+<p><a href="https://github.com/FatturaElettronicaPA">FatturaElettronicaPA</a> è un nuovo progetto open source che ho rilasciato qualche giorno fa assieme alla <a href="http://gestionaleamica.com">mia azienda</a>. Si tratta di una libreria C# che permette di leggere, scrivere e convalidare le Fatture Elettroniche aderenti alle specifiche del <a href="http://www.fatturapa.gov.it/export/fatturazione/sdi/Specifiche_tecniche_del_formato_FatturaPA_V1.1.pdf">sistema di interscambio</a> della Pubblica Amministrazione.</p> <a class="read-more" href="/fattura-elettronica-open-source/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/fattura-elettronica/">#fattura elettronica</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/open-source/">#open source</a>,
+            
+        
+        <time class="post-date" datetime="2015-02-10T00:00:00Z">
+            10 Feb 2015
+        </time>
+    </footer>
+</article>
+
+	
+	   <article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="/sustainable-open-source-management/">On Sustainable Open Source Management</a></h2>
     </header>
     <section class="post-excerpt">
@@ -1038,55 +1081,6 @@ $ pip install ordereddict
         
         <time class="post-date" datetime="2014-09-16T00:00:00Z">
             16 Sep 2014
-        </time>
-    </footer>
-</article>
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/taming-portable-class-libraries-and-net-framework-4/">Taming Portable Class Libraries and .NET Framework 4</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p><p>If your project is a Portable Class Library and you want it to run with the .NET Framework 4 well, you are in for a few surprises. Especially so if you are using InstallShield for building your deployment package. We&#8217;ve been going through this a few days ago and it&#8217;s been kind of a wild ride. I thought I could pin the whole thing down so that others might enjoy a painless journey through all this mess.</p>
-
-<h2 id="portable-class-libraries-and-net-framework-4">Portable Class Libraries and .NET Framework 4</h2>
-
-<p>The first thing you should know is that while the .NET Framework 4 does support PCLs, in fact it won&#8217;t run them without a patch. For whatever reason, Microsoft decided that PCL compatibility wasn&#8217;t a worth a 4.0.4 update. That leaves us with the need to not only make sure that target machines are running the up-to-date .NET4 release (v4.0.3) but also that they&#8217;ve been updated with <a href="https://support.microsoft.com/kb/2468871" target="_blank">KB2468871</a>.</p>
-
-<p>You might be wondering why this is an issue in the first place. We could simply install the .NET Framework 4.5 which is backward compatible with the .NET4 and includes the afore mentioned KB2468871. Even better, we could just target the .NET 4.5 on our PCL. Problem is that besides iOS, Android, WinPhone and Silverlight we also want our libraries to run seamlessly on as many Windows editions as possible, Windows XP included. Here is the catch: <a href="https://connect.microsoft.com/VisualStudio/feedback/details/730732/net-framework-4-5-should-support-windows-xp-sp3," target="_blank">.NET4 is the last framework version to run on Windows XP</a>. And yes, we got the memo, Microsoft officially abandoned Windows XP a while ago so why bother? Well it turns out that millions of users are still running XP, especially so in the enterprise and SMB. These PCL are targeting exactly that, precisely the accounting software segment, and believe me there&#8217;s a huge number of users happily invoicing and accounting on their <em>old-fart-but-still-splendidly-doing-its-job-for-cheap</em> boxes. Oh and the .NET Framework 3.5 is not an option as it doesn&#8217;t support Portable Classes at all.</p> <a class="read-more" href="/taming-portable-class-libraries-and-net-framework-4/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/.net/">#.net</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/installshield/">#installshield</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/kb2468871/">#kb2468871</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/pcl/">#pcl</a>,
-            
-        
-        <time class="post-date" datetime="2014-08-28T00:00:00Z">
-            28 Aug 2014
         </time>
     </footer>
 </article>

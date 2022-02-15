@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 13 Feb 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 15 Feb 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>google</title>
+      <link>https://nicolaiarocci.com/tags/google/</link>
+      <pubDate>Tue, 15 Feb 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>links</title>
+      <link>https://nicolaiarocci.com/tags/links/</link>
+      <pubDate>Tue, 15 Feb 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/links/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>eve</title>
@@ -81,15 +99,6 @@
       <pubDate>Mon, 07 Feb 2022 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/blockchain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>links</title>
-      <link>https://nicolaiarocci.com/tags/links/</link>
-      <pubDate>Mon, 07 Feb 2022 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/links/</guid>
       <description></description>
     </item>
     
@@ -2655,15 +2664,6 @@
       <pubDate>Tue, 05 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/font/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>google</title>
-      <link>https://nicolaiarocci.com/tags/google/</link>
-      <pubDate>Tue, 05 Jul 2011 00:00:00 +0000</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/google/</guid>
       <description></description>
     </item>
     

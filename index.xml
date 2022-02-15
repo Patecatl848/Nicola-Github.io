@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 13 Feb 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 15 Feb 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -726,6 +726,30 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Google Search is Dying</title>
+      <link>https://nicolaiarocci.com/google-search-is-dying/</link>
+      <pubDate>Tue, 15 Feb 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/google-search-is-dying/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Reddit is currently the most popular search engine. The only people who don’t
+know that are the team at Reddit, who can’t be bothered to build a decent
+search interface. So instead we resort to using Google, and appending the
+word “reddit” to the end of our queries. [&amp;hellip;] Why are people searching
+Reddit specifically? The short answer is that Google search results are
+clearly dying. The long answer is that most of the web has become too
+inauthentic to trust.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;More &lt;a href=&#34;https://dkb.io/post/google-search-is-dying&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I &lt;a href=&#34;https://nicolaiarocci.com/yet-another-reason-to-use-duckduckgo/&#34;&gt;switched to DuckDuckGo&lt;/a&gt; a long time ago, and you probably should too.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
