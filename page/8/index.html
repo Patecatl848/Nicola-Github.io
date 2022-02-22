@@ -1103,6 +1103,8 @@
     
         
     
+        
+    
 
     
 
@@ -1122,6 +1124,41 @@
 </nav>
 
     </div>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/quick-fix-mongodb-fails-when-saving-decimal-fields/">Quick fix: MongoDB fails when saving Decimal fields</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>So today I was trying to store some decimal fields on a MongoDB 3.4 instance and I kept failing, miserably.
+In Compass I was getting a somewhat obscure &ldquo;connection lost&rdquo; message on every save attempt. Upgrading to Mongo 3.4.10 (I was on 3.4.4) improved things, as the error message was now hinting at the setFeatureCompatibilityVersion setting which, apparently, was preventing some features to be made available.
+Now that made sense, as this specific database had been upgraded all the way from up Mongo 2. <a class="read-more" href="/quick-fix-mongodb-fails-when-saving-decimal-fields/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        
+        <time class="post-date" datetime="2017-11-23T11:05:28&#43;01:00">
+            23 Nov 2017
+        </time>
+    </footer>
+</article>
 
     
         <article class="post post">
@@ -1897,45 +1934,6 @@ Work on v0.7 is also ongoing. It will include new features such as support for t
         
         <time class="post-date" datetime="2016-03-14T00:00:00Z">
             14 Mar 2016
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/real-life-net-cross-platform/">Real Life .NET Cross Platform</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>There is a new episode up at Channel9 TecHeroes. It is called Real Life .NET Cross Platform and it is about developing production-ready, cross-platform applications with today&#8217;s .NET. In the interview we talk about SimpleCache, an asynchronous, permanent and cross-platform key-value object cache powered by SQLite3. The project is still a work in progress so there is no NuGet package available yet, but it is quite usable already. The talk slides are also available. <a class="read-more" href="/real-life-net-cross-platform/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/cross-platform/">#cross-platform</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/events/">#events</a>,
-            
-        
-        <time class="post-date" datetime="2016-03-11T00:00:00Z">
-            11 Mar 2016
         </time>
     </footer>
 </article>
