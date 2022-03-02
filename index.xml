@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 28 Feb 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 01 Mar 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -728,6 +728,54 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>You&#39;re probably using the wrong dictionary</title>
+      <link>https://nicolaiarocci.com/youre-probably-using-the-wrong-dictionary/</link>
+      <pubDate>Tue, 01 Mar 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/youre-probably-using-the-wrong-dictionary/</guid>
+      <description>&lt;p&gt;In 2014, James Somers sat down to write a beautiful, entertaining lament about
+the state of today’s dictionaries and an argument in favor of the adoption of
+Noah Webster’s 1913 edition.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I don&amp;rsquo;t want you to conclude that it&amp;rsquo;s just a matter of aesthetics. Yes,
+Webster&amp;rsquo;s definitions are prettier. But they are also better. They&amp;rsquo;re so much
+better that to use another dictionary is to keep yourself forever at arm&amp;rsquo;s
+length from the actual language.&lt;/p&gt;
+
+&lt;p&gt;Recall that the New Oxford, for the word &amp;ldquo;fustian,&amp;rdquo; gives &amp;ldquo;pompous or
+pretentious speech or writing.&amp;rdquo; I said earlier that that wasn&amp;rsquo;t even really
+correct. Here, then, is Webster&amp;rsquo;s definition: &amp;ldquo;An inflated style of writing;
+a kind of writing in which high-sounding words are used, above the dignity of
+the thoughts or subject; bombast.&amp;rdquo; Do you see the difference? What makes
+fustian fustian is not just that the language is pompous—it&amp;rsquo;s that this
+pomposity is above the dignity of the thoughts or subject. It&amp;rsquo;s using fancy
+language where fancy language isn&amp;rsquo;t called for. It&amp;rsquo;s a subtle difference, but
+that&amp;rsquo;s the whole point: English is an awfully subtle instrument. A dictionary
+that ignores these little shades is dangerous; in fact in those cases it&amp;rsquo;s
+worse than useless. It&amp;rsquo;s misleading, deflating. It divests those words of their
+worth and purpose.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can read it all &lt;a href=&#34;http://jsomers.net/blog/dictionary&#34;&gt;here&lt;/a&gt;. It&amp;rsquo;s worth your
+time..&lt;/p&gt;
+
+&lt;p&gt;Not happy with the essay alone, he also added instructions on installing
+Webster&amp;rsquo;s on a Mac. Unfortunately, I could not get them to work on Catalina:
+the DictUnifier app would crash as soon as I dragged the dictionary file on it.
+A little research revealed that DictUnifier has a &lt;a href=&#34;https://github.com/jjgod/mac-dictionary-kit/pull/4#issuecomment-583801724&#34;&gt;problem with Catalina&lt;/a&gt;.
+The suggested workarounds did not work for me. In the process, I learned
+that DictUnifier has gone unmaintained. Thankfully, a couple of years ago
+a good soul released &lt;a href=&#34;https://github.com/ritou11/dictconv&#34;&gt;DictConv&lt;/a&gt;, a &amp;ldquo;Node.js version of DictUnifier&amp;rdquo;.
+DictConv did the trick. Webster&amp;rsquo;s 1913 is now happily residing in my macOS
+Dictionary.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://nicolaiarocci.com/images/webster1913.png&#34; alt=&#34;Webster&#39;s 1913&#34; /&gt;
+&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
