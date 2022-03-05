@@ -1113,6 +1113,8 @@
     
         
     
+        
+    
 
     
 
@@ -1132,6 +1134,48 @@
 </nav>
 
     </div>
+
+    
+        <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/convalidare-un-dizionario-python-con-cerberus/">Convalidare un dizionario Python con Cerberus</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+            <p>Da qualche giorno ho rilasciato Cerberus, uno strumento per la convalida dei dizionari Python. Gli passate un dizionario, lui lo confronta con uno schema di convalida e, se c&#8217;è qualcosa che non va (per esempio una chiave sconosciuta, oppure un valore di tipo sbagliato), ve lo segnala.
+&gt;&gt;&gt; v = Validator({'name': {'type': 'string'}}) &gt;&gt;&gt; v.validate({'name': 'john doe'}) True Sono due le caratteristiche che rendono Cerberus interessante: è facilmente estensibile (la documentazione include un esempio di estensione del sistema di convalida), e non si blocca sollevando un&#8217;eccezione al primo problema riscontrato: gli errori, quando presenti, sono tutti riportati in una lista a fine convalida. <a class="read-more" href="/convalidare-un-dizionario-python-con-cerberus/">&raquo;</a></p>
+        
+    </section>
+    <footer class="post-meta">
+        
+
+        
+            
+            
+
+            
+            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
+            
+            
+            
+            Nicola Iarocci
+                 
+        
+
+        on
+            
+                <a href="https://nicolaiarocci.com//tags/cerberus/">#cerberus</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/open-source/">#open source</a>,
+            
+                <a href="https://nicolaiarocci.com//tags/python/">#python</a>,
+            
+        
+        <time class="post-date" datetime="2012-10-16T00:00:00Z">
+            16 Oct 2012
+        </time>
+    </footer>
+</article>
 
     
         <article class="post post">
@@ -1922,48 +1966,6 @@ import simplejson as json json.loads(fonte) {'aggiornato_il': 'Wed, 06 Jun 2012 
         
         <time class="post-date" datetime="2012-05-30T00:00:00Z">
             30 May 2012
-        </time>
-    </footer>
-</article>
-
-    
-        <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/primi-passi-con-ssh/">Primi passi con SSH</a></h2>
-    </header>
-    <section class="post-excerpt">
-        
-            <p>Se siete ai primi passi nello sviluppo di applicazioni web vi consiglio la lettura di SSH: What and How. Senza troppi fronzoli l&#8217;articolo spiega le basi di SSH mettendo bene in luce le possibilità offerte da questo importante strumento di lavoro.
- Ogni giorno molti sviluppatori web usano SSH (&#8220;Secure Shell&#8221;) per gestire i loro server, fare backup, lavorare in remoto e una miriade di altre cosette. Oggi vi spiego cos&#8217;è e da dove viene SSH e, soprattutto, vi insegno come configurarlo sul vostro server remoto o sulla vostra rete locale. <a class="read-more" href="/primi-passi-con-ssh/">&raquo;</a></p>
-        
-    </section>
-    <footer class="post-meta">
-        
-
-        
-            
-            
-
-            
-            <img class="author-thumb" src="/images/avatar.png" alt="Author image" nopin="nopin" />
-            
-            
-            
-            Nicola Iarocci
-                 
-        
-
-        on
-            
-                <a href="https://nicolaiarocci.com//tags/programmazione/">#programmazione</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/ssh/">#ssh</a>,
-            
-                <a href="https://nicolaiarocci.com//tags/web/">#web</a>,
-            
-        
-        <time class="post-date" datetime="2012-05-23T00:00:00Z">
-            23 May 2012
         </time>
     </footer>
 </article>
