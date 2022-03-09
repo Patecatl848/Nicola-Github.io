@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sat, 05 Mar 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 09 Mar 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>books</title>
+      <link>https://nicolaiarocci.com/tags/books/</link>
+      <pubDate>Wed, 09 Mar 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>endurance</title>
+      <link>https://nicolaiarocci.com/tags/endurance/</link>
+      <pubDate>Wed, 09 Mar 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/endurance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>links</title>
+      <link>https://nicolaiarocci.com/tags/links/</link>
+      <pubDate>Wed, 09 Mar 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/links/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>goodreads</title>
@@ -18,24 +45,6 @@
       <pubDate>Sat, 05 Mar 2022 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/goodreads/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>links</title>
-      <link>https://nicolaiarocci.com/tags/links/</link>
-      <pubDate>Sat, 05 Mar 2022 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/links/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>books</title>
-      <link>https://nicolaiarocci.com/tags/books/</link>
-      <pubDate>Fri, 04 Mar 2022 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/books/</guid>
       <description></description>
     </item>
     
