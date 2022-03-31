@@ -40,14 +40,14 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/</loc>
+    <loc>https://nicolaiarocci.com/quoting-david-foster-wallace/</loc>
     <lastmod>2022-03-31T06:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/whatever-you-worship-will-eat-you-alive/</loc>
+    <loc>https://nicolaiarocci.com/tags/</loc>
     <lastmod>2022-03-31T06:05:25+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -4577,6 +4577,15 @@
   <url>
     <loc>https://nicolaiarocci.com/guida-di-riferimento-per-asp-net/</loc>
     <lastmod>2010-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/my-playwright-session-at-webday-2022/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/playwright/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

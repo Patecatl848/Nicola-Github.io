@@ -13,11 +13,11 @@
     
     
     <item>
-      <title>Whatever you worship will eat you alive</title>
-      <link>https://nicolaiarocci.com/whatever-you-worship-will-eat-you-alive/</link>
+      <title>Quoting David Foster Wallace</title>
+      <link>https://nicolaiarocci.com/quoting-david-foster-wallace/</link>
       <pubDate>Thu, 31 Mar 2022 06:05:25 +0100</pubDate>
       
-      <guid>https://nicolaiarocci.com/whatever-you-worship-will-eat-you-alive/</guid>
+      <guid>https://nicolaiarocci.com/quoting-david-foster-wallace/</guid>
       <description>Because here’s something else that’s true. In the day-to-day trenches of adult life, there is actually no such thing as atheism. There is no such thing as not worshipping. Everybody worships. The only choice we get is what to worship. And an outstanding reason for choosing some sort of God or spiritual-type thing to worship-be it J.C. or Allah, be it Yahweh or the Wiccan mother-goddess or the Four Noble Truths or some infrangible set of ethical principles-is that pretty much anything else you worship will eat you alive.</description>
     </item>
     
@@ -4485,6 +4485,16 @@ usare una IDE, praticamente tutte supportano le regular expressions.&lt;/p&gt;</
       <guid>https://nicolaiarocci.com/guida-di-riferimento-per-asp-net/</guid>
       <description>La ASP.NET Developer Guidance Map è una eccellente risorsa sia per il programmatore alle prime armi che per il veterano. Fornisce una ottima selezione di risorse web catalogate nelle seguenti categorie: Primi Passi, Architettura e Design, Codice di Esempio, Come Fare, Filmati, Addestramento.
 Peccato sia disponibile solo in formato PDF, qualcuno dovrebbe approntare una pagina wiki o qualcosa di simile che riproduca questi contenuti.</description>
+    </item>
+    
+    <item>
+      <title>My Playwright session at WebDay 2022</title>
+      <link>https://nicolaiarocci.com/my-playwright-session-at-webday-2022/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nicolaiarocci.com/my-playwright-session-at-webday-2022/</guid>
+      <description>If you understand Italian, the recording of my Playwright session at UGIdotNET&amp;rsquo;s WebDay 2022 is now available on YouTube. Playwright is a phenomenal cross-browser, cross-platform, cross-language, single-API, mobile-friendly front-end testing tool.
+I&amp;rsquo;m looking forward to giving the same session in English sooner or later, but I should first win my laziness and start looking for exciting events with open CFPs. If you happen to know about one, please let me know.</description>
     </item>
     
   </channel>

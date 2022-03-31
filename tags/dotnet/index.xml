@@ -113,5 +113,15 @@ Subscribe to the newsletter, the RSS feed, or follow @nicolaiarocci on Twitter</
  Interestingly, Microsoft is recommending a third-party open-source library as an alternative. I hope we&amp;rsquo;ll see more of that in the future.</description>
     </item>
     
+    <item>
+      <title>My Playwright session at WebDay 2022</title>
+      <link>https://nicolaiarocci.com/my-playwright-session-at-webday-2022/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nicolaiarocci.com/my-playwright-session-at-webday-2022/</guid>
+      <description>If you understand Italian, the recording of my Playwright session at UGIdotNET&amp;rsquo;s WebDay 2022 is now available on YouTube. Playwright is a phenomenal cross-browser, cross-platform, cross-language, single-API, mobile-friendly front-end testing tool.
+I&amp;rsquo;m looking forward to giving the same session in English sooner or later, but I should first win my laziness and start looking for exciting events with open CFPs. If you happen to know about one, please let me know.</description>
+    </item>
+    
   </channel>
 </rss>
