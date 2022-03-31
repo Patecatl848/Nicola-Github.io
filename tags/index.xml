@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Wed, 30 Mar 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 31 Mar 2022 06:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>dfw</title>
+      <link>https://nicolaiarocci.com/tags/dfw/</link>
+      <pubDate>Thu, 31 Mar 2022 06:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/dfw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quotes</title>
+      <link>https://nicolaiarocci.com/tags/quotes/</link>
+      <pubDate>Thu, 31 Mar 2022 06:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/quotes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>authentication</title>
@@ -261,15 +279,6 @@
       <pubDate>Fri, 31 Dec 2021 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/reading/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dfw</title>
-      <link>https://nicolaiarocci.com/tags/dfw/</link>
-      <pubDate>Tue, 28 Dec 2021 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/dfw/</guid>
       <description></description>
     </item>
     
