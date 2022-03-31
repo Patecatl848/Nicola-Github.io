@@ -28,11 +28,6 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/my-playwright-session-at-webday-2022/</loc>
-    <lastmod>2022-03-31T06:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/</loc>
     <lastmod>2022-03-31T06:05:25+01:00</lastmod>
     <priority>0</priority>
@@ -45,37 +40,24 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/quoting-david-foster-wallace/</loc>
+    <lastmod>2022-03-31T06:05:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
     <lastmod>2022-03-31T06:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
+    <loc>https://nicolaiarocci.com/tags/dfw/</loc>
     <lastmod>2022-03-31T06:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/javascript/</loc>
-    <lastmod>2022-03-31T06:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/playwright/</loc>
-    <lastmod>2022-03-31T06:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/programming/</loc>
-    <lastmod>2022-03-31T06:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/speaking/</loc>
+    <loc>https://nicolaiarocci.com/tags/quotes/</loc>
     <lastmod>2022-03-31T06:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -182,6 +164,12 @@
   
   <url>
     <loc>https://nicolaiarocci.com/tags/csharp/</loc>
+    <lastmod>2022-02-27T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/dotnet/</loc>
     <lastmod>2022-02-27T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -303,6 +291,12 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/tags/programming/</loc>
+    <lastmod>2022-01-23T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/is-old-music-killing-new-music/</loc>
     <lastmod>2022-01-20T07:05:25+01:00</lastmod>
   </url>
@@ -359,12 +353,6 @@
   <url>
     <loc>https://nicolaiarocci.com/book-review-consider-the-lobster/</loc>
     <lastmod>2021-12-28T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/dfw/</loc>
-    <lastmod>2021-12-28T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1342,6 +1330,12 @@
   </url>
   
   <url>
+    <loc>https://nicolaiarocci.com/tags/speaking/</loc>
+    <lastmod>2021-02-15T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nicolaiarocci.com/troubles-with-virtualbox-and-the-windows-subsystem-for-linux/</loc>
     <lastmod>2021-02-14T07:05:25+01:00</lastmod>
   </url>
@@ -2239,6 +2233,12 @@
   <url>
     <loc>https://nicolaiarocci.com/today-my-startup-failed/</loc>
     <lastmod>2014-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/javascript/</loc>
+    <lastmod>2014-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
