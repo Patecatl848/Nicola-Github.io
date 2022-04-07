@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Tue, 05 Apr 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 07 Apr 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Neuromancer and the birth of Cyberpunk</title>
+      <link>https://nicolaiarocci.com/neuromancer-and-the-birth-of-cyberpunk/</link>
+      <pubDate>Thu, 07 Apr 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/neuromancer-and-the-birth-of-cyberpunk/</guid>
+      <description>I went back to my library to check the year of my original Neuromancer edition. It&amp;rsquo;s 1993. For some context, I was 23 back then, with my software company founded only a couple of years earlier. The World Wide Web was at its very early stages. I distinctly remember getting out of that book dazed and confused. Characters were two-dimensional at best. There was a certain lack of exposition. The recurring streams of consciousness were complex for me to follow1.</description>
+    </item>
     
     <item>
       <title>The Sun in high resolution</title>
