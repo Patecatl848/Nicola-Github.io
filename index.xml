@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Fri, 15 Apr 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 01 May 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -738,6 +738,71 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>In-person events are the best</title>
+      <link>https://nicolaiarocci.com/in-person-events-are-the-best/</link>
+      <pubDate>Sun, 01 May 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/in-person-events-are-the-best/</guid>
+      <description>&lt;p&gt;Last week, thanks to &lt;a href=&#34;https://www.andreaverlicchi.eu/&#34;&gt;Andrea Verlicchi&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&amp;rsquo;s effort, we ran the first
+in-person &lt;a href=&#34;https://devromagna.org/&#34;&gt;DevRomagna&lt;/a&gt; event since 2019. We did some meetups during the
+pandemic, some in 2020 and a couple in 2022, but they were all online.&lt;/p&gt;
+
+&lt;p&gt;In theory, online meetups and DevRomagna are a match made in heaven. The
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Romagna&#34;&gt;Romagna region&lt;/a&gt; consists of small same-size towns scattered in the vast
+countryside. To accommodate this, and in an attempt to encourage varied
+participation, DevRomagna has always been a roaming meetup. We might be in one
+place for one month, and then, next month, we&amp;rsquo;ll likely move to another town.
+With online meetups, attendance doesn&amp;rsquo;t have to commit to a commute, saving
+time and money and allowing everyone to participate in events that would
+otherwise be too far away.&lt;/p&gt;
+
+&lt;p&gt;But there&amp;rsquo;s value in commitment. The other day, we gathered in a new, cozy
+venue (&lt;a href=&#34;https://www.facebook.com/centro.vaina&#34;&gt;Ca&amp;rsquo; Vaina&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, a municipality-run youth center and coworking space)
+where my friend &lt;a href=&#34;https://twitter.com/gsantomaggio&#34;&gt;Gabriele Santomaggio&lt;/a&gt; talked about Kubernetes, service mesh
+and isolation techniques he and his colleagues adopt at Vmware. After the talk,
+some of us went for dinner in a nearby pizzeria. Pizza was good, craft beer was
+great, and meanwhile, we talked about many things, like our jobs, our favorite
+developer tools and languages, and all the nerdy stuff you&amp;rsquo;d imagine.
+Suggestions for new, original presentations were thrown around, which is always
+good. Most importantly, I got to know new people, including Ugo, a fellow
+&lt;a href=&#34;https://mvp.microsoft.com/&#34;&gt;Microsoft MVP&lt;/a&gt; from my area whom I somehow managed to miss all these years.
+With Ugo, we are now planning a few hopefully engaging dotnet-centered events.&lt;/p&gt;
+
+&lt;p&gt;All in all, it was a pleasant, fruitful evening spent with like-minded
+individuals. We could have done an online event instead, probably getting
+higher attendance. I would&amp;rsquo;ve saved some money and time, but I wouldn&amp;rsquo;t get to
+know Ugo and the others at the table or see Gabriele again after two years of
+pandemic-inflicted hiatus.&lt;/p&gt;
+
+&lt;p&gt;More than one asked if we would stream the event, and my answer was no for
+several reasons. First, I suspect that in-person attendance would dwindle if
+we&amp;rsquo;d stream our events, effectively discouraging active participation. Second,
+it wouldn&amp;rsquo;t be fair to the people who put in the effort and come to the venue.
+Recording the session and putting it online later might be an option, but
+I think this would also discourage live participation (if I know I can watch it
+later, I&amp;rsquo;ll likely skip going.) So, for the time being, whenever possible,
+DevRomagna will stay true to its roots and remain a live event. Of course,
+there might be exceptions, like if we have a foreign or far-away guest or can&amp;rsquo;t
+find a proper venue.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re a local meetup, and &amp;ldquo;local&amp;rdquo; is hard to conjugate with &amp;ldquo;online.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:7&#34;&gt;Andrea is a DevRomagna co-organizer. I am happy to have him onboard.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:7&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34;&gt;I despise Faceebook and I&amp;rsquo;m sorry to link it here, but I still want to link this cool venue and couldn&amp;rsquo;t find a better  reference. Walled gardens are bad.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:6&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
