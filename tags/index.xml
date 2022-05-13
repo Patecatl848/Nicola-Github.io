@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Sun, 01 May 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 13 May 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>links</title>
+      <link>https://nicolaiarocci.com/tags/links/</link>
+      <pubDate>Fri, 13 May 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdoc</title>
+      <link>https://nicolaiarocci.com/tags/markdoc/</link>
+      <pubDate>Fri, 13 May 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/markdoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stripe</title>
+      <link>https://nicolaiarocci.com/tags/stripe/</link>
+      <pubDate>Fri, 13 May 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/tags/stripe/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>devromagna</title>
@@ -54,15 +81,6 @@
       <pubDate>Wed, 13 Apr 2022 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/tags/cli/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>links</title>
-      <link>https://nicolaiarocci.com/tags/links/</link>
-      <pubDate>Wed, 13 Apr 2022 07:05:25 +0100</pubDate>
-      
-      <guid>https://nicolaiarocci.com/tags/links/</guid>
       <description></description>
     </item>
     
