@@ -748,7 +748,7 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
       <pubDate>Tue, 17 May 2022 07:05:25 +0100</pubDate>
       
       <guid>https://nicolaiarocci.com/eve-swagger-v0.2-released/</guid>
-      <description>&lt;p&gt;I just released &lt;a href=&#34;https:/pypi.org/project/Eve-Swagger/&#34;&gt;Eve-Swagger v0.2&lt;/a&gt; on PyPI. Eve-Swagger is a Swagger/OpenAPI
+      <description>&lt;p&gt;I just released &lt;a href=&#34;https://pypi.org/project/Eve-Swagger/&#34;&gt;Eve-Swagger v0.2&lt;/a&gt; on PyPI. Eve-Swagger is a Swagger/OpenAPI
 extension for &lt;a href=&#34;https://python-eve.org&#34;&gt;Eve&lt;/a&gt; powered RESTful APIs. This maintenance release addresses
 a few issues and adds support for &lt;a href=&#34;https://github.com/rs/eve-auth-jwt&#34;&gt;eve-auth-jwt&lt;/a&gt;. Many thanks to &lt;a href=&#34;https://github.com/sildur&#34;&gt;Roberto
 Romero&lt;/a&gt; for his contributions to this release.&lt;/p&gt;
