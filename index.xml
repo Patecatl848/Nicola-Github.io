@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>All rights reserved</copyright>
-    <lastBuildDate>Mon, 16 May 2022 07:05:25 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 17 May 2022 07:05:25 +0100</lastBuildDate>
     
 	<atom:link href="https://nicolaiarocci.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -739,6 +739,23 @@ go &amp;#8211; T.S. Eliot&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goodreads.com/user/show/4665453-nicola&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:nicola@nicolaiarocci.com&#34;&gt;Mail&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Eve-Swagger v0.2 released</title>
+      <link>https://nicolaiarocci.com/eve-swagger-v0.2-released/</link>
+      <pubDate>Tue, 17 May 2022 07:05:25 +0100</pubDate>
+      
+      <guid>https://nicolaiarocci.com/eve-swagger-v0.2-released/</guid>
+      <description>&lt;p&gt;I just released &lt;a href=&#34;https:/pypi.org/project/Eve-Swagger/&#34;&gt;Eve-Swagger v0.2&lt;/a&gt; on PyPI. Eve-Swagger is a Swagger/OpenAPI
+extension for &lt;a href=&#34;https://python-eve.org&#34;&gt;Eve&lt;/a&gt; powered RESTful APIs. This maintenance release addresses
+a few issues and adds support for &lt;a href=&#34;https://github.com/rs/eve-auth-jwt&#34;&gt;eve-auth-jwt&lt;/a&gt;. Many thanks to &lt;a href=&#34;https://github.com/sildur&#34;&gt;Roberto
+Romero&lt;/a&gt; for his contributions to this release.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://nicolaiarocci.com/images/eve-swagger-0.2.png&#34; alt=&#34;Eve-Swagger 0.2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subscribe to the &lt;a href=&#34;https://nicolaiarocci.substack.com&#34;&gt;newsletter&lt;/a&gt;, the &lt;a href=&#34;https://nicolaiarocci.com/index.xml&#34;&gt;RSS feed&lt;/a&gt;, or follow @&lt;a href=&#34;http://twitter.com/nicolaiarocci&#34;&gt;nicolaiarocci&lt;/a&gt; on Twitter&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
