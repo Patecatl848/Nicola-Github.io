@@ -28,26 +28,43 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/eve-swagger-v0.2-released/</loc>
-    <lastmod>2022-05-17T07:05:25+01:00</lastmod>
+    <loc>https://nicolaiarocci.com/becoming-the-emperor/</loc>
+    <lastmod>2022-05-18T07:05:25+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/</loc>
-    <lastmod>2022-05-17T07:05:25+01:00</lastmod>
+    <lastmod>2022-05-18T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/post/</loc>
-    <lastmod>2022-05-17T07:05:25+01:00</lastmod>
+    <lastmod>2022-05-18T07:05:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nicolaiarocci.com/tags/</loc>
-    <lastmod>2022-05-17T07:05:25+01:00</lastmod>
+    <lastmod>2022-05-18T07:05:25+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/books/</loc>
+    <lastmod>2022-05-18T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/tags/links/</loc>
+    <lastmod>2022-05-18T07:05:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nicolaiarocci.com/eve-swagger-v0.2-released/</loc>
+    <lastmod>2022-05-17T07:05:25+01:00</lastmod>
   </url>
   
   <url>
@@ -74,12 +91,6 @@
   </url>
   
   <url>
-    <loc>https://nicolaiarocci.com/tags/books/</loc>
-    <lastmod>2022-05-16T07:05:25+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nicolaiarocci.com/tags/reviews/</loc>
     <lastmod>2022-05-16T07:05:25+01:00</lastmod>
     <priority>0</priority>
@@ -88,12 +99,6 @@
   <url>
     <loc>https://nicolaiarocci.com/stripe-releases-markdoc-and-thats-a-good-thing/</loc>
     <lastmod>2022-05-13T07:05:25+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nicolaiarocci.com/tags/links/</loc>
-    <lastmod>2022-05-13T07:05:25+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
